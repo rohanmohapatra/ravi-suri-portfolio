@@ -1,0 +1,18 @@
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
+
+import { theme } from "./theme";
+import { ThemeProvider } from "@material-ui/styles";
+import Routes from "./Routes";
+
+function App() {
+  return (
+    <ThemeProvider theme={theme}>
+      <BrowserRouter basename="/ravi-suri">
+        <Routes />
+      </BrowserRouter>
+    </ThemeProvider>
+  );
+}
+
+export default App;
