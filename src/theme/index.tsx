@@ -9,6 +9,13 @@ let theme = createMuiTheme({
       textTransform: "none",
     },
   },
+  overrides: {
+    MuiAccordionSummary: {
+      content: {
+        display: "block",
+      },
+    },
+  },
 });
 theme = responsiveFontSizes(theme);
 

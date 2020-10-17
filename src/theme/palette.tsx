@@ -9,8 +9,8 @@ const palette = {
   primary: {
     contrastText: white,
     dark: "#1D4167",
-    main: "#274D76",
-    light: colors.indigo[100],
+    main: "#002143",
+    light: "#062B50",
   },
 };
 

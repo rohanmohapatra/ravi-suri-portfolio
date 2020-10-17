@@ -6,30 +6,35 @@ import { Grid, Hidden, Typography } from "@material-ui/core";
 import { Carousel } from "./components/Carousel";
 import { ProjectCards } from "./components/ProjectCards";
 import { CarouselV2 } from "./components/CarouselV2";
-import { useIsMobile } from "../../components/useIsMobile";
+import { useIsMobile, useWidth } from "../../components/useIsMobile";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     height: "100%",
-    paddingTop: 100,
   },
   sectionOne: {
     paddingTop: 80,
     paddingLeft: 60,
     paddingRight: 30,
+    [theme.breakpoints.down("xs")]: {
+      paddingTop: 30,
+      paddingLeft: 10,
+      paddingRight: 10,
+    },
   },
   sectionTwo: {
     paddingTop: 100,
-    paddingLeft: 60,
-    paddingRight: 60,
+    paddingLeft: 0,
+    paddingRight: 0,
     [theme.breakpoints.down("sm")]: {
-      paddingLeft: 30,
-      paddingRight: 30,
+      paddingLeft: 0,
+      paddingRight: 0,
     },
   },
   sectionHidden: {
     paddingTop: 100,
     [theme.breakpoints.down("sm")]: {
+      paddingTop: 50,
       paddingLeft: 5,
       paddingRight: 5,
     },
@@ -48,8 +53,8 @@ const useStyles = makeStyles((theme) => ({
     paddingLeft: 60,
     paddingRight: 60,
     [theme.breakpoints.down("sm")]: {
-      paddingLeft: 30,
-      paddingRight: 30,
+      paddingLeft: 10,
+      paddingRight: 10,
     },
   },
 }));
@@ -57,6 +62,7 @@ const useStyles = makeStyles((theme) => ({
 export function Home() {
   const classes = useStyles();
   const isMobile = useIsMobile();
+  const width = useWidth();
   return (
     <div className={classes.root}>
       <Grid
@@ -65,16 +71,16 @@ export function Home() {
         alignItems={isMobile ? "center" : "flex-start"}
         className={classes.sectionOne}
       >
-        <Grid item xs={3}>
+        <Grid item xs={width > 768 ? 4 : 12}>
           <RaviSuriImage />
         </Grid>
         <Grid item xs={8}>
-          <Hidden xsDown>
+          <Hidden xsDown smDown={width <= 768}>
             <CarouselV2 />
           </Hidden>
         </Grid>
       </Grid>
-      <Hidden smUp>
+      <Hidden smUp={width > 768}>
         <Grid
           container
           justify="space-between"

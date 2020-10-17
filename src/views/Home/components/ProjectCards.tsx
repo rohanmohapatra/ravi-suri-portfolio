@@ -14,23 +14,46 @@ const useStyles = makeStyles((theme) => ({
     background: "no-repeat center center",
     backgroundSize: "cover",
     height: 330,
+    [theme.breakpoints.between(1280, 1380)]: {
+      height: 240,
+    },
     [theme.breakpoints.down("sm")]: {
       height: 230,
+      backgroundPosition: " 50% center",
     },
     [theme.breakpoints.down("xs")]: {
-      height: 180,
+      height: 100,
     },
   },
   cardContent: {
-    paddingLeft: 10,
+    paddingLeft: 30,
     paddingTop: 30,
-    backgroundColor: theme.palette.primary.dark,
+    backgroundColor: theme.palette.primary.light,
     height: 300,
+    [theme.breakpoints.between(1280, 1380)]: {
+      height: 210,
+    },
     [theme.breakpoints.down("sm")]: {
       height: 200,
+      paddingLeft: 20,
     },
     [theme.breakpoints.down("xs")]: {
-      height: 150,
+      height: 90,
+      paddingTop: 10,
+      paddingLeft: 10,
+      paddingRight: 10,
+    },
+  },
+  cardContentLeft: {
+    marginLeft: 10,
+    [theme.breakpoints.down("xs")]: {
+      marginLeft: 4,
+    },
+  },
+  cardContentRight: {
+    marginRight: 10,
+    [theme.breakpoints.down("xs")]: {
+      marginRight: 4,
     },
   },
   cardText: {
@@ -43,7 +66,7 @@ const useStyles = makeStyles((theme) => ({
       fontSize: 10,
     },
     [theme.breakpoints.down("xs")]: {
-      paddingTop: 15,
+      paddingTop: 5,
       fontSize: 8,
     },
   },
@@ -53,13 +76,19 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 900,
     color: theme.palette.common.white,
     [theme.breakpoints.down("sm")]: {
-      fontSize: 12,
+      fontSize: 10,
     },
   },
   cardButton: {
     marginTop: 50,
+    textTransform: "uppercase",
+    fontWeight: 900,
+    backgroundColor: theme.palette.common.white,
+    color: theme.palette.primary.light,
     [theme.breakpoints.down("sm")]: {
-      marginTop: 20,
+      marginTop: 5,
+      fontSize: 8,
+      padding: 2,
     },
   },
 }));
@@ -186,26 +215,32 @@ function Card(props) {
   );
 }
 
-function ProjectCard(props) {
-  const { src, title, text, index } = props;
+export function ProjectCard(props) {
+  const { src, title, text, index, href } = props;
   const classes = useStyles();
   return index % 2 === 0 ? (
     <Grid container justify="center" alignItems="center">
-      <Grid item xs={6}>
+      <Grid item xs={4}>
         <div
           className={classes.cardImage}
           style={{ backgroundImage: `url(${src})`, marginRight: 10 }}
         ></div>
       </Grid>
-      <Grid item xs={6}>
-        <div className={classes.cardContent} style={{ marginLeft: 10 }}>
+      <Grid item xs={8}>
+        <div
+          className={[classes.cardContent, classes.cardContentLeft].join(" ")}
+        >
           <Typography variant="h5" className={classes.cardTitle}>
             {title}
           </Typography>
           <Typography variant="body1" className={classes.cardText}>
             {text}
           </Typography>
-          <Button variant="contained" className={classes.cardButton}>
+          <Button
+            variant="contained"
+            className={classes.cardButton}
+            href={href}
+          >
             Learn More
           </Button>
         </div>
@@ -213,20 +248,26 @@ function ProjectCard(props) {
     </Grid>
   ) : (
     <Grid container justify="center" alignItems="center">
-      <Grid item xs={6}>
-        <div className={classes.cardContent} style={{ marginRight: 10 }}>
+      <Grid item xs={8}>
+        <div
+          className={[classes.cardContent, classes.cardContentRight].join(" ")}
+        >
           <Typography variant="h5" className={classes.cardTitle}>
             {title}
           </Typography>
           <Typography variant="body1" className={classes.cardText}>
             {text}
           </Typography>
-          <Button variant="contained" className={classes.cardButton}>
+          <Button
+            variant="contained"
+            className={classes.cardButton}
+            href={href}
+          >
             Learn More
           </Button>
         </div>
       </Grid>
-      <Grid item xs={6}>
+      <Grid item xs={4}>
         <div
           className={classes.cardImage}
           style={{ backgroundImage: `url(${src})`, marginLeft: 10 }}

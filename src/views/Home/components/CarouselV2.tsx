@@ -43,6 +43,10 @@ const useStyles = makeStyles((theme) => ({
   card: {
     paddingLeft: 25,
     paddingRight: 25,
+    [theme.breakpoints.down("xs")]: {
+      paddingLeft: 10,
+      paddingRight: 10,
+    },
   },
   cardTitle: {
     position: "absolute",
@@ -51,6 +55,12 @@ const useStyles = makeStyles((theme) => ({
     color: "white",
     fontFamily: "Poppins",
     fontWeight: 700,
+    [theme.breakpoints.down("sm")]: {
+      fontSize: 18,
+    },
+    [theme.breakpoints.down("xs")]: {
+      fontSize: 8,
+    },
   },
   cardText: {
     position: "absolute",
@@ -58,18 +68,25 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     color: "white",
     fontFamily: "Poppins",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: 14,
+    },
   },
   cardImage: {
     height: 500,
     width: 1000,
     // maxWidth: "100%",
-    [theme.breakpoints.down("sm")]: {
-      height: 200,
-      width: 500,
-    },
     [theme.breakpoints.between(1280, 1380)]: {
       height: 450,
       width: 1000,
+    },
+    [theme.breakpoints.down("sm")]: {
+      height: 400,
+      width: 500,
+    },
+    [theme.breakpoints.down("xs")]: {
+      height: 200,
+      width: 500,
     },
   },
 }));
@@ -83,7 +100,7 @@ export function CarouselV2() {
     slidesToScroll: 1,
     speed: 500,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 13000,
   };
 
   return (

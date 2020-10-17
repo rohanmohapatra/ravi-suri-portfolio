@@ -10,9 +10,23 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     color: "white",
     fontFamily: "Poppins",
-    [theme.breakpoints.down("sm")]: {
+    [theme.breakpoints.down(1279)]: {
       top: "50%",
-      fontSize: 8,
+      fontSize: 16,
+    },
+    [theme.breakpoints.down("md")]: {
+      top: "50%",
+      fontSize: 14,
+    },
+    [theme.breakpoints.down("sm")]: {
+      top: "40%",
+      fontSize: 18,
+      width: 400,
+    },
+    [theme.breakpoints.down("xs")]: {
+      top: "35%",
+      fontSize: 12,
+      width: 300,
     },
   },
 }));
@@ -23,7 +37,7 @@ const variants = {
   animate: {
     opacity: 1,
     transition: {
-      duration: 2,
+      duration: 5,
     },
   },
 };
@@ -178,7 +192,7 @@ export function Text5() {
         initial="initial"
         animate={controls}
       >
-        Passionately working on
+        Passionately working on{" "}
         <span style={{ textTransform: "uppercase", fontWeight: 700 }}>
           SUSTAINABLE <br />
           INFRASTRUCTURE
@@ -278,7 +292,7 @@ export function Text8() {
         initial="initial"
         animate={controls}
       >
-        Doing Cutting edge work on
+        Doing Cutting edge work on{" "}
         <span style={{ textTransform: "uppercase", fontWeight: 700 }}>
           HYDROGEN <br />
           ECONOMY
@@ -346,7 +360,7 @@ export function Text10() {
         initial="initial"
         animate={controls}
       >
-        Acting member of
+        Acting member of{" "}
         <span style={{ textTransform: "uppercase", fontWeight: 700 }}>
           UNCC, Business
         </span>
@@ -384,18 +398,22 @@ export function Text11() {
       >
         <span style={{ textTransform: "uppercase", fontWeight: 700 }}>
           Gold Medalist
-        </span>
+        </span>{" "}
         in Bombay University
         <br />
-        Post graduate in
+        Post graduate in{" "}
         <span style={{ textTransform: "uppercase", fontWeight: 700 }}>
           CHEMICAL ENGINEERING
         </span>{" "}
         from <br />
         North western University
         <br />
-        Executive education from HARVARD, MIT, STANFORD,
-        <br /> WHARTON, YALE, CAMBRIDGE and OXFORD universities.
+        Executive education from{" "}
+        <span style={{ fontWeight: 700 }}>
+          HARVARD, MIT, STANFORD,
+          <br /> WHARTON, YALE, CAMBRIDGE
+        </span>{" "}
+        and <span style={{ fontWeight: 700 }}>OXFORD</span> universities.
       </motion.div>
     </Typography>
   );

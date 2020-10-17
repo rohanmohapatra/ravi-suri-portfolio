@@ -7,7 +7,6 @@ import {
   Button,
   Hidden,
   IconButton,
-  Drawer,
   SwipeableDrawer,
   List,
   ListItem,
@@ -17,6 +16,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 import { makeStyles } from "@material-ui/core/styles";
 import { Connect } from "./Connect";
 import CloseIcon from "@material-ui/icons/Close";
+import { pathName } from "../../properties/properties";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -74,7 +74,7 @@ const useStyles = makeStyles((theme) => ({
 const navbarItems = [
   {
     name: "About",
-    path: "/about",
+    path: pathName + "/about",
   },
   {
     name: "Landmark Deals",
@@ -82,23 +82,23 @@ const navbarItems = [
   },
   {
     name: "Thought Leadership",
-    path: "/about",
+    path: "/though-leadership",
   },
   {
     name: "Passion for Sustainability",
-    path: "/about",
+    path: "/sustainability",
   },
   {
-    name: "Promoting Business of Peace",
-    path: "/about",
+    name: "Promoting Business for Peace",
+    path: "/peace",
   },
   {
     name: "Awards",
-    path: "/about",
+    path: "/awards",
   },
   {
     name: "Gallery",
-    path: "/about",
+    path: "/gallery",
   },
 ];
 
@@ -125,31 +125,27 @@ export function TopBar(props) {
     setOpen(open);
   };
 
-  const isAbout = location.pathname === "/about";
+  const isAbout = location.pathname.includes("/about");
   const isGallery = location.pathname === "/gallery";
-  const isTl = location.pathname === "/thoughLeadership";
+  const isTl = location.pathname === "/though-leadership";
   const isAcc = location.pathname === "/accomplishment";
   const isSust = location.pathname === "/sustainability";
   const isAwards = location.pathname === "/awards";
-  const isUN = location.pathname === "/unitedNations";
+  const isLM = location.pathname === "/landmark-deals";
   const isConnect = connect;
 
-  const bold = [
-    isAbout,
-    isAbout,
-    isAbout,
-    isAbout,
-    isAbout,
-    isAbout,
-    isConnect,
-  ];
+  const bold = [isAbout, isLM, isAbout, isAbout, isAbout, isAbout, isGallery];
 
   return (
     <AppBar position="fixed" className={classes.appbar} elevation={5}>
       <Toolbar>
         <Grid container justify="space-between" alignItems="center">
           <Grid item xs={4}>
-            <Button color="inherit" className={classes.button} href="/home">
+            <Button
+              color="inherit"
+              className={classes.button}
+              href={pathName + "/home"}
+            >
               <Typography variant="h3" className={classes.title}>
                 RAVI SURI
               </Typography>
@@ -168,7 +164,7 @@ export function TopBar(props) {
                     <Button
                       color="inherit"
                       className={classes.button}
-                      href="/about"
+                      href={pathName + "/about"}
                     >
                       <Typography
                         variant="body1"
@@ -187,56 +183,75 @@ export function TopBar(props) {
                     <Button
                       color="inherit"
                       className={classes.button}
-                      href="/gallery"
+                      href={pathName + "/landmark-deals"}
                     >
                       <Typography
                         variant="body1"
                         className={classes.buttonText}
-                        style={
-                          isGallery ? { fontWeight: 500 } : { fontWeight: 300 }
-                        }
+                        style={isLM ? { fontWeight: 500 } : { fontWeight: 300 }}
                       >
                         Landmark Deals
                       </Typography>
                     </Button>
                   </Grid>
                 </Grid>
-                <Grid item xs={4}>
-                  <Grid container justify="center" alignItems="center">
+                <Grid item xs={2}>
+                  <Grid container justify="flex-start" alignItems="center">
                     <Button
                       color="inherit"
                       className={classes.button}
-                      href="/thoughLeadership"
-                    >
-                      <Typography
-                        variant="body1"
-                        className={classes.buttonText}
-                        style={isTl ? { fontWeight: 500 } : { fontWeight: 300 }}
-                      >
-                        Thought Leadership
-                      </Typography>
-                    </Button>
-                  </Grid>
-                </Grid>
-                <Grid item xs={4}>
-                  <Grid container justify="center" alignItems="center">
-                    <Button
-                      color="inherit"
-                      className={classes.button}
-                      href="/accomplishment"
+                      href="/awards"
                     >
                       <Typography
                         variant="body1"
                         className={classes.buttonText}
                         style={
-                          isAcc ? { fontWeight: 500 } : { fontWeight: 300 }
+                          isAwards ? { fontWeight: 500 } : { fontWeight: 300 }
                         }
                       >
-                        Passion for Sustainability
+                        Awards
                       </Typography>
                     </Button>
                   </Grid>
                 </Grid>
+                <Grid item xs={2}>
+                  <Button
+                    color="inherit"
+                    className={classes.button}
+                    href={pathName + "/gallery"}
+                  >
+                    <Typography
+                      variant="body1"
+                      className={classes.buttonText}
+                      style={
+                        isGallery ? { fontWeight: 500 } : { fontWeight: 300 }
+                      }
+                    >
+                      Gallery
+                    </Typography>
+                  </Button>
+                </Grid>
+                <Grid item xs={2}>
+                  <Grid container justify="center" alignItems="center">
+                    <Button
+                      color="inherit"
+                      className={classes.button}
+                      onClick={() => setConnect(true)}
+                    >
+                      <Typography
+                        variant="body1"
+                        className={classes.buttonText}
+                        style={
+                          isConnect ? { fontWeight: 500 } : { fontWeight: 300 }
+                        }
+                      >
+                        Connect
+                      </Typography>
+                    </Button>
+                  </Grid>
+                  <Connect open={connect} handleClose={handleConnectClose} />
+                </Grid>
+
                 <Grid
                   container
                   justify="space-between"
@@ -257,62 +272,48 @@ export function TopBar(props) {
                             isSust ? { fontWeight: 500 } : { fontWeight: 300 }
                           }
                         >
-                          Promoting Business of Peace
+                          Promoting Business for Peace
                         </Typography>
                       </Button>
                     </Grid>
                   </Grid>
-                  <Grid item xs={2}>
+                  <Grid item xs={4}>
                     <Grid container justify="center" alignItems="center">
                       <Button
                         color="inherit"
                         className={classes.button}
-                        href="/awards"
+                        href="/thoughLeadership"
                       >
                         <Typography
                           variant="body1"
                           className={classes.buttonText}
                           style={
-                            isAwards ? { fontWeight: 500 } : { fontWeight: 300 }
+                            isTl ? { fontWeight: 500 } : { fontWeight: 300 }
                           }
                         >
-                          Awards
+                          Thought Leadership
                         </Typography>
                       </Button>
                     </Grid>
                   </Grid>
-                  <Grid item xs={2}>
-                    <Button
-                      color="inherit"
-                      className={classes.button}
-                      href="/unitedNations"
-                    >
-                      <Typography
-                        variant="body1"
-                        className={classes.buttonText}
-                        style={isUN ? { fontWeight: 500 } : { fontWeight: 300 }}
+                  <Grid item xs={4}>
+                    <Grid container justify="center" alignItems="center">
+                      <Button
+                        color="inherit"
+                        className={classes.button}
+                        href="/accomplishment"
                       >
-                        Gallery
-                      </Typography>
-                    </Button>
-                  </Grid>
-                  <Grid item xs={2}>
-                    <Button
-                      color="inherit"
-                      className={classes.button}
-                      onClick={() => setConnect(true)}
-                    >
-                      <Typography
-                        variant="body1"
-                        className={classes.buttonText}
-                        style={
-                          isConnect ? { fontWeight: 500 } : { fontWeight: 300 }
-                        }
-                      >
-                        Connect
-                      </Typography>
-                    </Button>
-                    <Connect open={connect} handleClose={handleConnectClose} />
+                        <Typography
+                          variant="body1"
+                          className={classes.buttonText}
+                          style={
+                            isAcc ? { fontWeight: 500 } : { fontWeight: 300 }
+                          }
+                        >
+                          Passion for Sustainability
+                        </Typography>
+                      </Button>
+                    </Grid>
                   </Grid>
                 </Grid>
               </Grid>

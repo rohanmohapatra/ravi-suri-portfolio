@@ -4,7 +4,14 @@ import { Switch, Redirect } from "react-router-dom";
 import { RouteWithLayout } from "./components/RouteWithLayout";
 import { Main as MainLayout } from "./layouts/Main";
 
-import { Home as HomeView, About as AboutView } from "./views";
+import {
+  Home as HomeView,
+  About as AboutView,
+  Gallery as GalleryView,
+  LandmarkDeals as LandmarkDealsView,
+} from "./views";
+
+import { Testimonials as TestimonialsView } from "./views/About/views/Testimonials";
 
 export default function Routes() {
   return (
@@ -23,10 +30,22 @@ export default function Routes() {
         path="/about"
       />
       <RouteWithLayout
-        component={View}
+        component={TestimonialsView}
+        exact
+        layout={MainLayout}
+        path="/testimonials"
+      />
+      <RouteWithLayout
+        component={GalleryView}
         exact
         layout={MainLayout}
         path="/gallery"
+      />
+      <RouteWithLayout
+        component={LandmarkDealsView}
+        exact
+        layout={MainLayout}
+        path="/landmark-deals"
       />
       <RouteWithLayout
         component={View}

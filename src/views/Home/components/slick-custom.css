@@ -90,8 +90,17 @@
 }
 @media screen and (max-width: 600px) {
   .slick-dots li {
-    width: 12px;
-    height: 12px;
+    width: 8px;
+    height: 8px;
+  }
+
+  .slick-next {
+    right: 20px;
+    z-index: 10;
+  }
+  .slick-prev {
+    left: 20px;
+    z-index: 10;
   }
 }
 .slick-dots li button:before {
