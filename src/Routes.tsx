@@ -9,9 +9,12 @@ import {
   About as AboutView,
   Gallery as GalleryView,
   LandmarkDeals as LandmarkDealsView,
+  Transactions as TransactionsView,
+  Testimonials as TestimonialsView,
+  Qualifications as QualificationsView,
+  PassionForSustainability as SustainabilityView,
+  PassionForSustainabilityMore as SustainabilityAdditionalView,
 } from "./views";
-
-import { Testimonials as TestimonialsView } from "./views/About/views/Testimonials";
 
 export default function Routes() {
   return (
@@ -36,6 +39,12 @@ export default function Routes() {
         path="/testimonials"
       />
       <RouteWithLayout
+        component={QualificationsView}
+        exact
+        layout={MainLayout}
+        path="/qualifications"
+      />
+      <RouteWithLayout
         component={GalleryView}
         exact
         layout={MainLayout}
@@ -48,22 +57,34 @@ export default function Routes() {
         path="/landmark-deals"
       />
       <RouteWithLayout
-        component={View}
+        component={TransactionsView}
         exact
         layout={MainLayout}
-        path="/thoughLeadership"
+        path="/key-transactions"
       />
       <RouteWithLayout
         component={View}
         exact
         layout={MainLayout}
-        path="/accomplishment"
+        path="/thought-leadership"
       />
       <RouteWithLayout
         component={View}
+        exact
+        layout={MainLayout}
+        path="/peace"
+      />
+      <RouteWithLayout
+        component={SustainabilityView}
         exact
         layout={MainLayout}
         path="/sustainability"
+      />
+      <RouteWithLayout
+        component={SustainabilityAdditionalView}
+        exact
+        layout={MainLayout}
+        path="/sustainability-report"
       />
       <RouteWithLayout
         component={View}

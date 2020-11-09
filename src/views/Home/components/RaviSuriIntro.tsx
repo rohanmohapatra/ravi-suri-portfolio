@@ -13,6 +13,10 @@ const useStyles = makeStyles((theme) => ({
       height: 260,
       width: 260,
     },
+    [theme.breakpoints.down("md")]: {
+      height: 230,
+      width: 230,
+    },
     [theme.breakpoints.down("sm")]: {
       height: 180,
       width: 180,
@@ -38,6 +42,9 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.primary.contrastText,
     [theme.breakpoints.between(1280, 1380)]: {
       fontSize: 18,
+    },
+    [theme.breakpoints.down("md")]: {
+      fontSize: 16,
     },
     [theme.breakpoints.down("xs")]: {
       fontSize: 12,

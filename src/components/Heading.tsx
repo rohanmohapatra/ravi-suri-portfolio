@@ -5,7 +5,7 @@ const useStyles = makeStyles((theme) => ({
   header: {
     paddingTop: 40,
     paddingBottom: 40,
-    backgroundColor: theme.palette.primary.dark,
+    backgroundColor: theme.palette.primary.light,
     color: theme.palette.primary.contrastText,
     paddingLeft: 30,
   },

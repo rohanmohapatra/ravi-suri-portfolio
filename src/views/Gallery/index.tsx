@@ -1,8 +1,9 @@
 import { makeStyles, Typography } from "@material-ui/core";
 import React from "react";
 import { Heading } from "../../components/Heading";
+import { pathName } from "../../properties/properties";
 import { GalleryImage } from "./components/GalleryImage";
-import { GalleryPaper } from "./components/GalleryPaper";
+import { GalleryLongPaper, GalleryPaper } from "./components/GalleryPaper";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -59,7 +60,7 @@ export function Gallery() {
           organisations.
         </Typography>
       </div>
-      <GalleryImage src="https://source.unsplash.com/MAxpJkr1CMo/1920x1257" />
+      <GalleryImage src={pathName + "/assets/gallery/av.jpg"} />
       <Heading heading="AUTONOMOUS VEHICLES (AVs)" />
       <div className={classes.textContainer}>
         <Typography variant="h6" className={classes.text}>
@@ -75,26 +76,24 @@ export function Gallery() {
           <br />
           <br />
           <a href="https://amp.thenational.ae/business/technology/uae-moves-up-a-spot-in-driverless-car-readiness-ranking-1.1045632">
-            https://amp.thenational.ae/business/technology/uae-moves-up-a-spot-in-driverless-car-readiness-ranking-1.1045632
+            UAE moves up a spot in driverless car readiness ranking
           </a>
           <br />
           <br />
           <a href="https://www.cbnme.com/logistics-news/uae-ranks-in-top-10-on-kpmgs-2020-global-autonomous-vehicles-readiness-index/">
-            https://www.cbnme.com/logistics-news/uae-ranks-in-top-10-on-kpmgs-2020-global-autonomous-vehicles-readiness-index/
+            UAE ranks in top 10 on KPMG's 2020 Global Autonomous Vehicles
+            Readiness Index
           </a>
           <br />
           <br />
           <a href="https://www.arabianbusiness.com/technology/388224-uae-named-in-worlds-top-10-for-driverless-vehicles-potential">
-            https://www.arabianbusiness.com/technology/388224-uae-named-in-worlds-top-10-for-driverless-vehicles-potential
+            UAE named in world's top 10 for driverless vehicles potential
           </a>
           <br />
           <br />
-          <a href="https://amp.thenational.ae/business/technology/uae-moves-up-a-spot-in-driverless-car-readiness-ranking-1.1045632">
-            https://amp.thenational.ae/business/technology/uae-moves-up-a-spot-in-driverless-car-readiness-ranking-1.1045632
-          </a>
         </Typography>
       </div>
-      <GalleryImage src="https://source.unsplash.com/hDyO6rr3kqk/1920x1280" />
+      <GalleryImage src={pathName + "/assets/gallery/infra.jpg"} />
       <Heading heading="FUTURE OF INFRASTRUCTURE " />
       <div className={classes.textContainer}>
         <Typography variant="h6" className={classes.text}>
@@ -110,13 +109,13 @@ export function Gallery() {
           <br />
           <br />
           <a href="https://www.linkedin.com/posts/kpmg_lowergulf_covid19-infrastructure-infrastructurefinance-activity-6668845571622658048-3f54">
-            https://www.linkedin.com/posts/kpmg_lowergulf_covid19-infrastructure-infrastructurefinance-activity-6668845571622658048-3f54
+            Infrastructure sector post pandemic
           </a>
           <br />
           <br />
         </Typography>
       </div>
-      <GalleryImage src="https://source.unsplash.com/MAxpJkr1CMo/1920x1257" />
+      <GalleryImage src={pathName + "/assets/gallery/africa.jpg"} />
       <Heading heading="POWER AFRICA " />
       <div className={classes.textContainer}>
         <Typography variant="h6" className={classes.text}>
@@ -132,8 +131,8 @@ export function Gallery() {
           />
         </Typography>
       </div>
-      <GalleryImage src="https://source.unsplash.com/hDyO6rr3kqk/1920x1280" />
-      <Heading heading="PROJECT FINANCE " />
+      <GalleryImage src={pathName + "/assets/gallery/finance.jpg"} />
+      <Heading heading="PROJECT FINANCE" />
       <div className={classes.textContainer}>
         <Typography variant="h6" className={classes.text}>
           The future of project financing in a VUCA (volatile, uncertain,
@@ -146,8 +145,23 @@ export function Gallery() {
           <br />
           <br />
           <br />
-          <a href="https://www.linkedin.com/posts/kpmg_lowergulf_covid19-infrastructure-infrastructurefinance-activity-6668845571622658048-3f54">
-            https://www.linkedin.com/posts/kpmg_lowergulf_covid19-infrastructure-infrastructurefinance-activity-6668845571622658048-3f54
+          <a href="http://www.allconferences.com/conferences/2007/20070120231341">
+            The 3rd Annual Project Finance in the Middle East Forum
+          </a>
+          <br />
+          <br />
+          <a href="https://www.naturalgasworld.com/project-financing-shale-gas-europe">
+            Natural Gas world: Making a Financial Case for Shale Gas
+          </a>
+          <br />
+          <br />
+          <a href="http://www.pfie.com/story/1040882/gulf-power-2010-part-2-d60vmw79q3">
+            Gulf Power Roundtable 2020
+          </a>
+          <br />
+          <br />
+          <a href="https://www.gtreview.com/supplements/gtr-mena-supplement-2014/saudi-arabia-the-projects-keep-rolling-in/">
+            Saudi Arabia: The projects keep rolling, Global Trade Review (GTR)
           </a>
           <br />
           <br />
@@ -173,7 +187,7 @@ export function Gallery() {
           />
         </Typography>
       </div>
-      <GalleryImage src="https://source.unsplash.com/hDyO6rr3kqk/1920x1280" />
+      <GalleryImage src={pathName + "/assets/gallery/bri.jpg"} />
       <Heading heading="BELT AND ROAD INITIATIVE (BRI)" />
       <div className={classes.textContainer}>
         <Typography variant="h6" className={classes.text}>
@@ -187,11 +201,23 @@ export function Gallery() {
           <br />
           <br />
           <br />
-          <a href="https://www.linkedin.com/posts/kpmg_lowergulf_covid19-infrastructure-infrastructurefinance-activity-6668845571622658048-3f54">
-            https://www.linkedin.com/posts/kpmg_lowergulf_covid19-infrastructure-infrastructurefinance-activity-6668845571622658048-3f54
+          <a href="https://www.dmcc.ae/events/new-global-trade-order/asia-house-conference-speakers">
+            Asia House Conference Speakers
           </a>
           <br />
           <br />
+          <a href="zawya.com/mena/en/business/story/BRI_in_the_Gulf_Opening_up_a_world_of_opportunities_in_construction_and_real_estate_sectors-ZAWYA20191030101522/">
+            BRI in the Gulf Opening up a world of oppurtunities in construction
+            and real state sectors
+          </a>
+          <br />
+          <br />
+          <a href="https://asiahouse.org/news-and-views/middle-east-presents-unique-perspectives-belt-road-initiative/">
+            Middle East presents unique perspectives belt road initiative
+          </a>
+          <br />
+          <br />
+          <GalleryLongPaper header="Speaker at AFF, 2017" />
         </Typography>
       </div>
       <GalleryImage src="https://source.unsplash.com/hDyO6rr3kqk/1920x1280" />
@@ -205,14 +231,18 @@ export function Gallery() {
           by 12.5%.
           <br />
           <br />
-          LNG Journal European LNG Forum
+          <a href="https://lngjournal.com/index.php/the-journal/item/5283-european-lng-forum">
+            European LNG Forum, Oslo, Norway
+          </a>
           <br />
-          <a href="hhttps://lngjournal.com/index.php/the-journal/item/5283-european-lng-forum">
-            https://lngjournal.com/index.php/the-journal/item/5283-european-lng-forum
+          <br />
+          <a href="https://lngjournal.com/index.php/the-journal/item/5283-european-lng-forum">
+            SMI's LNG Conference, London 2012
           </a>
           <br />
           <br />
         </Typography>
+        <GalleryLongPaper header="FLNG World 2014 - Pimagazine Asia" />
       </div>
     </div>
   );

@@ -80,6 +80,10 @@ const useStyles = makeStyles((theme) => ({
       height: 450,
       width: 1000,
     },
+    [theme.breakpoints.down("md")]: {
+      height: 350,
+      width: 500,
+    },
     [theme.breakpoints.down("sm")]: {
       height: 400,
       width: 500,

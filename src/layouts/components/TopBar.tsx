@@ -49,6 +49,7 @@ const useStyles = makeStyles((theme) => ({
   button: {
     // paddingLeft: 30,
     // paddingRight: 30,
+    textTransform: "uppercase",
   },
   buttonText: {
     fontFamily: "Poppins",
@@ -78,27 +79,27 @@ const navbarItems = [
   },
   {
     name: "Landmark Deals",
-    path: "/landmark-deals",
+    path: pathName + "/landmark-deals",
   },
   {
     name: "Thought Leadership",
-    path: "/though-leadership",
+    path: pathName + "/thought-leadership",
   },
   {
     name: "Passion for Sustainability",
-    path: "/sustainability",
+    path: pathName + "/sustainability",
   },
   {
-    name: "Promoting Business for Peace",
-    path: "/peace",
+    name: "Impact on Society",
+    path: pathName + "/peace",
   },
   {
     name: "Awards",
-    path: "/awards",
+    path: pathName + "/awards",
   },
   {
     name: "Gallery",
-    path: "/gallery",
+    path: pathName + "/gallery",
   },
 ];
 
@@ -126,15 +127,15 @@ export function TopBar(props) {
   };
 
   const isAbout = location.pathname.includes("/about");
-  const isGallery = location.pathname === "/gallery";
-  const isTl = location.pathname === "/though-leadership";
-  const isAcc = location.pathname === "/accomplishment";
-  const isSust = location.pathname === "/sustainability";
-  const isAwards = location.pathname === "/awards";
   const isLM = location.pathname === "/landmark-deals";
+  const isTL = location.pathname === "/thought-leadership";
+  const isSust = location.pathname.includes("/sustainability");
+  const isPeace = location.pathname.includes("/peace");
+  const isAwards = location.pathname === "/awards";
+  const isGallery = location.pathname === "/gallery";
   const isConnect = connect;
 
-  const bold = [isAbout, isLM, isAbout, isAbout, isAbout, isAbout, isGallery];
+  const bold = [isAbout, isLM, isTL, isSust, isPeace, isAwards, isGallery];
 
   return (
     <AppBar position="fixed" className={classes.appbar} elevation={5}>
@@ -151,11 +152,11 @@ export function TopBar(props) {
               </Typography>
             </Button>
           </Grid>
-          <Hidden mdDown>
+          <Hidden smDown>
             <Grid item xs={8}>
               <Grid
                 container
-                justify="space-between"
+                justify="flex-start"
                 alignItems="center"
                 className={classes.navbar}
               >
@@ -170,7 +171,7 @@ export function TopBar(props) {
                         variant="body1"
                         className={classes.buttonText}
                         style={
-                          isAbout ? { fontWeight: 500 } : { fontWeight: 300 }
+                          isAbout ? { fontWeight: 800 } : { fontWeight: 300 }
                         }
                       >
                         About
@@ -188,9 +189,72 @@ export function TopBar(props) {
                       <Typography
                         variant="body1"
                         className={classes.buttonText}
-                        style={isLM ? { fontWeight: 500 } : { fontWeight: 300 }}
+                        style={isLM ? { fontWeight: 800 } : { fontWeight: 300 }}
                       >
                         Landmark Deals
+                      </Typography>
+                    </Button>
+                  </Grid>
+                </Grid>
+                <Grid item xs={4}>
+                  <Grid container justify="center" alignItems="center">
+                    <Button
+                      color="inherit"
+                      className={classes.button}
+                      href={pathName + "/thought-leadership"}
+                    >
+                      <Typography
+                        variant="body1"
+                        className={classes.buttonText}
+                        style={isTL ? { fontWeight: 800 } : { fontWeight: 300 }}
+                      >
+                        Thought Leadership
+                      </Typography>
+                    </Button>
+                  </Grid>
+                </Grid>
+                <Grid item xs={4}>
+                  <Grid container justify="center" alignItems="center">
+                    <Button
+                      color="inherit"
+                      className={classes.button}
+                      href={pathName + "/sustainability"}
+                    >
+                      <Typography
+                        variant="body1"
+                        className={classes.buttonText}
+                        style={
+                          isSust ? { fontWeight: 800 } : { fontWeight: 300 }
+                        }
+                      >
+                        Passion for Sustainability
+                      </Typography>
+                    </Button>
+                  </Grid>
+                </Grid>
+              </Grid>
+
+              <Grid
+                container
+                justify="flex-start"
+                alignItems="center"
+                className={classes.navbar}
+              >
+                <Grid item xs={3}>
+                  <Grid container justify="flex-start" alignItems="center">
+                    <Button
+                      color="inherit"
+                      className={classes.button}
+                      href={pathName + "/peace"}
+                    >
+                      <Typography
+                        variant="body1"
+                        className={classes.buttonText}
+                        style={
+                          isPeace ? { fontWeight: 800 } : { fontWeight: 300 }
+                        }
+                      >
+                        Impact on Society
                       </Typography>
                     </Button>
                   </Grid>
@@ -206,7 +270,7 @@ export function TopBar(props) {
                         variant="body1"
                         className={classes.buttonText}
                         style={
-                          isAwards ? { fontWeight: 500 } : { fontWeight: 300 }
+                          isAwards ? { fontWeight: 800 } : { fontWeight: 300 }
                         }
                       >
                         Awards
@@ -224,7 +288,7 @@ export function TopBar(props) {
                       variant="body1"
                       className={classes.buttonText}
                       style={
-                        isGallery ? { fontWeight: 500 } : { fontWeight: 300 }
+                        isGallery ? { fontWeight: 800 } : { fontWeight: 300 }
                       }
                     >
                       Gallery
@@ -242,7 +306,7 @@ export function TopBar(props) {
                         variant="body1"
                         className={classes.buttonText}
                         style={
-                          isConnect ? { fontWeight: 500 } : { fontWeight: 300 }
+                          isConnect ? { fontWeight: 800 } : { fontWeight: 300 }
                         }
                       >
                         Connect
@@ -251,75 +315,10 @@ export function TopBar(props) {
                   </Grid>
                   <Connect open={connect} handleClose={handleConnectClose} />
                 </Grid>
-
-                <Grid
-                  container
-                  justify="space-between"
-                  alignItems="center"
-                  className={classes.navbar}
-                >
-                  <Grid item xs={4}>
-                    <Grid container justify="flex-start" alignItems="center">
-                      <Button
-                        color="inherit"
-                        className={classes.button}
-                        href="/sustainability"
-                      >
-                        <Typography
-                          variant="body1"
-                          className={classes.buttonText}
-                          style={
-                            isSust ? { fontWeight: 500 } : { fontWeight: 300 }
-                          }
-                        >
-                          Promoting Business for Peace
-                        </Typography>
-                      </Button>
-                    </Grid>
-                  </Grid>
-                  <Grid item xs={4}>
-                    <Grid container justify="center" alignItems="center">
-                      <Button
-                        color="inherit"
-                        className={classes.button}
-                        href="/thoughLeadership"
-                      >
-                        <Typography
-                          variant="body1"
-                          className={classes.buttonText}
-                          style={
-                            isTl ? { fontWeight: 500 } : { fontWeight: 300 }
-                          }
-                        >
-                          Thought Leadership
-                        </Typography>
-                      </Button>
-                    </Grid>
-                  </Grid>
-                  <Grid item xs={4}>
-                    <Grid container justify="center" alignItems="center">
-                      <Button
-                        color="inherit"
-                        className={classes.button}
-                        href="/accomplishment"
-                      >
-                        <Typography
-                          variant="body1"
-                          className={classes.buttonText}
-                          style={
-                            isAcc ? { fontWeight: 500 } : { fontWeight: 300 }
-                          }
-                        >
-                          Passion for Sustainability
-                        </Typography>
-                      </Button>
-                    </Grid>
-                  </Grid>
-                </Grid>
               </Grid>
             </Grid>
           </Hidden>
-          <Hidden lgUp>
+          <Hidden mdUp>
             <Grid item xs={2}>
               <Grid container justify="flex-end">
                 {!open && (
@@ -359,7 +358,7 @@ export function TopBar(props) {
                             className={classes.buttonText}
                             style={
                               bold[index]
-                                ? { fontWeight: 500 }
+                                ? { fontWeight: 800 }
                                 : { fontWeight: 300 }
                             }
                           >
@@ -375,7 +374,7 @@ export function TopBar(props) {
                           className={classes.buttonText}
                           style={
                             isConnect
-                              ? { fontWeight: 500 }
+                              ? { fontWeight: 800 }
                               : { fontWeight: 300 }
                           }
                         >

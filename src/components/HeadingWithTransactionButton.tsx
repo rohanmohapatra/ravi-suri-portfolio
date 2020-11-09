@@ -2,11 +2,12 @@ import React from "react";
 import { Button, Grid, makeStyles, Typography } from "@material-ui/core";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import { useIsMobile } from "./useIsMobile";
+import { pathName } from "../properties/properties";
 const useStyles = makeStyles((theme) => ({
   header: {
     paddingTop: 40,
     paddingBottom: 40,
-    backgroundColor: theme.palette.primary.dark,
+    backgroundColor: theme.palette.primary.light,
     color: theme.palette.primary.contrastText,
     paddingLeft: 30,
   },
@@ -47,7 +48,7 @@ export function HeadingWithTransactionButton(props) {
           {heading}
         </Typography>
         {!isMobile && (
-          <Button>
+          <Button href={pathName + "/key-transactions"}>
             <Typography variant="h4" className={classes.headerButton}>
               Summary of key transactions{" "}
               <ChevronRightIcon className={classes.icon} />
@@ -57,7 +58,7 @@ export function HeadingWithTransactionButton(props) {
       </Grid>
       <Grid container justify="flex-start">
         {isMobile && (
-          <Button>
+          <Button href={pathName + "/key-transactions"}>
             <Grid container justify="flex-start">
               <Typography variant="h4" className={classes.headerButton}>
                 Summary of key transactions{" "}

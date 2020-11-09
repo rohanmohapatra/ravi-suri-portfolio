@@ -1,3 +1,3 @@
-// export const pathName = "/ravi-suri";
+export const pathName = "/ravi-suri";
 //Dev Property
-export const pathName = "";
+// export const pathName = "";

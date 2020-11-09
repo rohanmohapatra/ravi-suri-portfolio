@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
   header: {
     paddingTop: 40,
     paddingBottom: 40,
-    backgroundColor: theme.palette.primary.dark,
+    backgroundColor: theme.palette.primary.light,
     color: theme.palette.primary.contrastText,
     paddingLeft: 30,
   },
@@ -47,7 +47,7 @@ const useStyles = makeStyles((theme) => ({
   },
   paper: {
     padding: 20,
-    backgroundColor: theme.palette.primary.dark,
+    backgroundColor: theme.palette.primary.light,
   },
   heading: {
     fontFamily: '"Poppins"',
