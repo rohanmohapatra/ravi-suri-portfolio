@@ -15,8 +15,7 @@ const useStyles = makeStyles((theme) => ({
     height: "100%",
   },
   home: {
-    paddingLeft: 140,
-    paddingRight: 140,
+    padding: 40,
     color: theme.palette.common.white,
     [theme.breakpoints.down("xs")]: {
       paddingLeft: 20,
@@ -39,7 +38,7 @@ export const PassionForSustainabilityMore: React.FC = () => {
       <Heading heading="Passion For Sustainability" />
       <Grid container className={classes.home}>
         <Grid item xs={12}>
-          <Typography variant="h4" className={classes.text}>
+          <Typography variant="h6" className={classes.text}>
             In close context to Ravi Suri’s thoughts on Sustainability, kindly
             refer to the various reports and articles below on the way ahead.
           </Typography>

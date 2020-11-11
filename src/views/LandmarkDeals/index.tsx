@@ -55,8 +55,12 @@ const useStyles = makeStyles((theme) => ({
   cardContentRight: {
     paddingLeft: 350,
     marginRight: 10,
+    [theme.breakpoints.down("md")]: {
+      paddingLeft: 200,
+    },
     [theme.breakpoints.down("xs")]: {
       marginRight: 4,
+      paddingLeft: 10,
     },
   },
   cardText: {
@@ -92,6 +96,39 @@ const useStyles = makeStyles((theme) => ({
       marginTop: 5,
       fontSize: 8,
       padding: 2,
+    },
+  },
+  home: {
+    padding: 40,
+    color: theme.palette.common.white,
+    [theme.breakpoints.down("xs")]: {
+      paddingLeft: 20,
+      paddingRight: 20,
+    },
+  },
+  text: {
+    fontWeight: 700,
+    [theme.breakpoints.down("xs")]: {
+      fontSize: 10,
+    },
+  },
+  dealImage: {
+    background: `url(${pathName}/assets/landmarkdeals/landmarkdeals.png) no-repeat center`,
+    backgroundSize: "contain",
+    height: 600,
+    [theme.breakpoints.down("md")]: {
+      height: 400,
+    },
+    [theme.breakpoints.down("xs")]: {
+      height: 200,
+    },
+  },
+  item: {
+    paddingTop: 10,
+    paddingBottom: 10,
+    [theme.breakpoints.down("xs")]: {
+      paddingTop: 2,
+      paddingBottom: 2,
     },
   },
 }));
@@ -308,9 +345,27 @@ const landmarkDeals = [
 ];
 
 export function LandmarkDeals() {
+  const classes = useStyles();
   return (
     <div>
       <HeadingWithTransactionButton heading="Landmark Deals" />
+      <Grid container className={classes.home}>
+        <Grid item xs={12} className={classes.item}>
+          <Typography variant="h5" className={classes.text}>
+            OVERVIEW OF GROUND BREAKING TRANSACTIONS DONE BY RAVI
+          </Typography>
+        </Grid>
+        <Grid item xs={12} className={classes.item}>
+          <div className={classes.dealImage}></div>
+        </Grid>
+        <Grid item xs={12} className={classes.item}>
+          <Typography variant="h5" className={classes.text}>
+            Cutting edge deals done across various sectors like power, ports,
+            renewables, social infrastructure etc during Ravi’s tenure at ANZ,
+            GE , ABN AMRO, STANDARD CHARTERED and KPMG.
+          </Typography>
+        </Grid>
+      </Grid>
       {landmarkDeals.map((deal, index) => (
         <DealsCard
           index={index}

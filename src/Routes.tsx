@@ -14,6 +14,8 @@ import {
   Qualifications as QualificationsView,
   PassionForSustainability as SustainabilityView,
   PassionForSustainabilityMore as SustainabilityAdditionalView,
+  ImpactOnSociety as PeaceView,
+  ThoughtLeadership as TLView,
 } from "./views";
 
 export default function Routes() {
@@ -63,13 +65,13 @@ export default function Routes() {
         path="/key-transactions"
       />
       <RouteWithLayout
-        component={View}
+        component={TLView}
         exact
         layout={MainLayout}
         path="/thought-leadership"
       />
       <RouteWithLayout
-        component={View}
+        component={PeaceView}
         exact
         layout={MainLayout}
         path="/peace"
