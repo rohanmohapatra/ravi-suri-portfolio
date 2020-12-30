@@ -1,13 +1,6 @@
-import {
-  Button,
-  Divider,
-  Grid,
-  makeStyles,
-  Typography,
-} from "@material-ui/core";
+import { Grid, makeStyles, Typography } from "@material-ui/core";
 import React from "react";
 import { Heading } from "../../../components/Heading";
-import { pathName } from "../../../properties/properties";
 import { SustainabilityMore } from "../Sustainability";
 
 const useStyles = makeStyles((theme) => ({
@@ -26,7 +19,9 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: 20,
     paddingBottom: 20,
     [theme.breakpoints.down("xs")]: {
-      fontSize: 8,
+      fontSize: 14,
+      paddingTop: 0,
+      paddingBottom: 0,
     },
   },
 }));
@@ -38,7 +33,7 @@ export const PassionForSustainabilityMore: React.FC = () => {
       <Heading heading="Passion For Sustainability" />
       <Grid container className={classes.home}>
         <Grid item xs={12}>
-          <Typography variant="h6" className={classes.text}>
+          <Typography variant="h4">
             In close context to Ravi Suri’s thoughts on Sustainability, kindly
             refer to the various reports and articles below on the way ahead.
           </Typography>

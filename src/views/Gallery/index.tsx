@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
   },
   text: {
     [theme.breakpoints.down("sm")]: {
-      fontSize: "12px",
+      fontSize: 20,
     },
   },
 }));
@@ -220,7 +220,7 @@ export function Gallery() {
           <GalleryLongPaper header="Speaker at AFF, 2017" />
         </Typography>
       </div>
-      <GalleryImage src="https://source.unsplash.com/hDyO6rr3kqk/1920x1280" />
+      <GalleryImage src={pathName + "/assets/gallery/powerlng.jpg"} />
       <Heading heading="POWER AND LNG " />
       <div className={classes.textContainer}>
         <Typography variant="h6" className={classes.text}>

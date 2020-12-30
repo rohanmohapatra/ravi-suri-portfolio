@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
       backgroundPosition: " 50% center",
     },
     [theme.breakpoints.down("xs")]: {
-      height: 100,
+      height: 200,
     },
   },
   cardContent: {
@@ -38,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
       paddingLeft: 20,
     },
     [theme.breakpoints.down("xs")]: {
-      height: 90,
+      height: 200,
       paddingTop: 10,
       paddingLeft: 10,
       paddingRight: 10,
@@ -67,7 +67,7 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.down("xs")]: {
       paddingTop: 5,
-      fontSize: 8,
+      fontSize: 14,
     },
   },
   cardTitle: {
@@ -76,7 +76,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 900,
     color: theme.palette.common.white,
     [theme.breakpoints.down("sm")]: {
-      fontSize: 10,
+      fontSize: 20,
     },
   },
   cardButton: {
@@ -87,7 +87,7 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.primary.light,
     [theme.breakpoints.down("sm")]: {
       marginTop: 5,
-      fontSize: 8,
+      fontSize: 14,
       padding: 2,
     },
   },
@@ -98,39 +98,46 @@ const content = [
     title: "About",
     text: "Details on Expertise and work experience",
     src: `${pathName}/assets/home/Cards/about.png`,
+    href: `${pathName}/about`,
   },
   {
     title: "LANDMARK DEALS",
     text:
       "Cutting edge and large complex advisory projects done in sectors of power, ports, renewables etc, both developed and emerging markets",
     src: `${pathName}/assets/home/Cards/deals.jpg`,
+    href: `${pathName}/landmark-deals`,
   },
   {
     title: "Thought leadership",
     text:
       "Insights provided at high profile forums on lnfrastructure and sustainability",
     src: `${pathName}/assets/home/Cards/thoughtleadership.jpg`,
+    href: `${pathName}/thought-leadership`,
   },
   {
     title: "Passion for Sustainability",
     text: "Work being done on Sustainability and Green financing  ",
     src: `${pathName}/assets/home/Cards/sustainability.png`,
+    href: `${pathName}/sustainability`,
   },
 
   {
-    title: "PROMOTING BUSINESS FOR PEACE",
+    title: "Impact on Society",
     text: "Actively working for the Business For Peace Foundation",
     src: `${pathName}/assets/home/Cards/peace.jpg`,
+    href: `${pathName}/peace`,
   },
   {
     title: "Gallery",
     text: "Media coverage across different platforms",
     src: `${pathName}/assets/home/Cards/gallery.jpg`,
+    href: `${pathName}/gallery`,
   },
   {
     title: "AWARDS",
     text: "Industry awards won for project finance deals ",
     src: `${pathName}/assets/home/Cards/awards.jpg`,
+    href: `${pathName}/awards`,
   },
 ];
 
@@ -195,6 +202,7 @@ export function ProjectCards() {
             title={card.title}
             text={card.text}
             index={index}
+            href={card.href}
           />
         </Grid>
       ))}

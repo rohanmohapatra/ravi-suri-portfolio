@@ -14,13 +14,13 @@ const useStyles = makeStyles((theme) => ({
       fontSize: "16px",
     },
     [theme.breakpoints.down("xs")]: {
-      fontSize: 10,
+      fontSize: 20,
     },
   },
   button: {
     borderColor: theme.palette.common.white,
     [theme.breakpoints.down("xs")]: {
-      fontSize: 10,
+      fontSize: 18,
     },
   },
   item: {
@@ -36,7 +36,7 @@ export function GalleryPaper(props) {
   return (
     <Paper className={classes.paper}>
       <Grid container justify="center" alignItems="center">
-        <Grid item xs={6} className={classes.item}>
+        <Grid item xs={12} sm={6} className={classes.item}>
           <Typography variant="h4" className={classes.text}>
             {header1}
           </Typography>
@@ -48,7 +48,7 @@ export function GalleryPaper(props) {
             Learn More
           </Button>
         </Grid>
-        <Grid item xs={6} className={classes.item}>
+        <Grid item xs={12} sm={6} className={classes.item}>
           <Typography variant="h4" className={classes.text}>
             {header2}
           </Typography>

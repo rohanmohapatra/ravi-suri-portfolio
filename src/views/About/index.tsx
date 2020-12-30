@@ -1,5 +1,6 @@
 import {
   Grid,
+  Hidden,
   List,
   ListItem,
   ListItemIcon,
@@ -37,8 +38,8 @@ const useStyles = makeStyles((theme) => ({
     },
 
     [theme.breakpoints.down("xs")]: {
-      height: 150,
-      width: 150,
+      height: 200,
+      width: 200,
     },
   },
   about: {
@@ -62,8 +63,8 @@ const useStyles = makeStyles((theme) => ({
   },
   aboutText: {
     [theme.breakpoints.down("xs")]: {
-      paddingLeft: 20,
-      fontSize: 10,
+      paddingLeft: 5,
+      fontSize: 18,
     },
   },
   specialization: {
@@ -73,7 +74,7 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.down("xs")]: {
       // paddingTop: 20,
-      fontSize: 14,
+      fontSize: 20,
     },
   },
   we: {
@@ -106,7 +107,7 @@ const useStyles = makeStyles((theme) => ({
   },
   listText: {
     [theme.breakpoints.down("xs")]: {
-      fontSize: 10,
+      fontSize: 18,
     },
   },
 }));
@@ -132,62 +133,12 @@ export function About() {
       cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
       est laborum. */}
       <Heading heading="About" />
-      <Grid container className={classes.about} justify="space-between">
-        <Grid item xs={6} sm={4}>
-          <div className={classes.image}></div>
-          <Typography variant="h4" className={classes.specialization}>
-            SPECIALIZATION
-          </Typography>
-          <List component="ul">
-            {specialization.map((element) => (
-              <ListItem>
-                <ListItemIcon className={classes.listIcon}>
-                  <FiberManualRecordIcon className={classes.icon} />
-                </ListItemIcon>
-                <ListItemText>
-                  <Typography variant="body1" className={classes.listText}>
-                    {element}
-                  </Typography>
-                </ListItemText>
-              </ListItem>
-            ))}
-          </List>
-        </Grid>
-        <Grid item xs={6}>
-          <Typography variant="h6" className={classes.aboutText}>
-            Ravi has over 25 years of experience in the project finance and
-            infrastructure advisory space having worked with a number of blue
-            chip institutions. He has a distinguished career in banking,
-            industry and consulting, having worked with ANZ, GE Capital, ABN
-            AMRO Bank, Standard Chartered Bank and KPMG in global leadership
-            Positions. He has strong industry insights and professional
-            experience in the power,, transportation, infra, ports, rail.
-            airports, social infrastructure and oil and gas sectors. During his
-            career, he has led large complex advisory projects in the above
-            mentioned sectors across 50 countries in Asia, Africa, Middle East,
-            Europe and the Americas. Ravi believes that with the intersection of
-            Artificial intelligence, Internet of Things, Big Data, 3D and block
-            chain into infrastructure being an inexorable event, the technology
-            impact in this field will be significant resulting in a number of
-            disruptions. He emphasises that Risk mitigation for both debt and
-            equity will no longer be immutable, as it has been during the last
-            two decades, and newer methods will need to be adopted. <br />
-            Ravi is also working on cutting edge solutions to ensure
-            infrastructure projects are bankable with the technology risk they
-            face. He strongly believes in fighting the challenges facing climate
-            change, and feels sustainable finance is a force for good to achieve
-            this. He is passionate about this area and is doing some
-            pathbreaking work here. His initiatives to finance power projects in
-            Africa when at Standard Chartered bank under President Barack Obama’
-            s Power Africa initiative, is testament to his philosophy that
-            infrastructure projects ameliorate the living of the poor. It is
-            this belief that drives him to work with the Business for Peace
-            Foundation and the United Nations. In his own humble and modest way,
-            he is trying to make the world a better place to live in for the
-            future generations.
-          </Typography>
-        </Grid>
-      </Grid>
+      <Hidden xsDown>
+        <AboutSectionDesktopView />
+      </Hidden>
+      <Hidden smUp>
+        <AboutSectionMobileView />
+      </Hidden>
       <Heading heading="Work Experience" />
       <Grid container className={classes.we}>
         <Grid item xs={12}>
@@ -237,3 +188,129 @@ export function About() {
     </div>
   );
 }
+
+const AboutSectionDesktopView: React.FC = () => {
+  const classes = useStyles();
+  return (
+    <Grid container className={classes.about} justify="space-between">
+      <Grid item xs={6} sm={4}>
+        <div className={classes.image}></div>
+        <Typography variant="h4" className={classes.specialization}>
+          SPECIALIZATION
+        </Typography>
+        <List component="ul">
+          {specialization.map((element) => (
+            <ListItem>
+              <ListItemIcon className={classes.listIcon}>
+                <FiberManualRecordIcon className={classes.icon} />
+              </ListItemIcon>
+              <ListItemText>
+                <Typography variant="body1" className={classes.listText}>
+                  {element}
+                </Typography>
+              </ListItemText>
+            </ListItem>
+          ))}
+        </List>
+      </Grid>
+      <Grid item xs={6}>
+        <Typography variant="h6" className={classes.aboutText}>
+          Ravi has over 25 years of experience in the project finance and
+          infrastructure advisory space having worked with a number of blue chip
+          institutions. He has a distinguished career in banking, industry and
+          consulting, having worked with ANZ, GE Capital, ABN AMRO Bank,
+          Standard Chartered Bank and KPMG in global leadership Positions. He
+          has strong industry insights and professional experience in the
+          power,, transportation, infra, ports, rail. airports, social
+          infrastructure and oil and gas sectors. During his career, he has led
+          large complex advisory projects in the above mentioned sectors across
+          50 countries in Asia, Africa, Middle East, Europe and the Americas.
+          Ravi believes that with the intersection of Artificial intelligence,
+          Internet of Things, Big Data, 3D and block chain into infrastructure
+          being an inexorable event, the technology impact in this field will be
+          significant resulting in a number of disruptions. He emphasises that
+          Risk mitigation for both debt and equity will no longer be immutable,
+          as it has been during the last two decades, and newer methods will
+          need to be adopted. <br />
+          Ravi is also working on cutting edge solutions to ensure
+          infrastructure projects are bankable with the technology risk they
+          face. He strongly believes in fighting the challenges facing climate
+          change, and feels sustainable finance is a force for good to achieve
+          this. He is passionate about this area and is doing some pathbreaking
+          work here. His initiatives to finance power projects in Africa when at
+          Standard Chartered bank under President Barack Obama’ s Power Africa
+          initiative, is testament to his philosophy that infrastructure
+          projects ameliorate the living of the poor. It is this belief that
+          drives him to work with the Business for Peace Foundation and the
+          United Nations. In his own humble and modest way, he is trying to make
+          the world a better place to live in for the future generations.
+        </Typography>
+      </Grid>
+    </Grid>
+  );
+};
+
+const AboutSectionMobileView: React.FC = () => {
+  const classes = useStyles();
+  return (
+    <Grid container className={classes.about} justify="space-between">
+      <Grid item xs={12}>
+        <Grid container justify="center">
+          <div className={classes.image}></div>
+        </Grid>
+      </Grid>
+      <Grid item xs={12}>
+        <Typography variant="h6" className={classes.aboutText}>
+          Ravi has over 25 years of experience in the project finance and
+          infrastructure advisory space having worked with a number of blue chip
+          institutions. He has a distinguished career in banking, industry and
+          consulting, having worked with ANZ, GE Capital, ABN AMRO Bank,
+          Standard Chartered Bank and KPMG in global leadership Positions. He
+          has strong industry insights and professional experience in the
+          power,, transportation, infra, ports, rail. airports, social
+          infrastructure and oil and gas sectors. During his career, he has led
+          large complex advisory projects in the above mentioned sectors across
+          50 countries in Asia, Africa, Middle East, Europe and the Americas.
+          Ravi believes that with the intersection of Artificial intelligence,
+          Internet of Things, Big Data, 3D and block chain into infrastructure
+          being an inexorable event, the technology impact in this field will be
+          significant resulting in a number of disruptions. He emphasises that
+          Risk mitigation for both debt and equity will no longer be immutable,
+          as it has been during the last two decades, and newer methods will
+          need to be adopted. <br />
+          Ravi is also working on cutting edge solutions to ensure
+          infrastructure projects are bankable with the technology risk they
+          face. He strongly believes in fighting the challenges facing climate
+          change, and feels sustainable finance is a force for good to achieve
+          this. He is passionate about this area and is doing some pathbreaking
+          work here. His initiatives to finance power projects in Africa when at
+          Standard Chartered bank under President Barack Obama’ s Power Africa
+          initiative, is testament to his philosophy that infrastructure
+          projects ameliorate the living of the poor. It is this belief that
+          drives him to work with the Business for Peace Foundation and the
+          United Nations. In his own humble and modest way, he is trying to make
+          the world a better place to live in for the future generations.
+        </Typography>
+      </Grid>
+      <Grid item xs={12}>
+        <Typography variant="h4" className={classes.specialization}>
+          SPECIALIZATION
+        </Typography>
+        <List component="ul">
+          {specialization.map((element) => (
+            <ListItem>
+              <ListItemIcon className={classes.listIcon}>
+                <FiberManualRecordIcon className={classes.icon} />
+              </ListItemIcon>
+              <ListItemText>
+                <Typography variant="body1" className={classes.listText}>
+                  {element}
+                </Typography>
+              </ListItemText>
+            </ListItem>
+          ))}
+        </List>
+      </Grid>
+    </Grid>
+  );
+};

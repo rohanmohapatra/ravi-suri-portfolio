@@ -5,13 +5,13 @@ import { useWidth } from "../../../components/useIsMobile";
 import { pathName } from "../../../properties/properties";
 import "./video-react.css";
 
-const useStyles = makeStyles((theme) => ({
-  video: {
-    [theme.breakpoints.between(1280, 1380)]: {
-      height: 400,
-    },
-  },
-}));
+// const useStyles = makeStyles((theme) => ({
+//   video: {
+//     [theme.breakpoints.between(1280, 1380)]: {
+//       height: 400,
+//     },
+//   },
+// }));
 export function Video() {
   const source = pathName + "/assets/home/ravi-suri-video.mp4";
   const width = useWidth();
@@ -28,6 +28,7 @@ export function Video() {
           fluid={fluid}
           height={height}
           width={videoWidth}
+          loop={true}
         >
           <ControlBar autoHide={false} className="my-class" />
           <BigPlayButton position="center" />

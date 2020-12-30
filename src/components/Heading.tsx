@@ -14,6 +14,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 700,
     textTransform: "uppercase",
     color: theme.palette.primary.contrastText,
+    wordBreak: "break-word",
   },
   societyHeader: {
     paddingTop: 40,

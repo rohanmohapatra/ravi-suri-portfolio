@@ -16,6 +16,7 @@ import {
   PassionForSustainabilityMore as SustainabilityAdditionalView,
   ImpactOnSociety as PeaceView,
   ThoughtLeadership as TLView,
+  Awards as AwardsView,
 } from "./views";
 
 export default function Routes() {
@@ -89,7 +90,7 @@ export default function Routes() {
         path="/sustainability-report"
       />
       <RouteWithLayout
-        component={View}
+        component={AwardsView}
         exact
         layout={MainLayout}
         path="/awards"

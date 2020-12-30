@@ -9,3 +9,4 @@ export { PassionForSustainability } from "./Sustainability";
 export { PassionForSustainabilityMore } from "./Sustainability/views/More";
 export * from "./Peace";
 export * from "./ThoughtLeadership";
+export * from "./Awards";

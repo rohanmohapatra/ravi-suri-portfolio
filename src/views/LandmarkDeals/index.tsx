@@ -1,6 +1,7 @@
 import { Grid, Typography, Button, makeStyles } from "@material-ui/core";
 import React from "react";
 import { HeadingWithTransactionButton } from "../../components/HeadingWithTransactionButton";
+import { useIsMobile } from "../../components/useIsMobile";
 import { pathName } from "../../properties/properties";
 
 const useStyles = makeStyles((theme) => ({
@@ -12,11 +13,15 @@ const useStyles = makeStyles((theme) => ({
     // paddingRight: 10,
     paddingTop: 10,
     paddingBottom: 10,
+    [theme.breakpoints.down("xs")]: {
+      marginBottom: 40,
+    },
   },
   cardImage: {
     background: "no-repeat center center",
     backgroundSize: "cover",
     height: 330,
+    marginRight: 10,
     [theme.breakpoints.between(1280, 1380)]: {
       height: 240,
     },
@@ -25,7 +30,8 @@ const useStyles = makeStyles((theme) => ({
       backgroundPosition: " 50% center",
     },
     [theme.breakpoints.down("xs")]: {
-      height: 100,
+      height: 200,
+      marginRight: 0,
     },
   },
   cardContent: {
@@ -40,7 +46,7 @@ const useStyles = makeStyles((theme) => ({
       paddingLeft: 20,
     },
     [theme.breakpoints.down("xs")]: {
-      height: 90,
+      height: 120,
       paddingTop: 10,
       paddingLeft: 10,
       paddingRight: 10,
@@ -48,9 +54,7 @@ const useStyles = makeStyles((theme) => ({
   },
   cardContentLeft: {
     marginLeft: 10,
-    [theme.breakpoints.down("xs")]: {
-      marginLeft: 4,
-    },
+    [theme.breakpoints.down("xs")]: {},
   },
   cardContentRight: {
     paddingLeft: 350,
@@ -74,7 +78,7 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.down("xs")]: {
       paddingTop: 5,
-      fontSize: 8,
+      fontSize: 18,
     },
   },
   cardTitle: {
@@ -83,7 +87,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 900,
     color: theme.palette.common.white,
     [theme.breakpoints.down("sm")]: {
-      fontSize: 10,
+      fontSize: 20,
     },
   },
   cardButton: {
@@ -109,7 +113,7 @@ const useStyles = makeStyles((theme) => ({
   text: {
     fontWeight: 700,
     [theme.breakpoints.down("xs")]: {
-      fontSize: 10,
+      fontSize: 18,
     },
   },
   dealImage: {
@@ -141,7 +145,7 @@ const landmarkDeals = [
     href: "",
   },
   {
-    src: pathName + "/assets/landmarkdeals/istanbul.jpg",
+    src: pathName + "/assets/landmarkdeals/istanbul-tunnel.jpg",
     title: "Istanbul Tunnel Project",
     text: "Largest Solar Project and first CSP tower in the region",
     href: "",
@@ -166,7 +170,7 @@ const landmarkDeals = [
     href: "",
   },
   {
-    src: pathName + "/assets/landmarkdeals/dewa.jpg",
+    src: pathName + "/assets/landmarkdeals/azura.jpg",
     title: "AZURA ENDO POWER PROJECT NIGERIA",
     text: "Open Cycle Gas Turbine One of Nigeria’s first project financed IPPS",
     href: "",
@@ -179,7 +183,7 @@ const landmarkDeals = [
     href: "",
   },
   {
-    src: pathName + "/assets/landmarkdeals/dewa.jpg",
+    src: pathName + "/assets/landmarkdeals/barakah.jpg",
     title: "Barakah Nuclear Power Plant, Abu Dhabi",
     text:
       "One of the first privately financed Nuclear power projects in the worldn",
@@ -192,7 +196,7 @@ const landmarkDeals = [
     href: "",
   },
   {
-    src: pathName + "/assets/landmarkdeals/dewa.jpg",
+    src: pathName + "/assets/landmarkdeals/maaden.jpg",
     title: "Ma’aden Phosphate Fertilizer Project, Saudi Arabia",
     text:
       "After the existing 2 pillars of Saudi Aramco (Oil) & SABIC (petrochemicals), this is the third pillar of mining established in the country",
@@ -213,41 +217,41 @@ const landmarkDeals = [
     href: "",
   },
   {
-    src: pathName + "/assets/landmarkdeals/dewa.jpg",
+    src: pathName + "/assets/landmarkdeals/rabigh-water.jpg",
     title: "Rabigh Power and Water Project",
     text:
       "First Independent Water and Power project financed by international banks and executed with a Chinese EPC contractor",
     href: "",
   },
   {
-    src: pathName + "/assets/landmarkdeals/dewa.jpg",
+    src: pathName + "/assets/landmarkdeals/haya-water.jpg",
     title: "Haya Water PROJECT",
     text:
       "One of the first PPP’s to be procured under the newly notified Oman PPP Law",
     href: "",
   },
   {
-    src: pathName + "/assets/landmarkdeals/dewa.jpg",
+    src: pathName + "/assets/landmarkdeals/fewa-solar.jpg",
     title: "FEWA 500MW Solar PV IPP",
     text: "First Solar IPP Projectn",
     href: "",
   },
   {
-    src: pathName + "/assets/landmarkdeals/dewa.jpg",
+    src: pathName + "/assets/landmarkdeals/shams-maan.jpg",
     title: "Shams Ma’an Solar PV IPP Project",
     text:
       "First solar PV project across MENA & the first CSP tower project in Jordan.",
     href: "",
   },
   {
-    src: pathName + "/assets/landmarkdeals/dewa.jpg",
+    src: pathName + "/assets/landmarkdeals/dp-djibouti.jpg",
     title: "DP World’s Ports In Djibouti",
     text:
       "One of the only projects where GDP of the country is less than the Project cost",
     href: "",
   },
   {
-    src: pathName + "/assets/landmarkdeals/dewa.jpg",
+    src: pathName + "/assets/landmarkdeals/ras-laffan.jpg",
     title: "Ras Laffan B Power and Water Project, Qatar",
     text: "Longest power and water purchase agreement in the Middle East.",
     href: "",
@@ -267,76 +271,76 @@ const landmarkDeals = [
     href: "",
   },
   {
-    src: pathName + "/assets/landmarkdeals/dewa.jpg",
+    src: pathName + "/assets/landmarkdeals/al-dur.jpg",
     title: "Al Dur II IWPP",
     text: "Largest Independent Power and Water plant in Bahrain",
     href: "",
   },
   {
-    src: pathName + "/assets/landmarkdeals/dewa.jpg",
+    src: pathName + "/assets/landmarkdeals/fewa-solar.jpg",
     title: "FEWA UAQ IWP",
     text: "FEWA’s first successfully closed PPP project",
     href: "",
   },
   {
-    src: pathName + "/assets/landmarkdeals/dewa.jpg",
+    src: pathName + "/assets/landmarkdeals/al-ghubrah.jpg",
     title: "Al Ghubrah-3 IWP and Barka-5",
     text: "One of the largest IWP procurements in Oman",
     href: "",
   },
   {
-    src: pathName + "/assets/landmarkdeals/dewa.jpg",
+    src: pathName + "/assets/landmarkdeals/rabigh-iii.jpg",
     title: "Rabigh III IWP",
     text: "First large scale IWP for the investor in the region",
     href: "",
   },
   {
-    src: pathName + "/assets/landmarkdeals/dewa.jpg",
+    src: pathName + "/assets/landmarkdeals/waste-to-energy.jpg",
     title: "Transformative Waste-to-Energy Project",
     text: "Largest Waste-to- Energy project in the world",
     href: "",
   },
   {
-    src: pathName + "/assets/landmarkdeals/dewa.jpg",
+    src: pathName + "/assets/landmarkdeals/sembcorp.jpg",
     title: "Sembcorp Salalah Power & Water Company",
     text:
       "Largest project in Oman executed at the peak of the Financial Crisis",
     href: "",
   },
   {
-    src: pathName + "/assets/landmarkdeals/dewa.jpg",
+    src: pathName + "/assets/landmarkdeals/jhajjar-solar.jpg",
     title: "Jhajjar power project, India",
     text:
       "First coal-fired power generation project in India to be financed by a consortium of foreign banksn",
     href: "",
   },
   {
-    src: pathName + "/assets/landmarkdeals/dewa.jpg",
+    src: pathName + "/assets/landmarkdeals/doraleh-port-senegal.jpg",
     title: "DP World’s ports in Senegal",
     text: "First project finance port deal in Senegal",
     href: "",
   },
   {
-    src: pathName + "/assets/landmarkdeals/dewa.jpg",
+    src: pathName + "/assets/landmarkdeals/ruwais-power.jpg",
     title: "Refinancing for Ruwais Power Company",
     text: "First project bond offering by an IWPP in the Middle Waste",
     href: "",
   },
   {
-    src: pathName + "/assets/landmarkdeals/dewa.jpg",
+    src: pathName + "/assets/landmarkdeals/oyu-tolgoi.jpg",
     title: "Oyu Tolgoi Project",
     text: "Largest single investment in Mongolia’s history",
     href: "",
   },
   {
-    src: pathName + "/assets/landmarkdeals/dewa.jpg",
+    src: pathName + "/assets/landmarkdeals/oman-refineries.jpg",
     title: "Oman refineries",
     text:
       "Merger led to the formation of the largest refinery complex in Oman till date, with a combined capacity of 222,400 BPDn",
     href: "",
   },
   {
-    src: pathName + "/assets/landmarkdeals/dewa.jpg",
+    src: pathName + "/assets/landmarkdeals/messaieed-water.jpg",
     title: "Mesaieed Water and Power Project",
     text:
       "First power privatization in Qatar and the longest debt tenor for a power project in the region at the time",
@@ -387,16 +391,22 @@ export const DealsCard: React.FC<{
   href?: string;
 }> = (props) => {
   const { src, title, text, index, href } = props;
+  const isMobile = useIsMobile();
   const classes = useStyles();
-  return index % 2 === 0 ? (
-    <Grid container justify="center" alignItems="center">
-      <Grid item xs={6}>
+  return index % 2 === 0 || isMobile ? (
+    <Grid
+      container
+      justify="center"
+      alignItems="center"
+      className={classes.card}
+    >
+      <Grid item xs={12} sm={6}>
         <div
           className={classes.cardImage}
-          style={{ backgroundImage: `url(${src})`, marginRight: 10 }}
+          style={{ backgroundImage: `url(${src})` }}
         ></div>
       </Grid>
-      <Grid item xs={6}>
+      <Grid item xs={12} sm={6}>
         <div
           className={[classes.cardContent, classes.cardContentLeft].join(" ")}
         >
@@ -417,8 +427,13 @@ export const DealsCard: React.FC<{
       </Grid>
     </Grid>
   ) : (
-    <Grid container justify="center" alignItems="center">
-      <Grid item xs={6}>
+    <Grid
+      container
+      justify="center"
+      alignItems="center"
+      className={classes.card}
+    >
+      <Grid item xs={12} sm={6}>
         <div
           className={[classes.cardContent, classes.cardContentRight].join(" ")}
         >
@@ -447,7 +462,7 @@ export const DealsCard: React.FC<{
           </Grid>
         </div>
       </Grid>
-      <Grid item xs={6}>
+      <Grid item xs={12} sm={6}>
         <div
           className={classes.cardImage}
           style={{ backgroundImage: `url(${src})`, marginLeft: 10 }}

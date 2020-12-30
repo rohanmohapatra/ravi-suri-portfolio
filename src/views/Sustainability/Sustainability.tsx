@@ -8,8 +8,10 @@ import {
   makeStyles,
   CardMedia,
 } from "@material-ui/core";
+import { useTheme } from "@material-ui/styles";
 import React from "react";
 import { data } from "./CardData";
+
 const useStyles = makeStyles((theme) => ({
   root: {
     padding: 15,
@@ -22,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
     position: "relative",
     [theme.breakpoints.down("xs")]: {
       padding: 20,
-      height: 300,
+      height: (props: { cardHeightMobile: number }) => props.cardHeightMobile,
     },
   },
   content: {
@@ -42,26 +44,28 @@ const useStyles = makeStyles((theme) => ({
       height: 200,
     },
     [theme.breakpoints.down("xs")]: {
-      height: 100,
+      height: 200,
     },
   },
   button: {
     color: theme.palette.primary.contrastText,
     textDecoration: "underline",
     [theme.breakpoints.down("xs")]: {
-      fontSize: 8,
+      fontSize: 18,
       padding: 0,
       textAlign: "left",
     },
   },
   title: {
     [theme.breakpoints.down("xs")]: {
-      fontSize: 10,
+      fontSize: 20,
     },
   },
   text: {
+    paddingTop: 20,
     [theme.breakpoints.down("xs")]: {
-      fontSize: 7,
+      paddingTop: 10,
+      fontSize: 18,
     },
   },
 }));
@@ -71,7 +75,7 @@ export const SustainabilityLess: React.FC = () => {
   return (
     <Grid container>
       {data.slice(0, 2).map((row) => (
-        <Grid item xs={6} className={classes.root}>
+        <Grid item xs={12} sm={6} className={classes.root}>
           <SustainCard {...row} />
         </Grid>
       ))}
@@ -84,7 +88,7 @@ export const SustainabilityMore: React.FC = () => {
   return (
     <Grid container>
       {data.slice(2).map((row) => (
-        <Grid item xs={6} className={classes.root}>
+        <Grid item xs={12} sm={6} className={classes.root}>
           <SustainCard {...row} />
         </Grid>
       ))}
@@ -101,7 +105,9 @@ interface Props {
 }
 
 const SustainCard: React.FC<Props> = (props) => {
-  const classes = useStyles();
+  const cardHeightMobile =
+    props.text.length > 200 ? (props.text.length > 330 ? 700 : 550) : 450;
+  const classes = useStyles({ cardHeightMobile });
   return (
     <Card className={classes.card}>
       <CardMedia
@@ -118,7 +124,12 @@ const SustainCard: React.FC<Props> = (props) => {
         </Typography>
       </CardContent>
       <CardActions className={classes.buttoncontent}>
-        <Button size="large" href={props.href} className={classes.button}>
+        <Button
+          size="large"
+          href={props.href}
+          className={classes.button}
+          target="_blank"
+        >
           {props.buttonText}
         </Button>
       </CardActions>

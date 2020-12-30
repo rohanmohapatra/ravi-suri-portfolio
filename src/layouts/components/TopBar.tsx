@@ -264,7 +264,7 @@ export function TopBar(props) {
                     <Button
                       color="inherit"
                       className={classes.button}
-                      href="/awards"
+                      href={pathName + "/awards"}
                     >
                       <Typography
                         variant="body1"

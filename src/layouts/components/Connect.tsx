@@ -31,6 +31,9 @@ const useStyles = makeStyles((theme) => ({
       width: 200,
     },
   },
+  anchor: {
+    textDecoration: "none",
+  },
 }));
 
 export function Connect(props) {
@@ -54,32 +57,51 @@ export function Connect(props) {
           </Typography>
 
           <IconButton aria-label="close" onClick={handleClose}>
-            <CloseIcon />
+            <CloseIcon htmlColor="#fff" />
           </IconButton>
         </Grid>
       </DialogTitle>
       <DialogContent className={classes.dialog}>
         <DialogContentText id="connect-dialog-description">
-          <Grid container className={classes.item}>
+          <Grid container spacing={2} className={classes.item}>
             <Grid item>
               <PhoneIcon />
             </Grid>
             <Grid item>
-              +97 1505518141 <br />
-              +97 1504563640
+              <a className={classes.anchor} href="tel:+971505518141">
+                +97 1505518141
+              </a>
+              <br />
+              <a className={classes.anchor} href="tel:+971504563640">
+                +97 1504563640
+              </a>
             </Grid>
           </Grid>
-          <Grid container className={classes.item}>
+          <Grid container spacing={2} className={classes.item}>
             <Grid item>
               <MailIcon />
             </Grid>
-            <Grid item>ravisuri1@rediffmail.com</Grid>
+            <Grid item>
+              <a
+                className={classes.anchor}
+                href="mailto:ravisuri1@rediffmail.com"
+              >
+                ravisuri1@rediffmail.com
+              </a>
+            </Grid>
           </Grid>
-          <Grid container className={classes.item}>
+          <Grid container spacing={2} className={classes.item}>
             <Grid item>
               <LinkedInIcon />
             </Grid>
-            <Grid item>RAVI SURI</Grid>
+            <Grid item>
+              <a
+                className={classes.anchor}
+                href="https://www.linkedin.com/in/ravi-suri-0aa30021"
+              >
+                RAVI SURI
+              </a>
+            </Grid>
           </Grid>
         </DialogContentText>
       </DialogContent>

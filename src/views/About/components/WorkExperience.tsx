@@ -29,10 +29,9 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   image: {
-    height: 30,
-    width: 30,
-    margin: 20,
-    marginTop: 10,
+    height: 120,
+    width: 120,
+    marginRight: 30,
     background: `no-repeat center`,
     backgroundSize: "contain",
     // [theme.breakpoints.between(1280, 1380)]: {
@@ -48,16 +47,17 @@ const useStyles = makeStyles((theme) => ({
     //   width: 200,
     // },
 
-    // [theme.breakpoints.down("xs")]: {
-    //   height: 180,
-    //   width: 180,
-    // },
+    [theme.breakpoints.down("xs")]: {
+      height: 180,
+      width: 180,
+      marginRight: 10,
+    },
   },
   text: {
     marginLeft: 200,
     width: 500,
     [theme.breakpoints.down("xs")]: {
-      fontSize: 14,
+      fontSize: 18,
       marginLeft: 20,
       width: 200,
     },
@@ -69,7 +69,7 @@ export function WorkExperience() {
   const timelineRef = useRef();
   const { ref, start, end } = useRefScrollProgress(timelineRef);
   const interval = start && end ? end - start : 1;
-  const lateStart = start ? start - 0.07 : 0;
+  const lateStart = start ? start - 0.15 : 0;
   const scrollRange = [
     lateStart,
     lateStart + interval / 5,
@@ -87,11 +87,11 @@ export function WorkExperience() {
     // six: useTransform(scrollYProgress, scrollRange, [0, 0, 0, 0, 0, 0]),
   };
   const companies = [
-    pathName + "/assets/about/logos/discord.png",
-    pathName + "/assets/about/logos/discord.png",
-    pathName + "/assets/about/logos/discord.png",
-    pathName + "/assets/about/logos/discord.png",
-    pathName + "/assets/about/logos/discord.png",
+    pathName + "/assets/about/logos/anz.png",
+    pathName + "/assets/about/logos/ge.png",
+    pathName + "/assets/about/logos/abn.png",
+    pathName + "/assets/about/logos/scb.png",
+    pathName + "/assets/about/logos/kpmg.png",
   ];
   const classes = useStyles();
   return (

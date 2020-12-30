@@ -23,7 +23,12 @@ const useStyles = makeStyles(
       paper: {
         backgroundColor: theme.palette.primary.light,
       },
-      sectionOne: { padding: 40 },
+      sectionOne: {
+        padding: 40,
+        [theme.breakpoints.down("xs")]: {
+          padding: 10,
+        },
+      },
     }
 );
 
