@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
   oneText: {
     [theme.breakpoints.down("xs")]: {
       fontSize: 20,
-      textAlign: "justify",
+      // textAlign: "tjusify",
     },
   },
   one: {},
@@ -61,13 +61,12 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       padding: 10,
       fontSize: 20,
-      textAlign: "justify",
+      // textAlign: "justify",
     },
   },
 }));
 
 export const ImpactOnSociety: React.FC = () => {
-  const classes = useStyles();
   return (
     <>
       <Hidden xsDown>

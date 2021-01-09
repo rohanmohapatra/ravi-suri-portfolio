@@ -317,7 +317,7 @@ export const Qualifications: React.FC = () => {
               <ListItemIcon>
                 <FiberManualRecordIcon className={classes.icon} />
               </ListItemIcon>
-              <ListItemText primary="Cambridge Executive Education" />
+              <ListItemText primary="CAMBRIDGE EXECUTIVE EDUCATION" />
             </ListItem>
             <ListItem>
               <ListItemIcon>
@@ -338,7 +338,7 @@ export const Qualifications: React.FC = () => {
         <ProjectCard
           src={pathName + "/assets/about/banner/testimonial.jpg"}
           title="Testimonials"
-          text="Testimonials by leading Industry veterans and expert on Ravi’s professionalism, work ethics, and positive personal traits"
+          text="Testimonials by leading Industry veterans on Ravi’s professionalism, work ethics, and positive personal traits"
           index={1}
           href={pathName + "/testimonials"}
         />

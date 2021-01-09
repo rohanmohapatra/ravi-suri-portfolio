@@ -1,7 +1,8 @@
-import { Typography, makeStyles, Grid, Box, Card } from "@material-ui/core";
+import { Typography, makeStyles, Grid, Box } from "@material-ui/core";
 import React from "react";
 import { Heading } from "../../components/Heading";
 import { pathName } from "../../properties/properties";
+import { AwardsVideo } from "./AwardsVideo";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -48,7 +49,7 @@ const awards = [
   },
   {
     src: pathName + "/assets/awards/aw3.jpg",
-    desc: "WINNER OF STANDARD CHARTERED BANK STAR OF THE YEAR",
+    desc: "WINNER OF STANDARD CHARTERED BANK'S STAR OF THE YEAR",
   },
   {
     src: pathName + "/assets/awards/aw4.jpg",
@@ -71,7 +72,7 @@ const awards = [
   },
   {
     src: pathName + "/assets/awards/aw8.jpg",
-    desc: "PROJECT FINANCE DEALS OF THE YEAR 2013.",
+    desc: "PROJECT FINANCE DEAL OF THE YEAR 2013",
   },
   {
     src: pathName + "/assets/awards/aw9.jpg",
@@ -87,11 +88,11 @@ const awards = [
   },
   {
     src: pathName + "/assets/awards/aw12.jpg",
-    desc: "IJ GLOBAL AWARDS; MENA Power Salalah 20",
+    desc: "IJ GLOBAL AWARDS; MENA Power Salalah 2",
   },
   {
     src: pathName + "/assets/awards/aw13.jpg",
-    desc: "THE ASSET ASIAN AWARDS BEST ISLAMIC PROJECT FINANCE HOUSE",
+    desc: "THE ASSET ASIAN AWARDS-BEST ISLAMIC PROJECT FINANCE HOUSE",
   },
 ];
 
@@ -176,6 +177,7 @@ export const Awards: React.FC = () => {
         VARIOUS AWARDS WON AND DEALS DONE BY RAVI ACROSS 52 COUNTRIES WHILE HE
         WAS WITH GE CAPITAL, ABN AMRO, STANDARD CHARTERED BANK AND KPMG.
       </Typography>
+      <AwardsVideo />
       <Heading heading="AWARDS WON" />
       <Grid container>
         {awards.map((item) => (
@@ -185,7 +187,7 @@ export const Awards: React.FC = () => {
         ))}
       </Grid>
 
-      <Heading heading="TOMBSTONE FOR VARIOUS DEALS DONE" />
+      <Heading heading="TOMBSTONES FOR VARIOUS DEALS DONE" />
       <Grid container>
         {tombstones.map((item) => (
           <Grid item xs={12} sm={6}>

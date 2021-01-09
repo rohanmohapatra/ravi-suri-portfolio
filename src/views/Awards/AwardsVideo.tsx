@@ -1,18 +1,11 @@
 import { Grid } from "@material-ui/core";
 import React from "react";
 import ReactPlayer from "react-player";
-import { useWidth } from "../../../components/useIsMobile";
-import { pathName } from "../../../properties/properties";
+import { useWidth } from "../../components/useIsMobile";
+import { pathName } from "../../properties/properties";
 
-// const useStyles = makeStyles((theme) => ({
-//   video: {
-//     [theme.breakpoints.between(1280, 1380)]: {
-//       height: 400,
-//     },
-//   },
-// }));
-export function Video() {
-  const source = pathName + "/assets/home/ravi-suri-video.mp4";
+export const AwardsVideo: React.FC = () => {
+  const source = pathName + "/assets/awards/awards-video.mp4";
   const width = useWidth();
   let height: number;
   // width >= 1200 && width <= 1380 ? 650 : 0;
@@ -30,6 +23,7 @@ export function Video() {
       height = 700;
       break;
   }
+
   return (
     <div>
       <Grid container justify="center">
@@ -44,4 +38,4 @@ export function Video() {
       </Grid>
     </div>
   );
-}
+};

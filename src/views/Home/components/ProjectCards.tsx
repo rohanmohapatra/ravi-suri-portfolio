@@ -2,6 +2,7 @@ import React from "react";
 import { Button, Grid, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { pathName } from "../../../properties/properties";
+import { useIsMobile } from "../../../components/useIsMobile";
 
 const useStyles = makeStyles((theme) => ({
   card: {
@@ -22,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
       backgroundPosition: " 50% center",
     },
     [theme.breakpoints.down("xs")]: {
-      height: 200,
+      height: 240,
     },
   },
   cardContent: {
@@ -38,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
       paddingLeft: 20,
     },
     [theme.breakpoints.down("xs")]: {
-      height: 200,
+      height: 230,
       paddingTop: 10,
       paddingLeft: 10,
       paddingRight: 10,
@@ -47,13 +48,13 @@ const useStyles = makeStyles((theme) => ({
   cardContentLeft: {
     marginLeft: 10,
     [theme.breakpoints.down("xs")]: {
-      marginLeft: 4,
+      marginLeft: 2,
     },
   },
   cardContentRight: {
     marginRight: 10,
     [theme.breakpoints.down("xs")]: {
-      marginRight: 4,
+      marginRight: 2,
     },
   },
   cardText: {
@@ -67,7 +68,7 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.down("xs")]: {
       paddingTop: 5,
-      fontSize: 14,
+      fontSize: 12,
     },
   },
   cardTitle: {
@@ -76,7 +77,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 900,
     color: theme.palette.common.white,
     [theme.breakpoints.down("sm")]: {
-      fontSize: 20,
+      fontSize: 18,
     },
   },
   cardButton: {
@@ -87,62 +88,66 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.primary.light,
     [theme.breakpoints.down("sm")]: {
       marginTop: 5,
-      fontSize: 14,
+      fontSize: 8,
       padding: 2,
     },
   },
 }));
 
-const content = [
-  {
-    title: "About",
-    text: "Details on Expertise and work experience",
-    src: `${pathName}/assets/home/Cards/about.png`,
-    href: `${pathName}/about`,
-  },
-  {
-    title: "LANDMARK DEALS",
-    text:
-      "Cutting edge and large complex advisory projects done in sectors of power, ports, renewables etc, both developed and emerging markets",
-    src: `${pathName}/assets/home/Cards/deals.jpg`,
-    href: `${pathName}/landmark-deals`,
-  },
-  {
-    title: "Thought leadership",
-    text:
-      "Insights provided at high profile forums on lnfrastructure and sustainability",
-    src: `${pathName}/assets/home/Cards/thoughtleadership.jpg`,
-    href: `${pathName}/thought-leadership`,
-  },
-  {
-    title: "Passion for Sustainability",
-    text: "Work being done on Sustainability and Green financing  ",
-    src: `${pathName}/assets/home/Cards/sustainability.png`,
-    href: `${pathName}/sustainability`,
-  },
-
-  {
-    title: "Impact on Society",
-    text: "Actively working for the Business For Peace Foundation",
-    src: `${pathName}/assets/home/Cards/peace.jpg`,
-    href: `${pathName}/peace`,
-  },
-  {
-    title: "Gallery",
-    text: "Media coverage across different platforms",
-    src: `${pathName}/assets/home/Cards/gallery.jpg`,
-    href: `${pathName}/gallery`,
-  },
-  {
-    title: "AWARDS",
-    text: "Industry awards won for project finance deals ",
-    src: `${pathName}/assets/home/Cards/awards.jpg`,
-    href: `${pathName}/awards`,
-  },
-];
-
 export function ProjectCards() {
   const classes = useStyles();
+  const isMobile = useIsMobile();
+  const content = [
+    {
+      title: "About",
+      text: "Details on Expertise and work experience",
+      src: `${pathName}/assets/home/Cards/about.png`,
+      href: `${pathName}/about`,
+    },
+    {
+      title: "LANDMARK DEALS",
+      text:
+        "Cutting edge and large complex advisory projects done in sectors of power, ports, renewables etc, both developed and emerging markets",
+      src: `${pathName}/assets/home/Cards/deals.jpg`,
+      href: `${pathName}/landmark-deals`,
+    },
+    {
+      title: "Thought leadership",
+      text:
+        "Insights provided at high profile forums on lnfrastructure and sustainability",
+      src: `${pathName}/assets/home/Cards/thoughtleadership.jpg`,
+      href: `${pathName}/thought-leadership`,
+    },
+    {
+      title: "Passion for Sustainability",
+      text: "Work being done on Sustainability and Green financing  ",
+      src: isMobile
+        ? `${pathName}/assets/home/Cards/sustainability-mobile.png`
+        : `${pathName}/assets/home/Cards/sustainability.png`,
+      href: `${pathName}/sustainability`,
+    },
+
+    {
+      title: "Impact on Society",
+      text: "Actively working for the Business For Peace Foundation",
+      src: `${pathName}/assets/home/Cards/peace.jpg`,
+      href: `${pathName}/peace`,
+    },
+    {
+      title: "Gallery",
+      text: "Media coverage across different platforms",
+      src: `${pathName}/assets/home/Cards/gallery.jpg`,
+      href: `${pathName}/gallery`,
+    },
+    {
+      title: "AWARDS",
+      text: "Industry awards won for project finance deals ",
+      src: isMobile
+        ? `${pathName}/assets/home/Cards/awards-mobile.jpg`
+        : `${pathName}/assets/home/Cards/awards.jpg`,
+      href: `${pathName}/awards`,
+    },
+  ];
   return (
     // <Grid container spacing={4}>
     //   <Grid item xs={6} sm={3}>
@@ -210,31 +215,31 @@ export function ProjectCards() {
   );
 }
 
-function Card(props) {
-  const { src, text } = props;
-  const classes = useStyles();
-  return (
-    <div>
-      <img src={src} style={{ maxHeight: "100%", maxWidth: "100%" }} />
-      <Typography variant="body1" className={classes.cardText}>
-        {text}
-      </Typography>
-    </div>
-  );
-}
+// function Card(props) {
+//   const { src, text } = props;
+//   const classes = useStyles();
+//   return (
+//     <div>
+//       <img src={src} style={{ maxHeight: "100%", maxWidth: "100%" }} />
+//       <Typography variant="body1" className={classes.cardText}>
+//         {text}
+//       </Typography>
+//     </div>
+//   );
+// }
 
 export function ProjectCard(props) {
   const { src, title, text, index, href } = props;
   const classes = useStyles();
   return index % 2 === 0 ? (
     <Grid container justify="center" alignItems="center">
-      <Grid item xs={4}>
+      <Grid item xs={6} sm={4}>
         <div
           className={classes.cardImage}
           style={{ backgroundImage: `url(${src})`, marginRight: 10 }}
         ></div>
       </Grid>
-      <Grid item xs={8}>
+      <Grid item xs={6} sm={8}>
         <div
           className={[classes.cardContent, classes.cardContentLeft].join(" ")}
         >
@@ -256,7 +261,7 @@ export function ProjectCard(props) {
     </Grid>
   ) : (
     <Grid container justify="center" alignItems="center">
-      <Grid item xs={8}>
+      <Grid item xs={6} sm={8}>
         <div
           className={[classes.cardContent, classes.cardContentRight].join(" ")}
         >
@@ -275,7 +280,7 @@ export function ProjectCard(props) {
           </Button>
         </div>
       </Grid>
-      <Grid item xs={4}>
+      <Grid item xs={6} sm={4}>
         <div
           className={classes.cardImage}
           style={{ backgroundImage: `url(${src})`, marginLeft: 10 }}

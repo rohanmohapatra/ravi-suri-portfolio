@@ -60,7 +60,7 @@ const useStyles = makeStyles((theme) => ({
   },
   content: {
     padding: 0,
-    paddingTop: 16,
+    paddingTop: 8,
     flex: 1,
   },
   buttoncontent: {
@@ -110,6 +110,12 @@ const useStyles = makeStyles((theme) => ({
       paddingBottom: 5,
     },
   },
+  introductionText: {
+    fontWeight: 700,
+    [theme.breakpoints.between(1280, 1380)]: {
+      fontSize: 24,
+    },
+  },
 }));
 
 export const ThoughtLeadership: React.FC = () => {
@@ -118,12 +124,12 @@ export const ThoughtLeadership: React.FC = () => {
     <div className={classes.root}>
       <Heading heading="Thought Leadership" />
       <Grid container className={classes.home}>
-        <Grid item xs={12}>
-          <Typography variant="h4">
+        {/* <Grid item xs={12}>
+          <Typography variant="h4" className={classes.introductionText}>
             In close context to Ravi Suri’s thoughts on Sustainability, kindly
             refer to the various reports and articles below on the way ahead.
           </Typography>
-        </Grid>
+        </Grid> */}
       </Grid>
       <Grid container>
         {data.slice(0, 12).map((row) => (
@@ -135,7 +141,7 @@ export const ThoughtLeadership: React.FC = () => {
           <RiskMitigationCard
             src={pathName + "/assets/thought/13.jpg"}
             title="RISK MITIGATION"
-            text="Ravi writes on correctly mitigating the risks involved with infrastructure projects to ensure they get financed."
+            text="Ravi writes on correctly mitigating the risks involved with infrastructure projects to ensure they get financed and the need for effective risk mitigation to attract capital."
             buttonText="Learn More"
             href=""
           />
@@ -222,11 +228,11 @@ const RiskMitigationCard: React.FC<Props> = (props) => {
         <Typography variant="h4" className={classes.title}>
           {props.title}
         </Typography>
-        <Typography variant="body2" className={classes.text}>
+        <Typography variant="h6" className={classes.text}>
           {props.text}
         </Typography>
       </CardContent>
-      <CardActions>
+      <CardActions style={{ padding: 0 }}>
         <Button
           size="large"
           href={props.href}
@@ -237,7 +243,7 @@ const RiskMitigationCard: React.FC<Props> = (props) => {
         </Button>
       </CardActions>
       <CardContent className={classes.content}>
-        <Typography variant="body2" className={classes.text}>
+        <Typography variant="h6" className={classes.text}>
           With reference to the above article, please find more details on:
         </Typography>
         <Grid container>
@@ -335,7 +341,7 @@ const RiskMitigationCard: React.FC<Props> = (props) => {
             </Typography>
             <Button
               size="large"
-              href=""
+              href={pathName + "/assets/thought/pdf/unbundling.pdf"}
               className={classes.button}
               target="_blank"
             >

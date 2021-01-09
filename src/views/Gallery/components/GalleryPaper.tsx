@@ -19,6 +19,9 @@ const useStyles = makeStyles((theme) => ({
   },
   button: {
     borderColor: theme.palette.common.white,
+    fontSize: 18,
+    textDecoration: "underline",
+    paddingLeft: 0,
     [theme.breakpoints.down("xs")]: {
       fontSize: 18,
     },
@@ -30,8 +33,13 @@ const useStyles = makeStyles((theme) => ({
     },
   },
 }));
-export function GalleryPaper(props) {
-  const { header1, header2 } = props;
+export function GalleryPaper(props: {
+  header1: string;
+  header2: string;
+  link1?: string;
+  link2?: string;
+}) {
+  const { header1, header2, link1, link2 } = props;
   const classes = useStyles();
   return (
     <Paper className={classes.paper}>
@@ -42,8 +50,10 @@ export function GalleryPaper(props) {
           </Typography>
           <br />
           <Button
-            variant="outlined"
+            variant="text"
             className={[classes.text, classes.button].join(" ")}
+            href={link1 ?? ""}
+            target="_blank"
           >
             Learn More
           </Button>
@@ -54,8 +64,10 @@ export function GalleryPaper(props) {
           </Typography>
           <br />
           <Button
-            variant="outlined"
+            variant="text"
             className={[classes.text, classes.button].join(" ")}
+            href={link2 ?? ""}
+            target="_blank"
           >
             Learn More
           </Button>
@@ -65,8 +77,8 @@ export function GalleryPaper(props) {
   );
 }
 
-export function GalleryLongPaper(props) {
-  const { header } = props;
+export function GalleryLongPaper(props: { header: string; link: string }) {
+  const { header, link } = props;
   const classes = useStyles();
   return (
     <Paper className={classes.paper}>
@@ -77,8 +89,10 @@ export function GalleryLongPaper(props) {
           </Typography>
           <br />
           <Button
-            variant="outlined"
+            variant="text"
             className={[classes.text, classes.button].join(" ")}
+            href={link}
+            target="_blank"
           >
             Learn More
           </Button>

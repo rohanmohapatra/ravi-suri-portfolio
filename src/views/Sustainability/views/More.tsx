@@ -24,6 +24,12 @@ const useStyles = makeStyles((theme) => ({
       paddingBottom: 0,
     },
   },
+  introductionText: {
+    fontWeight: 700,
+    [theme.breakpoints.between(1280, 1380)]: {
+      fontSize: 24,
+    },
+  },
 }));
 
 export const PassionForSustainabilityMore: React.FC = () => {
@@ -33,9 +39,10 @@ export const PassionForSustainabilityMore: React.FC = () => {
       <Heading heading="Passion For Sustainability" />
       <Grid container className={classes.home}>
         <Grid item xs={12}>
-          <Typography variant="h4">
-            In close context to Ravi Suri’s thoughts on Sustainability, kindly
-            refer to the various reports and articles below on the way ahead.
+          <Typography variant="h4" className={classes.introductionText}>
+            With reference to Ravi’s thoughts on Sustainability, kindly refer to
+            the various reports and articles below that support his ideas on the
+            way forward.
           </Typography>
         </Grid>
       </Grid>

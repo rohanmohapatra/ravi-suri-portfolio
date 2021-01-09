@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Switch, Redirect } from "react-router-dom";
 
 import { RouteWithLayout } from "./components/RouteWithLayout";
@@ -10,6 +10,7 @@ import {
   Gallery as GalleryView,
   LandmarkDeals as LandmarkDealsView,
   Transactions as TransactionsView,
+  LandmarkDealPage as LDPageView,
   Testimonials as TestimonialsView,
   Qualifications as QualificationsView,
   PassionForSustainability as SustainabilityView,
@@ -96,10 +97,10 @@ export default function Routes() {
         path="/awards"
       />
       <RouteWithLayout
-        component={View}
+        component={LDPageView}
         exact
         layout={MainLayout}
-        path="/unitedNations"
+        path="/landmark-deals/:hash"
       />
       <RouteWithLayout
         component={View}
@@ -114,9 +115,9 @@ export default function Routes() {
 /**
  * Dummy Layout
  */
-function Layout() {
-  return <div>Layout!</div>;
-}
+// function Layout() {
+//   return <div>Layout!</div>;
+// }
 
 /**
  * Dummy View

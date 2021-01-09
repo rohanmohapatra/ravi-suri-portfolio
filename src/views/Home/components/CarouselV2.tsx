@@ -21,6 +21,8 @@ import {
 import { pathName } from "../../../properties/properties";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import ChevronRightIcon from "@material-ui/icons/ChevronRight";
+import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 const variants = {
   initial: {
     opacity: 0,
@@ -95,6 +97,28 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <ChevronRightIcon
+      className={className}
+      style={{ ...style, color: "white", fontSize: 40 }}
+      onClick={onClick}
+    />
+  );
+}
+
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <ChevronLeftIcon
+      className={className}
+      style={{ ...style, color: "white", fontSize: 40 }}
+      onClick={onClick}
+    />
+  );
+}
+
 export function CarouselV2() {
   const classes = useStyles();
   const settings = {
@@ -105,6 +129,8 @@ export function CarouselV2() {
     speed: 500,
     autoplay: true,
     autoplaySpeed: 13000,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
   };
 
   return (

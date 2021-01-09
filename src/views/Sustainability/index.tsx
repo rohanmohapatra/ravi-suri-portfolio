@@ -45,7 +45,7 @@ const useStyles = makeStyles((theme) => ({
       paddingLeft: 5,
       paddingRight: 5,
       fontSize: 20,
-      textAlign: "justify",
+      // textAlign: "justify",
     },
   },
   divider: {
@@ -65,7 +65,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export const PassionForSustainability: React.FC = () => {
-  const classes = useStyles();
   return (
     <>
       <Hidden xsDown>
@@ -97,11 +96,11 @@ export const PassionForSustainabilityDesktopView: React.FC = () => {
               </Grid>
             </Grid>
             <Grid item xs={6}>
-              <Typography variant="body2" className={classes.text}>
+              <Typography variant="h6" className={classes.text}>
                 Forest fires rage from Australia to California ; thunderstorms
                 shatter coastal towns ; icebergs are melting and sea levels in
                 coastal towns are rising at alarming levels. Mother Nature is
-                wrath with us ; and rightly so. We humans have disturbed the
+                angry with us ; and rightly so. We humans have disturbed the
                 carbon balance on the planet with our emissions.
               </Typography>
             </Grid>
@@ -110,13 +109,13 @@ export const PassionForSustainabilityDesktopView: React.FC = () => {
         <Grid item xs={12}>
           <Grid container alignItems="center" className={classes.content}>
             <Grid item xs={6}>
-              <Typography variant="body2" className={classes.text}>
+              <Typography variant="h6" className={classes.text}>
                 Though not proven ; it is also likely that the Covid virus
                 challenge we face is due to this change in our carbon balance .
                 We have less than two decades left to ensure temperature rise
-                does not exceed twodegree centigrade and hence fighting climate
-                change is real and the sustainabilityagenda comes to the fore
-                front.
+                does not exceed two degree centigrade and hence fighting climate
+                change is real and the sustainability agenda needs to come to
+                the forefront.
               </Typography>
             </Grid>
             <Grid item xs={6}>
@@ -144,12 +143,15 @@ export const PassionForSustainabilityDesktopView: React.FC = () => {
               </Grid>
             </Grid>
             <Grid item xs={6}>
-              <Typography variant="body2" className={classes.text}>
+              <Typography variant="h6" className={classes.text}>
                 Climate change can be fought on three pillars:
                 <br />
                 1) CONTROLLING CARBON EMISSIONS
+                <br />
                 <br /> 2) CAPTURING CARBON EMISSIONS
+                <br />
                 <br /> 3) GROWING THE CIRCULAR ECONOMY
+                <br />
                 <br /> On the first pillar significant progress has been made by
                 growing renewable power generation ; mainly solar and wind. This
                 must and will continue. However, more is needed and, hence, the
@@ -161,18 +163,18 @@ export const PassionForSustainabilityDesktopView: React.FC = () => {
         <Grid item xs={12}>
           <Grid container alignItems="center" className={classes.content}>
             <Grid item xs={6}>
-              <Typography variant="body2" className={classes.text}>
+              <Typography variant="h6" className={classes.text}>
                 Growth of battery storage and Waste to Energy will be a big
                 factor as we tackle climate change.Whilst a lot of work has been
                 on controlling carbon emission; a lot more needs to bedone in
                 the capture side. Carbon storage and capture technology needs to
                 evolve, and technology needs to bring the cost down. We must
-                focus on reforestation and use of technology to increase the
-                carbon capture by our forests, including growing our oceans to
-                act as a sink for increased carbon capture. Finally, on the
-                third pillar, we need to grow the circular economy, as just
-                focusing on the first two pillars will not let us achieve our
-                objectives. We need to ensure waste is captured and reused.
+                focus on reforestation and use of technology should increased so
+                that carbon is captured by our forests, including growing our
+                oceans to act as a sink for increased carbon capture. Finally,
+                on the third pillar, we need to grow the circular economy, as
+                just focusing on the first two pillars will not let us achieve
+                our objectives. We need to ensure waste is captured and reused.
               </Typography>
             </Grid>
             <Grid item xs={6}>
@@ -200,7 +202,7 @@ export const PassionForSustainabilityDesktopView: React.FC = () => {
               </Grid>
             </Grid>
             <Grid item xs={6}>
-              <Typography variant="body2" className={classes.text}>
+              <Typography variant="h6" className={classes.text}>
                 Ravi is passionate about sustainability and is making his
                 contributions to society to help fight climate change. He has
                 extensive experience and ideas across the three pillars that
@@ -240,7 +242,7 @@ const PassionForSustainabilityMobileView: React.FC = () => {
                 Forest fires rage from Australia to California ; thunderstorms
                 shatter coastal towns ; icebergs are melting and sea levels in
                 coastal towns are rising at alarming levels. Mother Nature is
-                wrath with us ; and rightly so. We humans have disturbed the
+                angry with us ; and rightly so. We humans have disturbed the
                 carbon balance on the planet with our emissions.
               </Typography>
             </Grid>
@@ -263,9 +265,9 @@ const PassionForSustainabilityMobileView: React.FC = () => {
                 Though not proven ; it is also likely that the Covid virus
                 challenge we face is due to this change in our carbon balance .
                 We have less than two decades left to ensure temperature rise
-                does not exceed twodegree centigrade and hence fighting climate
-                change is real and the sustainabilityagenda comes to the fore
-                front.
+                does not exceed two degree centigrade and hence fighting climate
+                change is real and the sustainability agenda needs to come to
+                the forefront.
               </Typography>
             </Grid>
             <Grid item xs={12}>
@@ -287,8 +289,11 @@ const PassionForSustainabilityMobileView: React.FC = () => {
                 Climate change can be fought on three pillars:
                 <br />
                 1) CONTROLLING CARBON EMISSIONS
+                <br />
                 <br /> 2) CAPTURING CARBON EMISSIONS
+                <br />
                 <br /> 3) GROWING THE CIRCULAR ECONOMY
+                <br />
                 <br /> On the first pillar significant progress has been made by
                 growing renewable power generation ; mainly solar and wind. This
                 must and will continue. However, more is needed and, hence, the
@@ -316,12 +321,12 @@ const PassionForSustainabilityMobileView: React.FC = () => {
                 on controlling carbon emission; a lot more needs to bedone in
                 the capture side. Carbon storage and capture technology needs to
                 evolve, and technology needs to bring the cost down. We must
-                focus on reforestation and use of technology to increase the
-                carbon capture by our forests, including growing our oceans to
-                act as a sink for increased carbon capture. Finally, on the
-                third pillar, we need to grow the circular economy, as just
-                focusing on the first two pillars will not let us achieve our
-                objectives. We need to ensure waste is captured and reused.
+                focus on reforestation and use of technology should increased so
+                that carbon is captured by our forests, including growing our
+                oceans to act as a sink for increased carbon capture. Finally,
+                on the third pillar, we need to grow the circular economy, as
+                just focusing on the first two pillars will not let us achieve
+                our objectives. We need to ensure waste is captured and reused.
               </Typography>
             </Grid>
             <Grid item xs={12}>

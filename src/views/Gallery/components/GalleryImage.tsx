@@ -29,6 +29,7 @@ export function GalleryImage(props) {
           onLoad={() => {
             setLoaded(true);
           }}
+          alt={src}
           style={{ visibility: "hidden" }}
         />
       )}

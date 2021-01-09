@@ -8,7 +8,6 @@ import {
   makeStyles,
   CardMedia,
 } from "@material-ui/core";
-import { useTheme } from "@material-ui/styles";
 import React from "react";
 import { data } from "./CardData";
 
@@ -17,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
     padding: 15,
   },
   card: {
-    height: 600,
+    height: 700,
     padding: 50,
     backgroundColor: theme.palette.primary.light,
     color: theme.palette.primary.contrastText,
@@ -50,6 +49,7 @@ const useStyles = makeStyles((theme) => ({
   button: {
     color: theme.palette.primary.contrastText,
     textDecoration: "underline",
+    paddingLeft: 0,
     [theme.breakpoints.down("xs")]: {
       fontSize: 18,
       padding: 0,
@@ -119,7 +119,7 @@ const SustainCard: React.FC<Props> = (props) => {
         <Typography variant="h4" className={classes.title}>
           {props.title}
         </Typography>
-        <Typography variant="body2" className={classes.text}>
+        <Typography variant="h6" className={classes.text}>
           {props.text}
         </Typography>
       </CardContent>

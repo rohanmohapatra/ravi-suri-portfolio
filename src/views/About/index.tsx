@@ -64,7 +64,7 @@ const useStyles = makeStyles((theme) => ({
   aboutText: {
     [theme.breakpoints.down("xs")]: {
       paddingLeft: 5,
-      fontSize: 18,
+      fontSize: 14,
     },
   },
   specialization: {
@@ -117,7 +117,7 @@ const specialization = [
   "Broad based experience across Banking, Industry and Consulting",
   "Experienced Project Financier and Sustainable Specialist",
   "Infrastructure Experience across broad sectors",
-  "Deep knowledge of tech impact on infrastructure",
+  "Deep knowledge of technological impact on infrastructure",
   "Deep insights into developed and emerging markets",
 ];
 
@@ -213,32 +213,35 @@ const AboutSectionDesktopView: React.FC = () => {
           ))}
         </List>
       </Grid>
-      <Grid item xs={6}>
+      <Grid item xs={6} sm={8}>
         <Typography variant="h6" className={classes.aboutText}>
           Ravi has over 25 years of experience in the project finance and
           infrastructure advisory space having worked with a number of blue chip
           institutions. He has a distinguished career in banking, industry and
           consulting, having worked with ANZ, GE Capital, ABN AMRO Bank,
           Standard Chartered Bank and KPMG in global leadership Positions. He
-          has strong industry insights and professional experience in the
-          power,, transportation, infra, ports, rail. airports, social
-          infrastructure and oil and gas sectors. During his career, he has led
-          large complex advisory projects in the above mentioned sectors across
-          50 countries in Asia, Africa, Middle East, Europe and the Americas.
-          Ravi believes that with the intersection of Artificial intelligence,
-          Internet of Things, Big Data, 3D and block chain into infrastructure
-          being an inexorable event, the technology impact in this field will be
-          significant resulting in a number of disruptions. He emphasises that
-          Risk mitigation for both debt and equity will no longer be immutable,
-          as it has been during the last two decades, and newer methods will
-          need to be adopted. <br />
+          has strong industry insights and professional experience in the power,
+          transportation, infra, ports, rail. airports, social infrastructure
+          and oil and gas sectors. <br /> <br />
+          During his career, he has led large complex advisory projects in the
+          above mentioned sectors across 50 countries in Asia, Africa, Middle
+          East, Europe and the Americas. Ravi believes that with the
+          intersection of Artificial intelligence, Internet of Things, Big Data,
+          3D and block chain into infrastructure being an inexorable event, the
+          technology impact in this field will be significant resulting in a
+          number of disruptions. He emphasises that risk mitigation for both
+          debt and equity will no longer be immutable, as it has been during the
+          last two decades, and newer methods will need to be adopted. <br />
+          <br />
           Ravi is also working on cutting edge solutions to ensure
           infrastructure projects are bankable with the technology risk they
           face. He strongly believes in fighting the challenges facing climate
           change, and feels sustainable finance is a force for good to achieve
           this. He is passionate about this area and is doing some pathbreaking
-          work here. His initiatives to finance power projects in Africa when at
-          Standard Chartered bank under President Barack Obama’ s Power Africa
+          work here. <br />
+          <br />
+          His initiatives to finance power projects in Africa when at Standard
+          Chartered bank under President Barack Obama’ s Power Africa
           initiative, is testament to his philosophy that infrastructure
           projects ameliorate the living of the poor. It is this belief that
           drives him to work with the Business for Peace Foundation and the
@@ -266,25 +269,28 @@ const AboutSectionMobileView: React.FC = () => {
           institutions. He has a distinguished career in banking, industry and
           consulting, having worked with ANZ, GE Capital, ABN AMRO Bank,
           Standard Chartered Bank and KPMG in global leadership Positions. He
-          has strong industry insights and professional experience in the
-          power,, transportation, infra, ports, rail. airports, social
-          infrastructure and oil and gas sectors. During his career, he has led
-          large complex advisory projects in the above mentioned sectors across
-          50 countries in Asia, Africa, Middle East, Europe and the Americas.
-          Ravi believes that with the intersection of Artificial intelligence,
-          Internet of Things, Big Data, 3D and block chain into infrastructure
-          being an inexorable event, the technology impact in this field will be
-          significant resulting in a number of disruptions. He emphasises that
-          Risk mitigation for both debt and equity will no longer be immutable,
-          as it has been during the last two decades, and newer methods will
-          need to be adopted. <br />
+          has strong industry insights and professional experience in the power,
+          transportation, infra, ports, rail. airports, social infrastructure
+          and oil and gas sectors. <br /> <br />
+          During his career, he has led large complex advisory projects in the
+          above mentioned sectors across 50 countries in Asia, Africa, Middle
+          East, Europe and the Americas. Ravi believes that with the
+          intersection of Artificial intelligence, Internet of Things, Big Data,
+          3D and block chain into infrastructure being an inexorable event, the
+          technology impact in this field will be significant resulting in a
+          number of disruptions. He emphasises that risk mitigation for both
+          debt and equity will no longer be immutable, as it has been during the
+          last two decades, and newer methods will need to be adopted. <br />
+          <br />
           Ravi is also working on cutting edge solutions to ensure
           infrastructure projects are bankable with the technology risk they
           face. He strongly believes in fighting the challenges facing climate
           change, and feels sustainable finance is a force for good to achieve
           this. He is passionate about this area and is doing some pathbreaking
-          work here. His initiatives to finance power projects in Africa when at
-          Standard Chartered bank under President Barack Obama’ s Power Africa
+          work here. <br />
+          <br />
+          His initiatives to finance power projects in Africa when at Standard
+          Chartered bank under President Barack Obama’ s Power Africa
           initiative, is testament to his philosophy that infrastructure
           projects ameliorate the living of the poor. It is this belief that
           drives him to work with the Business for Peace Foundation and the

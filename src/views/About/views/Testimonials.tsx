@@ -205,7 +205,7 @@ function Header1() {
       James Courtney
       <br />
       Former Global Head, Project and Export Finance <br />
-      Standard Chatered Bank <br />
+      Standard Chartered Bank <br />
     </Typography>
   );
 }
@@ -217,7 +217,7 @@ function Header2() {
       Mark Dowie
       <br />
       Former CEO Corporate and Institutional Banking, <br />
-      Standard Chartered PLC <br />
+      Standard Chartered Bank <br />
     </Typography>
   );
 }
@@ -254,9 +254,9 @@ function Header5() {
     <Typography variant="h4" className={classes.headerTitle2}>
       RICHARD REKHY
       <br />
-      FORMER CEO,
+      FORMER CEO, KPMG INDIA
       <br />
-      KPMG INDIA BOARD MEMBER KPMG LOWER GULF <br />
+      BOARD MEMBER KPMG LOWER GULF <br />
     </Typography>
   );
 }
