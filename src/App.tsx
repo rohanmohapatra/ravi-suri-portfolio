@@ -8,7 +8,7 @@ import Routes from "./Routes";
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <BrowserRouter basename="/ravi-suri">
+      <BrowserRouter basename="">
         <Routes />
       </BrowserRouter>
     </ThemeProvider>
