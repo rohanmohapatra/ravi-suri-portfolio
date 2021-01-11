@@ -8,7 +8,7 @@ import {
 } from "@material-ui/core";
 import React from "react";
 import { Heading } from "../../components/Heading";
-import { pathName } from "../../properties/properties";
+import { imageCDN, pathName } from "../../properties/properties";
 import { SustainabilityLess } from "./Sustainability";
 
 const useStyles = makeStyles((theme) => ({
@@ -90,7 +90,7 @@ export const PassionForSustainabilityDesktopView: React.FC = () => {
                 <div
                   className={classes.image}
                   style={{
-                    backgroundImage: `url(${pathName}/assets/sustainability/home_1.jpg)`,
+                    backgroundImage: `url(${imageCDN}/assets/sustainability/home_1.jpg)`,
                   }}
                 />
               </Grid>
@@ -123,7 +123,7 @@ export const PassionForSustainabilityDesktopView: React.FC = () => {
                 <div
                   className={classes.image}
                   style={{
-                    backgroundImage: `url(${pathName}/assets/sustainability/home_2.png)`,
+                    backgroundImage: `url(${imageCDN}/assets/sustainability/home_2.png)`,
                   }}
                 />
               </Grid>
@@ -137,7 +137,7 @@ export const PassionForSustainabilityDesktopView: React.FC = () => {
                 <div
                   className={classes.image}
                   style={{
-                    backgroundImage: `url(${pathName}/assets/sustainability/home_3.png)`,
+                    backgroundImage: `url(${imageCDN}/assets/sustainability/home_3.png)`,
                   }}
                 />
               </Grid>
@@ -196,7 +196,7 @@ export const PassionForSustainabilityDesktopView: React.FC = () => {
                 <div
                   className={classes.image}
                   style={{
-                    backgroundImage: `url(${pathName}/assets/sustainability/home_5.jpg)`,
+                    backgroundImage: `url(${imageCDN}/assets/sustainability/home_5.jpg)`,
                   }}
                 />
               </Grid>
@@ -251,7 +251,7 @@ const PassionForSustainabilityMobileView: React.FC = () => {
                 <div
                   className={classes.image}
                   style={{
-                    backgroundImage: `url(${pathName}/assets/sustainability/home_1.jpg)`,
+                    backgroundImage: `url(${imageCDN}/assets/sustainability/home_1.jpg)`,
                   }}
                 />
               </Grid>
@@ -275,7 +275,7 @@ const PassionForSustainabilityMobileView: React.FC = () => {
                 <div
                   className={classes.image}
                   style={{
-                    backgroundImage: `url(${pathName}/assets/sustainability/home_2.png)`,
+                    backgroundImage: `url(${imageCDN}/assets/sustainability/home_2.png)`,
                   }}
                 />
               </Grid>
@@ -305,7 +305,7 @@ const PassionForSustainabilityMobileView: React.FC = () => {
                 <div
                   className={classes.image}
                   style={{
-                    backgroundImage: `url(${pathName}/assets/sustainability/home_3.png)`,
+                    backgroundImage: `url(${imageCDN}/assets/sustainability/home_3.png)`,
                   }}
                 />
               </Grid>
@@ -358,7 +358,7 @@ const PassionForSustainabilityMobileView: React.FC = () => {
                 <div
                   className={classes.image}
                   style={{
-                    backgroundImage: `url(${pathName}/assets/sustainability/home_5.jpg)`,
+                    backgroundImage: `url(${imageCDN}/assets/sustainability/home_5.jpg)`,
                   }}
                 />
               </Grid>

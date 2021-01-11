@@ -1,7 +1,7 @@
 import { Grid, Hidden, makeStyles, Typography } from "@material-ui/core";
 import React from "react";
 import { Heading, SocietyHeading } from "../../components/Heading";
-import { pathName } from "../../properties/properties";
+import { imageCDN } from "../../properties/properties";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -120,7 +120,7 @@ const ImpactOnSocietyDesktopView: React.FC = () => {
           <div
             className={classes.imageItem}
             style={{
-              backgroundImage: `url(${pathName}/assets/peace/bpf.png)`,
+              backgroundImage: `url(${imageCDN}/assets/peace/bpf.png)`,
             }}
           ></div>
         </Grid>
@@ -167,7 +167,7 @@ const ImpactOnSocietyDesktopView: React.FC = () => {
           <div
             className={classes.imageItem}
             style={{
-              backgroundImage: `url(${pathName}/assets/peace/unece.png)`,
+              backgroundImage: `url(${imageCDN}/assets/peace/unece.png)`,
             }}
           ></div>
         </Grid>
@@ -212,7 +212,7 @@ const ImpactOnSocietyDesktopView: React.FC = () => {
           <div
             className={classes.imageItem}
             style={{
-              backgroundImage: `url(${pathName}/assets/peace/africa.jpg)`,
+              backgroundImage: `url(${imageCDN}/assets/peace/africa.jpg)`,
             }}
           ></div>
         </Grid>
@@ -222,7 +222,7 @@ const ImpactOnSocietyDesktopView: React.FC = () => {
           <div
             className={classes.imageItem}
             style={{
-              backgroundImage: `url(${pathName}/assets/peace/clifford.png)`,
+              backgroundImage: `url(${imageCDN}/assets/peace/clifford.png)`,
             }}
           ></div>
         </Grid>
@@ -259,7 +259,7 @@ const ImpactOnSocietyDesktopView: React.FC = () => {
           <div
             className={classes.imageItem}
             style={{
-              backgroundImage: `url(${pathName}/assets/peace/bri.jpg)`,
+              backgroundImage: `url(${imageCDN}/assets/peace/bri.jpg)`,
             }}
           ></div>
         </Grid>
@@ -314,7 +314,7 @@ const ImpactOnSocietyMobileView: React.FC = () => {
           <div
             className={classes.imageItem}
             style={{
-              backgroundImage: `url(${pathName}/assets/peace/bpf.png)`,
+              backgroundImage: `url(${imageCDN}/assets/peace/bpf.png)`,
             }}
           ></div>
         </Grid>
@@ -342,7 +342,7 @@ const ImpactOnSocietyMobileView: React.FC = () => {
           <div
             className={classes.imageItem}
             style={{
-              backgroundImage: `url(${pathName}/assets/peace/unece.png)`,
+              backgroundImage: `url(${imageCDN}/assets/peace/unece.png)`,
             }}
           ></div>
         </Grid>
@@ -402,7 +402,7 @@ const ImpactOnSocietyMobileView: React.FC = () => {
           <div
             className={classes.imageItem}
             style={{
-              backgroundImage: `url(${pathName}/assets/peace/africa.jpg)`,
+              backgroundImage: `url(${imageCDN}/assets/peace/africa.jpg)`,
             }}
           ></div>
         </Grid>
@@ -428,7 +428,7 @@ const ImpactOnSocietyMobileView: React.FC = () => {
           <div
             className={classes.imageItem}
             style={{
-              backgroundImage: `url(${pathName}/assets/peace/clifford.png)`,
+              backgroundImage: `url(${imageCDN}/assets/peace/clifford.png)`,
             }}
           ></div>
         </Grid>
@@ -453,7 +453,7 @@ const ImpactOnSocietyMobileView: React.FC = () => {
           <div
             className={classes.imageItem}
             style={{
-              backgroundImage: `url(${pathName}/assets/peace/bri.jpg)`,
+              backgroundImage: `url(${imageCDN}/assets/peace/bri.jpg)`,
             }}
           ></div>
         </Grid>

@@ -18,7 +18,7 @@ import {
   Text10,
   Text11,
 } from "./Texts";
-import { pathName } from "../../../properties/properties";
+import { imageCDN } from "../../../properties/properties";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
@@ -138,53 +138,53 @@ export function CarouselV2() {
       <Slider {...settings}>
         <div>
           <Grid container justify="center" alignItems="center">
-            <Card src={pathName + "/assets/home/Carousel/1.png"} text={Text1} />
+            <Card src={imageCDN + "/assets/home/Carousel/1.png"} text={Text1} />
           </Grid>
         </div>
         <div>
           <Grid container justify="center" alignItems="center">
-            <Card src={pathName + "/assets/home/Carousel/2.jpg"} text={Text2} />
+            <Card src={imageCDN + "/assets/home/Carousel/2.jpg"} text={Text2} />
           </Grid>
         </div>
         <div>
           <Grid container justify="center" alignItems="center">
-            <Card src={pathName + "/assets/home/Carousel/3.png"} text={Text3} />
+            <Card src={imageCDN + "/assets/home/Carousel/3.png"} text={Text3} />
           </Grid>
         </div>
         <div>
           <Grid container justify="center" alignItems="center">
-            <Card src={pathName + "/assets/home/Carousel/4.png"} text={Text4} />
+            <Card src={imageCDN + "/assets/home/Carousel/4.png"} text={Text4} />
           </Grid>
         </div>
         <div>
           <Grid container justify="center" alignItems="center">
-            <Card src={pathName + "/assets/home/Carousel/5.png"} text={Text5} />
+            <Card src={imageCDN + "/assets/home/Carousel/5.png"} text={Text5} />
           </Grid>
         </div>
         <div>
           <Grid container justify="center" alignItems="center">
-            <Card src={pathName + "/assets/home/Carousel/6.png"} text={Text6} />
+            <Card src={imageCDN + "/assets/home/Carousel/6.png"} text={Text6} />
           </Grid>
         </div>
         <div>
           <Grid container justify="center" alignItems="center">
-            <Card src={pathName + "/assets/home/Carousel/7.png"} text={Text7} />
+            <Card src={imageCDN + "/assets/home/Carousel/7.png"} text={Text7} />
           </Grid>
         </div>
         <div>
           <Grid container justify="center" alignItems="center">
-            <Card src={pathName + "/assets/home/Carousel/8.jpg"} text={Text8} />
+            <Card src={imageCDN + "/assets/home/Carousel/8.jpg"} text={Text8} />
           </Grid>
         </div>
         <div>
           <Grid container justify="center" alignItems="center">
-            <Card src={pathName + "/assets/home/Carousel/9.png"} text={Text9} />
+            <Card src={imageCDN + "/assets/home/Carousel/9.png"} text={Text9} />
           </Grid>
         </div>
         <div>
           <Grid container justify="center" alignItems="center">
             <Card
-              src={pathName + "/assets/home/Carousel/10.jpg"}
+              src={imageCDN + "/assets/home/Carousel/10.jpg"}
               text={Text10}
             />
           </Grid>
@@ -192,7 +192,7 @@ export function CarouselV2() {
         <div>
           <Grid container justify="center" alignItems="center">
             <Card
-              src={pathName + "/assets/home/Carousel/11.png"}
+              src={imageCDN + "/assets/home/Carousel/11.png"}
               text={Text11}
             />
           </Grid>

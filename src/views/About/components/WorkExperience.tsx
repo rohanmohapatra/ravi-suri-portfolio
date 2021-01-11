@@ -9,7 +9,7 @@ import {
 import { useTransform, useViewportScroll } from "framer-motion";
 import React, { useRef } from "react";
 import { motion } from "framer-motion";
-import { pathName } from "../../../properties/properties";
+import { imageCDN } from "../../../properties/properties";
 import { makeStyles, Typography } from "@material-ui/core";
 import { useRefScrollProgress } from "../../../components/useRefScrollProgress";
 
@@ -87,11 +87,11 @@ export function WorkExperience() {
     // six: useTransform(scrollYProgress, scrollRange, [0, 0, 0, 0, 0, 0]),
   };
   const companies = [
-    pathName + "/assets/about/logos/anz.png",
-    pathName + "/assets/about/logos/ge.png",
-    pathName + "/assets/about/logos/abn.png",
-    pathName + "/assets/about/logos/scb.png",
-    pathName + "/assets/about/logos/kpmg.png",
+    imageCDN + "/assets/about/logos/anz.png",
+    imageCDN + "/assets/about/logos/ge.png",
+    imageCDN + "/assets/about/logos/abn.png",
+    imageCDN + "/assets/about/logos/scb.png",
+    imageCDN + "/assets/about/logos/kpmg.png",
   ];
   const classes = useStyles();
   return (

@@ -1,13 +1,13 @@
 import { Grid, Hidden, makeStyles, Typography } from "@material-ui/core";
 import React from "react";
 import { useWidth } from "../../../components/useIsMobile";
-import { pathName } from "../../../properties/properties";
+import { imageCDN } from "../../../properties/properties";
 
 const useStyles = makeStyles((theme) => ({
   image: {
     height: 300,
     width: 300,
-    background: `url(${pathName}/assets/home/ravi-suri.png) no-repeat center`,
+    background: `url(${imageCDN}/assets/home/ravi-suri.png) no-repeat center`,
     backgroundSize: "contain",
     [theme.breakpoints.between(1280, 1380)]: {
       height: 260,

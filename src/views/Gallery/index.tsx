@@ -1,7 +1,7 @@
 import { makeStyles, Typography } from "@material-ui/core";
 import React from "react";
 import { Heading } from "../../components/Heading";
-import { pathName } from "../../properties/properties";
+import { imageCDN, pathName } from "../../properties/properties";
 import { GalleryImage } from "./components/GalleryImage";
 import { GalleryLongPaper, GalleryPaper } from "./components/GalleryPaper";
 
@@ -79,7 +79,7 @@ export function Gallery() {
           different organisations.
         </Typography>
       </div>
-      <GalleryImage src={pathName + "/assets/gallery/av.jpg"} />
+      <GalleryImage src={imageCDN + "/assets/gallery/av.jpg"} />
       <Heading heading="AUTONOMOUS VEHICLES (AVs)" />
       <div className={classes.textContainer}>
         <Typography variant="h6" className={classes.text}>
@@ -124,7 +124,7 @@ export function Gallery() {
           <br />
         </Typography>
       </div>
-      <GalleryImage src={pathName + "/assets/gallery/infra.jpg"} />
+      <GalleryImage src={imageCDN + "/assets/gallery/infra.jpg"} />
       <Heading heading="FUTURE OF INFRASTRUCTURE " />
       <div className={classes.textContainer}>
         <Typography variant="h6" className={classes.text}>
@@ -146,7 +146,7 @@ export function Gallery() {
           <br />
         </Typography>
       </div>
-      <GalleryImage src={pathName + "/assets/gallery/africa.jpg"} />
+      <GalleryImage src={imageCDN + "/assets/gallery/africa.jpg"} />
       <Heading heading="POWER AFRICA " />
       <div className={classes.textContainer}>
         <Typography variant="h6" className={classes.text}>
@@ -164,7 +164,7 @@ export function Gallery() {
           />
         </Typography>
       </div>
-      <GalleryImage src={pathName + "/assets/gallery/finance.jpg"} />
+      <GalleryImage src={imageCDN + "/assets/gallery/finance.jpg"} />
       <Heading heading="PROJECT FINANCE" />
       <div className={classes.textContainer}>
         <Typography variant="h6" className={classes.text}>
@@ -244,7 +244,7 @@ export function Gallery() {
           />
         </Typography>
       </div>
-      <GalleryImage src={pathName + "/assets/gallery/bri.jpg"} />
+      <GalleryImage src={imageCDN + "/assets/gallery/bri.jpg"} />
       <Heading heading="BELT AND ROAD INITIATIVE (BRI)" />
       <div className={classes.textContainer}>
         <Typography variant="h6" className={classes.text}>
@@ -282,7 +282,7 @@ export function Gallery() {
           />
         </Typography>
       </div>
-      <GalleryImage src={pathName + "/assets/gallery/powerlng.jpg"} />
+      <GalleryImage src={imageCDN + "/assets/gallery/powerlng.jpg"} />
       <Heading heading="POWER AND LNG " />
       <div className={classes.textContainer}>
         <Typography variant="h6" className={classes.text}>

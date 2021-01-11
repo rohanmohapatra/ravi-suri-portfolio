@@ -10,7 +10,7 @@ import {
 } from "@material-ui/core";
 import React from "react";
 import { Heading } from "../../components/Heading";
-import { pathName } from "../../properties/properties";
+import { imageCDN } from "../../properties/properties";
 import { data } from "./CardData";
 
 interface Props {
@@ -119,7 +119,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export const ThoughtLeadership: React.FC = () => {
-  const classes = useStyles();
+  const classes = useStyles({} as { cardHeightMobile: number });
   return (
     <div className={classes.root}>
       <Heading heading="Thought Leadership" />
@@ -139,7 +139,7 @@ export const ThoughtLeadership: React.FC = () => {
         ))}
         <Grid item xs={12} className={classes.section}>
           <RiskMitigationCard
-            src={pathName + "/assets/thought/13.jpg"}
+            src={imageCDN + "/assets/thought/13.jpg"}
             title="RISK MITIGATION"
             text="Ravi writes on correctly mitigating the risks involved with infrastructure projects to ensure they get financed and the need for effective risk mitigation to attract capital."
             buttonText="Learn More"
@@ -190,7 +190,7 @@ const TLGeneralCard: React.FC<Props> = (props) => {
 };
 
 const TLExtendedCard: React.FC<Props> = (props) => {
-  const classes = useStyles();
+  const classes = useStyles({} as { cardHeightMobile: number });
   return (
     <Card className={classes.card}>
       <CardMedia
@@ -216,7 +216,7 @@ const TLExtendedCard: React.FC<Props> = (props) => {
 };
 
 const RiskMitigationCard: React.FC<Props> = (props) => {
-  const classes = useStyles();
+  const classes = useStyles({} as { cardHeightMobile: number });
   return (
     <Card className={classes.riskcard}>
       <CardMedia
@@ -253,7 +253,7 @@ const RiskMitigationCard: React.FC<Props> = (props) => {
             </Typography>
             <Button
               size="large"
-              href={pathName + "/assets/thought/pdf/VFM.pdf"}
+              href={imageCDN + "/assets/thought/pdf/VFM.pdf"}
               className={classes.button}
               target="_blank"
             >
@@ -267,7 +267,7 @@ const RiskMitigationCard: React.FC<Props> = (props) => {
             <Button
               size="large"
               href={
-                pathName +
+                imageCDN +
                 "/assets/thought/pdf/project-finance-key-concepts.pdf"
               }
               className={classes.button}
@@ -285,7 +285,7 @@ const RiskMitigationCard: React.FC<Props> = (props) => {
                 <Button
                   size="large"
                   href={
-                    pathName +
+                    imageCDN +
                     "/assets/thought/pdf/introduction-kpmg-truevalue.pdf"
                   }
                   className={classes.button}
@@ -298,7 +298,7 @@ const RiskMitigationCard: React.FC<Props> = (props) => {
                 <Button
                   size="large"
                   href={
-                    pathName +
+                    imageCDN +
                     "/assets/thought/pdf/volvo-group-kpmg-true-value-case-study.pdf"
                   }
                   className={classes.button}
@@ -311,7 +311,7 @@ const RiskMitigationCard: React.FC<Props> = (props) => {
                 <Button
                   size="large"
                   href={
-                    pathName +
+                    imageCDN +
                     "/assets/thought/pdf/kpmg-true-value-services.pdf"
                   }
                   className={classes.button}
@@ -328,7 +328,7 @@ const RiskMitigationCard: React.FC<Props> = (props) => {
             </Typography>
             <Button
               size="large"
-              href={pathName + "/assets/thought/pdf/regulation.pdf"}
+              href={imageCDN + "/assets/thought/pdf/regulation.pdf"}
               className={classes.button}
               target="_blank"
             >
@@ -341,7 +341,7 @@ const RiskMitigationCard: React.FC<Props> = (props) => {
             </Typography>
             <Button
               size="large"
-              href={pathName + "/assets/thought/pdf/unbundling.pdf"}
+              href={imageCDN + "/assets/thought/pdf/unbundling.pdf"}
               className={classes.button}
               target="_blank"
             >

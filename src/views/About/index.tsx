@@ -11,7 +11,7 @@ import {
 import FiberManualRecordIcon from "@material-ui/icons/FiberManualRecord";
 import React from "react";
 import { Heading } from "../../components/Heading";
-import { pathName } from "../../properties/properties";
+import { imageCDN, pathName } from "../../properties/properties";
 import { ProjectCard } from "../Home/components/ProjectCards";
 import { WorkExperience } from "./components/WorkExperience";
 const useStyles = makeStyles((theme) => ({
@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
   image: {
     height: 450,
     width: 450,
-    background: `url(${pathName}/assets/home/ravi-suri.png) no-repeat center`,
+    background: `url(${imageCDN}/assets/home/ravi-suri.png) no-repeat center`,
     backgroundSize: "contain",
     [theme.breakpoints.between(1280, 1380)]: {
       height: 450,
@@ -168,7 +168,7 @@ export function About() {
       <Grid container>
         <Grid item xs={12} className={classes.card}>
           <ProjectCard
-            src={pathName + "/assets/about/banner/Education.jpg"}
+            src={imageCDN + "/assets/about/banner/Education.jpg"}
             title="Educational Qualifications"
             text="Ravi’s degree courses, Executive Education from the world’s most prestigious universities, and the various scholarships won for higher education"
             index={0}
@@ -177,7 +177,7 @@ export function About() {
         </Grid>
         <Grid item xs={12} className={classes.card}>
           <ProjectCard
-            src={pathName + "/assets/about/banner/testimonial.jpg"}
+            src={imageCDN + "/assets/about/banner/testimonial.jpg"}
             title="Testimonials"
             text="Testimonials by leading Industry veterans and expert on Ravi’s professionalism, work ethics, and positive personal traits"
             index={1}

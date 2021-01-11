@@ -1,4 +1,4 @@
-import { pathName } from "../../properties/properties";
+import { imageCDN, pathName } from "../../properties/properties";
 
 export const data = [
   {
@@ -8,7 +8,7 @@ export const data = [
     buttonText: "Learn More",
     href:
       "https://www.linkedin.com/posts/ravi-suri-0aa30021_sustainableinfrastructure-economicrecovery-activity-6683989870785916928-DK5F",
-    src: pathName + "/assets/thought/1.jpg",
+    src: imageCDN + "/assets/thought/1.jpg",
   },
   {
     title: "INFRASTRUCTURE IN A POST COVID-19 WORLD",
@@ -17,7 +17,7 @@ export const data = [
     buttonText: "Learn More",
     href:
       "https://www.linkedin.com/posts/ravi-suri-0aa30021_what-will-the-infrastructure-sector-look-activity-6680798093971070976-wvIG",
-    src: pathName + "/assets/thought/2.jpg",
+    src: imageCDN + "/assets/thought/2.jpg",
   },
   {
     title: "RISK MITIGATION FOR BANKABILITY",
@@ -26,7 +26,7 @@ export const data = [
     buttonText: "Learn More",
     href:
       "https://www.linkedin.com/posts/ravi-suri-0aa30021_why-infrastructure-projects-fail-resulting-activity-6708266733569884160-s9J_",
-    src: pathName + "/assets/thought/3.jpg",
+    src: imageCDN + "/assets/thought/3.jpg",
   },
   {
     title: "PLANNING A SUCCESSFUL PRIVATISATION PROGRAMME",
@@ -34,7 +34,7 @@ export const data = [
       "Adequate capital is available to finance the infrastructure needs of the world provided the contracts are bankable and correct risk mitigation is done. Ravi Suri throws light on what needs to be done to make projects bankable.",
     buttonText: "Effective risk mitigation.pdf",
     href: pathName + "/assets/thought/pdf/effective-risk-mitigation.pdf",
-    src: pathName + "/assets/thought/4.jpg",
+    src: imageCDN + "/assets/thought/4.jpg",
   },
   {
     title: "INFRASTRUCTURE POST PANDEMIC",
@@ -43,7 +43,7 @@ export const data = [
     buttonText: "Listen Here",
     href:
       "https://www.linkedin.com/posts/ravi-suri-0aa30021_post-covid-19-infrastructure-kpmg-210620-activity-6680799337615781888-aqG7",
-    src: pathName + "/assets/thought/5.jpg",
+    src: imageCDN + "/assets/thought/5.jpg",
   },
   {
     title: "SUSTAINABLE INFRASTRUCTURE OPPORTUNITIES",
@@ -52,7 +52,7 @@ export const data = [
     buttonText: "Learn More",
     href:
       "https://home.kpmg/xx/en/home/insights/2020/06/covid-19-recovery.html?cid=linkd_soc_xx-acx_brnd-covid19&utm_medium=soc&utm_source=linkd&utm_content=xx-acx&utm_campaign=brnd-covid19",
-    src: pathName + "/assets/thought/6.png",
+    src: imageCDN + "/assets/thought/6.png",
   },
   {
     title: "EMERGING TRENDS",
@@ -60,7 +60,7 @@ export const data = [
       "Given the dynamic changes taking place in the infrastructure sector, Ravi writes about the key trends in infrastructure finance.",
     buttonText: "Learn More",
     href: "https://twitter.com/KPMG_LowerGulf/status/1204364201579429896?s=20",
-    src: pathName + "/assets/thought/7.jpg",
+    src: imageCDN + "/assets/thought/7.jpg",
   },
   {
     title: "FUTURE OF INFRASTRUCTURE",
@@ -68,7 +68,7 @@ export const data = [
     buttonText: "Learn More",
     href:
       "https://assets.kpmg/content/dam/kpmg/ae/pdf/emerging-trends-in-infrastructure-2020.pdf",
-    src: pathName + "/assets/thought/8.jpg",
+    src: imageCDN + "/assets/thought/8.jpg",
   },
   {
     title: "Autonomous Vehicles",
@@ -76,7 +76,7 @@ export const data = [
       "On the Business Breakfast programme on Dubai Eye, Ravi talks about the Autonomous Vehicles Readiness Index 2019",
     buttonText: "Listen Here",
     href: "https://omny.fm/shows/businessbreakfast/kpmg-24-02-2019",
-    src: pathName + "/assets/thought/9.jpg",
+    src: imageCDN + "/assets/thought/9.jpg",
   },
   {
     title: "Autonomous Vehicles readiness index",
@@ -85,7 +85,7 @@ export const data = [
     buttonText: "Learn More",
     href:
       "https://mobile.twitter.com/kpmg_lowergulf/status/1102529807726923776",
-    src: pathName + "/assets/thought/10.jpg",
+    src: imageCDN + "/assets/thought/10.jpg",
   },
   {
     title: "SDG SUMMIT",
@@ -102,7 +102,7 @@ export const data = [
     buttonText: "Learn More",
     href:
       "https://www.linkedin.com/posts/ravi-suri-0aa30021_the-impact-of-technological-disruption-on-activity-6708266774363688960-9hJy",
-    src: pathName + "/assets/thought/12.jpg",
+    src: imageCDN + "/assets/thought/12.jpg",
   },
   {
     title: "PFI CONFERENCE: FINANCING ENERGY PROJECTS IN ASIA, OCTOBER, 2020",
@@ -110,6 +110,6 @@ export const data = [
       "As part of the high profile panel, Ravi shares his views on financing Energy Projects and the need for risk mitigation to meet these needs",
     buttonText: "Listen Here",
     href: "",
-    src: pathName + "/assets/thought/14.jpg",
+    src: imageCDN + "/assets/thought/14.jpg",
   },
 ];
