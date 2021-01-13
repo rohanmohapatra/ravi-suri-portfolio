@@ -9,7 +9,7 @@ import {
 import { useTransform, useViewportScroll } from "framer-motion";
 import React, { useRef } from "react";
 import { motion } from "framer-motion";
-import { pathName } from "../../../properties/properties";
+import { imageCDN } from "../../../properties/properties";
 import { makeStyles, Typography } from "@material-ui/core";
 import { useRefScrollProgress } from "../../../components/useRefScrollProgress";
 
@@ -87,11 +87,11 @@ export function WorkExperience() {
     // six: useTransform(scrollYProgress, scrollRange, [0, 0, 0, 0, 0, 0]),
   };
   const companies = [
-    pathName + "/assets/about/logos/anz.png",
-    pathName + "/assets/about/logos/ge.png",
-    pathName + "/assets/about/logos/abn.png",
-    pathName + "/assets/about/logos/scb.png",
-    pathName + "/assets/about/logos/kpmg.png",
+    imageCDN + "/assets/about/logos/anz.png",
+    imageCDN + "/assets/about/logos/ge.png",
+    imageCDN + "/assets/about/logos/abn.png",
+    imageCDN + "/assets/about/logos/scb.png",
+    imageCDN + "/assets/about/logos/kpmg.png",
   ];
   const classes = useStyles();
   return (
@@ -130,11 +130,11 @@ export function WorkExperience() {
               After a successful stint with ANZ, including training in their
               Melbourne Flowerdale Centre, he joined GE Capital’s Global Project
               and Structured Finance Unit for Asia Pacific. He led GE Capital to
-              play a leadership role in the successfully privatisation of
-              India’s power sector and was involved in landmark deals in
-              Pakistan, Bangladesh and Indonesia. Whilst at GE, he was
-              instrumental in setting up an infrastructure fund with Soros and
-              IFC that invested in Power assets globally.
+              play a leadership role in the successful privatisation of India’s
+              power sector and was involved in landmark deals in Pakistan,
+              Bangladesh and Indonesia. Whilst at GE, he was instrumental in
+              setting up an infrastructure fund with Soros and IFC that invested
+              in Power assets globally.
             </Typography>
           </TimelineContent>
         </TimelineItem>
@@ -174,7 +174,7 @@ export function WorkExperience() {
           </TimelineSeparator>
           <TimelineContent>
             <Typography variant="h6" className={classes.text}>
-              After ABN AMRO he joined the Standard Chartered BANK unit to set
+              After ABN AMRO he joined the Standard Chartered Bank unit to set
               up their Project and Export Finance Unit. He grew this business
               successfully to make Standard Chartered a force to reckon with in
               the global arena and was promoted as the global head of this
@@ -198,13 +198,12 @@ export function WorkExperience() {
           <TimelineContent>
             <Typography variant="h6" className={classes.text}>
               After a glorious stint of over 15 years at Standard Chartered
-              Bank, and moving on from the Banking sector, Ravi joined KPMG as
-              their Partner and Global Head for Infrastructure Finance, covering
-              approximately 150 countries. Under him KPMG made it to the top
-              league tables in the MENA region in a very short span of time. As
-              it stands, KPMG has soon become a leader in the project finance
-              Advisory services, with some unique high profile complex deal
-              executions.
+              Bank, Ravi joined KPMG as their Partner and Global Head for
+              Infrastructure Finance, covering approximately 150 countries.
+              Under him KPMG made it to the top league tables in the MENA region
+              in a very short span of time. As it stands, KPMG has soon become a
+              leader in the project finance Advisory services, with some unique
+              high profile complex deal executions.
             </Typography>
           </TimelineContent>
         </TimelineItem>

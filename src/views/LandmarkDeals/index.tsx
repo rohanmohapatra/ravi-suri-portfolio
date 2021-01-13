@@ -2,7 +2,7 @@ import { Grid, Typography, Button, makeStyles } from "@material-ui/core";
 import React from "react";
 import { HeadingWithTransactionButton } from "../../components/HeadingWithTransactionButton";
 import { useIsMobile } from "../../components/useIsMobile";
-import { pathName } from "../../properties/properties";
+import { imageCDN, pathName } from "../../properties/properties";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -142,209 +142,209 @@ const useStyles = makeStyles((theme) => ({
 
 const landmarkDeals = [
   {
-    src: pathName + "/assets/landmarkdeals/dewa.jpg",
+    src: imageCDN + "/assets/landmarkdeals/dewa.jpg",
     title: "DEWA MBR Solar - Phase IV, UAE",
     text: "Largest Solar Project and first CSP tower in the region",
     href: pathName + "/landmark-deals/dewa-mbr",
   },
   {
-    src: pathName + "/assets/landmarkdeals/istanbul-tunnel.jpg",
+    src: imageCDN + "/assets/landmarkdeals/istanbul-tunnel.jpg",
     title: "Istanbul Tunnel Project",
     text:
       "One of the most complex tunnel financing transactions connecting Europe and Asia",
     href: pathName + "/landmark-deals/istanbul-tunnel",
   },
   {
-    src: pathName + "/assets/landmarkdeals/petronet.jpg",
+    src: imageCDN + "/assets/landmarkdeals/petronet.jpg",
     title: "PetroNet LNG Project",
     text: "India’s first Liquified Natural Gas Importer",
     href: pathName + "/landmark-deals/petronet",
   },
   {
-    src: pathName + "/assets/landmarkdeals/guangdong.jpg",
+    src: imageCDN + "/assets/landmarkdeals/guangdong.jpg",
     title: "Guangdong LNG Project",
     text: "China’s First LNG receiving terminal",
     href: pathName + "/landmark-deals/guangdong",
   },
   {
-    src: pathName + "/assets/landmarkdeals/power-africa.jpg",
+    src: imageCDN + "/assets/landmarkdeals/power-africa.jpg",
     title: "Power Africa",
     text:
       "Part of US President Barack Obama’s Power Africa Initiative to help generate power to ameliorate the living conditions of Africans",
-    href: pathName + "/landmark-deals/dewa-mbr",
+    href: pathName + "/landmark-deals/power-africa",
   },
   {
-    src: pathName + "/assets/landmarkdeals/azura.jpg",
+    src: imageCDN + "/assets/landmarkdeals/azura.jpg",
     title: "AZURA ENDO POWER PROJECT NIGERIA",
     text: "Open Cycle Gas Turbine One of Nigeria’s first project financed IPPS",
     href: pathName + "/landmark-deals/azura-edo",
   },
   {
-    src: pathName + "/assets/landmarkdeals/corpus-christi.jpg",
+    src: imageCDN + "/assets/landmarkdeals/corpus-christi.jpg",
     title: "Corpus Christi Liquefaction Project, USA",
     text:
       "It was the first greenfield LNG export facility in the United States in nearly 50 years",
     href: pathName + "/landmark-deals/corpus-christi",
   },
   {
-    src: pathName + "/assets/landmarkdeals/barakah.jpg",
+    src: imageCDN + "/assets/landmarkdeals/barakah.jpg",
     title: "Barakah Nuclear Power Plant, Abu Dhabi",
     text:
       "One of the first privately financed Nuclear power projects in the world",
     href: pathName + "/landmark-deals/barakah-nuclear",
   },
   {
-    src: pathName + "/assets/landmarkdeals/vict.jpg",
+    src: imageCDN + "/assets/landmarkdeals/vict.jpg",
     title: "Victoria International Container Terminal, australia",
     text: "Australia’s first fully automated terminal",
     href: pathName + "/landmark-deals/vict",
   },
   {
-    src: pathName + "/assets/landmarkdeals/maaden.jpg",
+    src: imageCDN + "/assets/landmarkdeals/maaden.jpg",
     title: "Ma’aden Phosphate Fertilizer Project, Saudi Arabia",
     text:
       "After the existing 2 pillars of Saudi Aramco (Oil) & SABIC (petrochemicals), this is the third pillar of mining established in the country",
     href: pathName + "/landmark-deals/maaden-phosphate",
   },
   {
-    src: pathName + "/assets/landmarkdeals/uch-power.jpg",
+    src: imageCDN + "/assets/landmarkdeals/uch-power.jpg",
     title: "UCH Power Ltd, Pakistan",
     text:
       "It was the first greenfield LNG export facility in Pakistan in nearly 50 years",
     href: pathName + "/landmark-deals/uch-power",
   },
   {
-    src: pathName + "/assets/landmarkdeals/shirajganj.jpg",
+    src: imageCDN + "/assets/landmarkdeals/shirajganj.jpg",
     title: "Sirajganj 2- Combined Cycle Power Plant, Bangladesh",
     text:
       "One of the projects towards the transformation of the Bangladesh power sector",
     href: pathName + "/landmark-deals/sirajganj",
   },
   {
-    src: pathName + "/assets/landmarkdeals/rabigh-water.jpg",
+    src: imageCDN + "/assets/landmarkdeals/rabigh-water.jpg",
     title: "Rabigh Power and Water Project",
     text:
       "First Independent Water and Power project financed by international banks and executed with a Chinese EPC contractor",
     href: pathName + "/landmark-deals/rabigh-power-water",
   },
   {
-    src: pathName + "/assets/landmarkdeals/haya-water.jpg",
+    src: imageCDN + "/assets/landmarkdeals/haya-water.jpg",
     title: "Haya Water PROJECT",
     text:
       "One of the first PPP’s to be procured under the newly notified Oman PPP Law",
     href: pathName + "/landmark-deals/haya",
   },
   {
-    src: pathName + "/assets/landmarkdeals/fewa-solar.jpg",
+    src: imageCDN + "/assets/landmarkdeals/fewa-solar.jpg",
     title: "FEWA 500MW Solar PV IPP",
     text: "First Solar IPP Projectn",
     href: pathName + "/landmark-deals/fewa-solar",
   },
   {
-    src: pathName + "/assets/landmarkdeals/shams-maan.jpg",
+    src: imageCDN + "/assets/landmarkdeals/shams-maan.jpg",
     title: "Shams Ma’an Solar PV IPP Project",
     text:
       "First solar PV project across MENA & the first CSP tower project in Jordan.",
     href: pathName + "/landmark-deals/shams-maan",
   },
   {
-    src: pathName + "/assets/landmarkdeals/dp-djibouti.jpg",
-    title: "DP World’s Ports In Djibouti",
+    src: imageCDN + "/assets/landmarkdeals/dp-djibouti.jpg",
+    title: "DP World Ports In Djibouti",
     text:
       "One of the only projects where GDP of the country is less than the Project cost",
     href: pathName + "/landmark-deals/dp-djibouti",
   },
   {
-    src: pathName + "/assets/landmarkdeals/ras-laffan.jpg",
+    src: imageCDN + "/assets/landmarkdeals/ras-laffan.jpg",
     title: "Ras Laffan B Power and Water Project, Qatar",
     text: "Longest power and water purchase agreement in the Middle East.",
     href: pathName + "/landmark-deals/ras-laffan-b",
   },
   {
-    src: pathName + "/assets/landmarkdeals/jorf-lasfar.jpg",
+    src: imageCDN + "/assets/landmarkdeals/jorf-lasfar.jpg",
     title: "Jorf Lasfar coal-fired power plant, Morocco",
     text:
       "Largest coal-fired plant in the Middle East and North Africa and first independent power producer (IPP) in Morocco at the time",
     href: pathName + "/landmark-deals/jorf-lasfar",
   },
   {
-    src: pathName + "/assets/landmarkdeals/clp-india.jpg",
+    src: imageCDN + "/assets/landmarkdeals/clp-india.jpg",
     title: "CLP wind energy assets, India",
     text:
       "‘Pooled Financing’ arrangement was expected to boost the growth of CLP India’s wind portfolio",
     href: pathName + "/landmark-deals/clp-india",
   },
   {
-    src: pathName + "/assets/landmarkdeals/al-dur-ii.jpg",
+    src: imageCDN + "/assets/landmarkdeals/al-dur-ii.jpg",
     title: "Al Dur II IWPP",
     text: "Largest Independent Power and Water plant in Bahrain",
     href: pathName + "/landmark-deals/al-dur-ii",
   },
   {
-    src: pathName + "/assets/landmarkdeals/fewa-solar.jpg",
+    src: imageCDN + "/assets/landmarkdeals/fewa-solar.jpg",
     title: "FEWA UAQ IWP",
     text: "FEWA’s first successfully closed PPP project",
     href: pathName + "/landmark-deals/fewa-water",
   },
   {
-    src: pathName + "/assets/landmarkdeals/al-ghubrah.jpg",
+    src: imageCDN + "/assets/landmarkdeals/al-ghubrah.jpg",
     title: "Al Ghubrah-3 IWP and Barka-5",
     text: "One of the largest IWP procurements in Oman",
     href: pathName + "/landmark-deals/al-ghubrah",
   },
   {
-    src: pathName + "/assets/landmarkdeals/rabigh-iii.jpg",
+    src: imageCDN + "/assets/landmarkdeals/rabigh-iii.jpg",
     title: "Rabigh III IWP",
     text: "First large scale IWP for the investor in the region",
     href: pathName + "/landmark-deals/rabigh-iii",
   },
   {
-    src: pathName + "/assets/landmarkdeals/waste-to-energy.jpg",
+    src: imageCDN + "/assets/landmarkdeals/waste-to-energy.jpg",
     title: "Transformative Waste-to-Energy Project",
     text: "Largest Waste-to- Energy project in the world",
     href: pathName + "/landmark-deals/waste-to-energy",
   },
   {
-    src: pathName + "/assets/landmarkdeals/sembcorp.jpg",
+    src: imageCDN + "/assets/landmarkdeals/sembcorp.jpg",
     title: "Sembcorp Salalah Power & Water Company",
     text:
       "Largest project in Oman executed at the peak of the Financial Crisis",
-    href: pathName + "/landmark-deals/sembcorp-salalahr",
+    href: pathName + "/landmark-deals/sembcorp-salalah",
   },
   {
-    src: pathName + "/assets/landmarkdeals/jhajjar-india.jpg",
+    src: imageCDN + "/assets/landmarkdeals/jhajjar-india.jpg",
     title: "Jhajjar power project, India",
     text:
-      "First coal-fired power generation project in India to be financed by a consortium of foreign banksn",
+      "First coal-fired power generation project in India to be financed by a consortium of foreign banks",
     href: pathName + "/landmark-deals/jhajjar-india",
   },
   {
-    src: pathName + "/assets/landmarkdeals/dp-senegal.jpg",
-    title: "DP World’s ports in Senegal",
+    src: imageCDN + "/assets/landmarkdeals/dp-senegal.jpg",
+    title: "DP World ports in Senegal",
     text: "First project finance port deal in Senegal",
     href: pathName + "/landmark-deals/dp-senegal",
   },
   {
-    src: pathName + "/assets/landmarkdeals/ruwais-power.jpg",
+    src: imageCDN + "/assets/landmarkdeals/ruwais-power.jpg",
     title: "Refinancing for Ruwais Power Company",
     text: "First project bond offering by an IWPP in the Middle Waste",
     href: pathName + "/landmark-deals/ruwais",
   },
   {
-    src: pathName + "/assets/landmarkdeals/oyu-tolgoi.jpg",
+    src: imageCDN + "/assets/landmarkdeals/oyu-tolgoi.jpg",
     title: "Oyu Tolgoi Project",
     text: "Largest single investment in Mongolia’s history",
-    href: pathName + "/landmark-deals//oyu-tolgo",
+    href: pathName + "/landmark-deals/oyu-tolgoi",
   },
   {
-    src: pathName + "/assets/landmarkdeals/oman-refineries.jpg",
+    src: imageCDN + "/assets/landmarkdeals/oman-refineries.jpg",
     title: "Oman refineries",
     text:
       "Merger led to the formation of the largest refinery complex in Oman till date, with a combined capacity of 222,400 BPDn",
     href: pathName + "/landmark-deals/oman-refineries",
   },
   {
-    src: pathName + "/assets/landmarkdeals/messaieed-water.jpg",
+    src: imageCDN + "/assets/landmarkdeals/messaieed-water.jpg",
     title: "Mesaieed Water and Power Project",
     text:
       "First power privatization in Qatar and the longest debt tenor for a power project in the region at the time",

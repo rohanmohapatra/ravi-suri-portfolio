@@ -71,7 +71,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export const SustainabilityLess: React.FC = () => {
-  const classes = useStyles();
+  const classes = useStyles({ cardHeightMobile: 0 });
   return (
     <Grid container>
       {data.slice(0, 2).map((row) => (
@@ -84,7 +84,7 @@ export const SustainabilityLess: React.FC = () => {
 };
 
 export const SustainabilityMore: React.FC = () => {
-  const classes = useStyles();
+  const classes = useStyles({ cardHeightMobile: 0 });
   return (
     <Grid container>
       {data.slice(2).map((row) => (

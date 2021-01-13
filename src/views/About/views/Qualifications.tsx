@@ -14,7 +14,7 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import FiberManualRecordIcon from "@material-ui/icons/FiberManualRecord";
 import React from "react";
 import { Heading } from "../../../components/Heading";
-import { pathName } from "../../../properties/properties";
+import { imageCDN, pathName } from "../../../properties/properties";
 import { ProjectCard } from "../../Home/components/ProjectCards";
 
 const useStyles = makeStyles((theme) => ({
@@ -124,12 +124,12 @@ const useStyles = makeStyles((theme) => ({
 
 const executiveEducation = [
   {
-    src: pathName + "/assets/about/education/stanford.jpg",
+    src: imageCDN + "/assets/about/education/stanford.jpg",
     university: "STANFORD UNIVERSITY GRADUATE SCHOOL OF BUSINESS",
     details: ["Customer Focussed Innovation"],
   },
   {
-    src: pathName + "/assets/about/education/harvard.jpg",
+    src: imageCDN + "/assets/about/education/harvard.jpg",
     university: "HARVARD UNIVERSITY KENNEDY SCHOOL OF GOVERNMENT",
     details: [
       "Creating Shared Value with Michael Potter",
@@ -138,32 +138,32 @@ const executiveEducation = [
     ],
   },
   {
-    src: pathName + "/assets/about/education/yale.jpg",
+    src: imageCDN + "/assets/about/education/yale.jpg",
     university: "Yale University",
     details: ["YALE CEO COLLEGE"],
   },
   {
-    src: pathName + "/assets/about/education/oxford.jpg",
+    src: imageCDN + "/assets/about/education/oxford.jpg",
     university: "University Of Oxford",
     details: ["Creative writing", "Executive Leadership Programme"],
   },
   {
-    src: pathName + "/assets/about/education/cambridge.jpg",
+    src: imageCDN + "/assets/about/education/cambridge.jpg",
     university: "University Of Cambridge",
     details: ["General Management"],
   },
   {
-    src: pathName + "/assets/about/education/northwestern-kellogg.jpg",
+    src: imageCDN + "/assets/about/education/northwestern-kellogg.jpg",
     university: "Kellogg School of Management",
     details: ["Soul of Leadership"],
   },
   {
-    src: pathName + "/assets/about/education/mit.jpg",
+    src: imageCDN + "/assets/about/education/mit.jpg",
     university: "Massachusetts Institute Of Technology",
     details: ["Clean Technology"],
   },
   {
-    src: pathName + "/assets/about/education/wharton_upenn.jpg",
+    src: imageCDN + "/assets/about/education/wharton_upenn.jpg",
     university: "UNIVERSITY OF PENNSYLVANIA WHARTON",
     details: [
       "Accelerated Development programme",
@@ -172,12 +172,12 @@ const executiveEducation = [
     ],
   },
   {
-    src: pathName + "/assets/about/education/imperial_london.jpg",
+    src: imageCDN + "/assets/about/education/imperial_london.jpg",
     university: "IMPERIAL COLLEGE, London",
     details: ["Customer Focussed Innovation"],
   },
   {
-    src: pathName + "/assets/about/education/lse.jpg",
+    src: imageCDN + "/assets/about/education/lse.jpg",
     university: "LONDON SCHOOL OF ECONOMICS",
     details: [
       "Behavioral Economics and the Modern Economy",
@@ -185,32 +185,32 @@ const executiveEducation = [
     ],
   },
   {
-    src: pathName + "/assets/about/education/cornell.png",
+    src: imageCDN + "/assets/about/education/cornell.png",
     university: "CORNELL UNIVERSITY",
     details: ["Leading High performance Teams"],
   },
   {
-    src: pathName + "/assets/about/education/nyu-stern.jpg",
+    src: imageCDN + "/assets/about/education/nyu-stern.jpg",
     university: "NYU, STERN",
     details: ["Executive Programme in Business leadership"],
   },
   {
-    src: pathName + "/assets/about/education/insead.jpg",
+    src: imageCDN + "/assets/about/education/insead.jpg",
     university: "INSEAD, France",
     details: ["Blue Ocean Strategy Programme"],
   },
   {
-    src: pathName + "/assets/about/education/london_business.jpg",
+    src: imageCDN + "/assets/about/education/london_business.jpg",
     university: "LONDON BUSINESS SCHOOL",
     details: ["Masterclass in Private Equity"],
   },
   {
-    src: pathName + "/assets/about/education/imd.jpg",
+    src: imageCDN + "/assets/about/education/imd.jpg",
     university: "IMD, SWITZERLAND",
     details: ["Leading Digital Business Transformation"],
   },
   {
-    src: pathName + "/assets/about/education/berkley.png",
+    src: imageCDN + "/assets/about/education/berkley.png",
     university: "UNIVERSITY OF BERKLEY",
     details: [
       "GOLDMAN SCHOOL OF PUBLIC POLICY",
@@ -218,7 +218,7 @@ const executiveEducation = [
     ],
   },
   {
-    src: pathName + "/assets/about/education/singularity.png",
+    src: imageCDN + "/assets/about/education/singularity.png",
     university: "SINGULARITY UNIVERSITY",
     details: ["Impact of Exponential Technology Changes"],
   },
@@ -236,21 +236,21 @@ export const Qualifications: React.FC = () => {
         <Grid container>
           <Grid item xs={6}>
             <DegreeCard
-              src={pathName + "/assets/about/education/bombay_uni.jpg"}
+              src={imageCDN + "/assets/about/education/bombay_uni.jpg"}
               university="University Of Mumbai"
               course="B.Sc – Chemistry and Physics"
               other="RANK THIRD"
             />
             <DegreeCard
-              src={pathName + "/assets/about/education/bombay_uni.jpg"}
+              src={imageCDN + "/assets/about/education/bombay_uni.jpg"}
               university="University Of Mumbai"
-              course="B.Sc (Tech))"
+              course="B.Sc (Tech)"
               other="GOLD MEDALIST"
             />
           </Grid>
           <Grid item xs={6}>
             <DegreeCard
-              src={pathName + "/assets/about/education/northwestern_uni.jpg"}
+              src={imageCDN + "/assets/about/education/northwestern_uni.jpg"}
               university="Northwestern University"
               course="Master Of Science (M.Sc),"
               other="Chemical Engineering"
@@ -336,7 +336,7 @@ export const Qualifications: React.FC = () => {
       </Grid>
       <Grid container className={classes.card}>
         <ProjectCard
-          src={pathName + "/assets/about/banner/testimonial.jpg"}
+          src={imageCDN + "/assets/about/banner/testimonial.jpg"}
           title="Testimonials"
           text="Testimonials by leading Industry veterans on Ravi’s professionalism, work ethics, and positive personal traits"
           index={1}

@@ -1,4 +1,4 @@
-import { pathName } from "../../../properties/properties";
+import { imageCDN, pathName } from "../../../properties/properties";
 
 export const data = {
   "mock-deal": {
@@ -26,7 +26,7 @@ export const data = {
     srNumber: 1,
     dealTitle: "Dewa MBR Solar - Phase IV",
     dealSubtitle: "Largest Solar Project and first CSP tower in the region",
-    image: pathName + "/assets/landmarkdeals/dewa.jpg",
+    image: imageCDN + "/assets/landmarkdeals/dewa.jpg",
     projectCapacity: "950 MW",
     sector: "Power",
     projectValue: "USD 4 Billion",
@@ -55,7 +55,7 @@ export const data = {
     dealTitle: "Shams Ma'an Solar PV IPP project",
     dealSubtitle:
       "First solar PV project across MENA & the first CSP tower project in the region",
-    image: pathName + "/assets/landmarkdeals/shams-maan.jpg",
+    image: imageCDN + "/assets/landmarkdeals/shams-maan.jpg",
     projectCapacity: "52.5 MW",
     sector: "Power",
     projectValue: "USD 197 Million",
@@ -76,7 +76,7 @@ export const data = {
     srNumber: 3,
     dealTitle: "Al Dur II IWPP",
     dealSubtitle: "Largest Independent Power and Water plant in Bahrain",
-    image: pathName + "/assets/landmarkdeals/al-dur-ii.jpg",
+    image: imageCDN + "/assets/landmarkdeals/al-dur-ii.jpg",
     projectCapacity: "1500 MW",
     sector: "Power and Water",
     projectValue: "USD 1 Billion",
@@ -93,7 +93,7 @@ export const data = {
     srNumber: 4,
     dealTitle: "FEWA 500MW Solar PV IPP",
     dealSubtitle: "FEWA’s first Solar IPP Project",
-    image: pathName + "/assets/landmarkdeals/fewa-solar.jpg",
+    image: imageCDN + "/assets/landmarkdeals/fewa-solar.jpg",
     projectCapacity: "500 MW",
     sector: "Power",
     projectValue: "USD 250 Million",
@@ -110,7 +110,7 @@ export const data = {
     srNumber: 5,
     dealTitle: "Al Ghubrah-3 IWP and Barka-5 desalination project",
     dealSubtitle: "One of the largest IWP procurements in Oman",
-    image: pathName + "/assets/landmarkdeals/al-ghubrah.jpg",
+    image: imageCDN + "/assets/landmarkdeals/al-ghubrah.jpg",
     projectCapacity:
       "190,000 m3/day Al Ghubrah-3 IWP and 150,000 m3/day Barka-5 desalination project",
     sector: "Water",
@@ -137,7 +137,7 @@ export const data = {
     srNumber: 6,
     dealTitle: "Rabigh III IWP",
     dealSubtitle: "First large scale IWP for the investor in the region",
-    image: pathName + "/assets/landmarkdeals/rabigh-iii.jpg",
+    image: imageCDN + "/assets/landmarkdeals/rabigh-iii.jpg",
     projectCapacity: "600,000 m3 / day",
     sector: "Water",
     projectValue: "USD 700 Million",
@@ -157,7 +157,7 @@ export const data = {
     srNumber: 7,
     dealTitle: "PetroNet LNG",
     dealSubtitle: "India’s first Liquified Natural Gas Importer",
-    image: pathName + "/assets/landmarkdeals/petronet.jpg",
+    image: imageCDN + "/assets/landmarkdeals/petronet.jpg",
     projectCapacity: [],
     sector: "LNG",
     projectValue: "USD 230 Million",
@@ -177,7 +177,7 @@ export const data = {
     dealTitle: "Istanbul Tunnel",
     dealSubtitle:
       "One of the most complex tunnel financing transactions connecting Europe and Asia",
-    image: pathName + "/assets/landmarkdeals/istanbul-tunnel.jpg",
+    image: imageCDN + "/assets/landmarkdeals/istanbul-tunnel.jpg",
     projectCapacity: [],
     sector: "Roads",
     projectValue: "USD 1.4 Billion",
@@ -204,7 +204,7 @@ export const data = {
     dealTitle: "Barakah nuclear power plant",
     dealSubtitle:
       "One of the first privately financed Nuclear power projects in the world",
-    image: pathName + "/assets/landmarkdeals/barakah.jpg",
+    image: imageCDN + "/assets/landmarkdeals/barakah.jpg",
     projectCapacity: "5600 MW",
     sector: "Nuclear Energy",
     projectValue: "USD 24.4 Billion",
@@ -230,9 +230,9 @@ export const data = {
   },
   "waste-to-energy": {
     srNumber: 10,
-    dealTitle: "Transformative Waste-to- Energy Project",
+    dealTitle: "Transformative Waste-to-Energy Project",
     dealSubtitle: "Largest Waste-toEnergy project in the world",
-    image: pathName + "/assets/landmarkdeals/waste-to-energy.jpg",
+    image: imageCDN + "/assets/landmarkdeals/waste-to-energy.jpg",
     projectCapacity: [],
     sector: "Waste to Energy",
     projectValue: "USD 750 Million",
@@ -253,7 +253,7 @@ export const data = {
     dealTitle: "Sembcorp Salalah Power & Water Company",
     dealSubtitle:
       "Largest project in Oman executed at the peak of the Financial Crisis",
-    image: pathName + "/assets/landmarkdeals/sembcorp.jpg",
+    image: imageCDN + "/assets/landmarkdeals/sembcorp.jpg",
     projectCapacity: "445 MW, 15 MIGD IWPP",
     sector: "Power & Utilities",
     projectValue: "USD 1 Billion",
@@ -271,10 +271,10 @@ export const data = {
   },
   "dp-djibouti": {
     srNumber: 12,
-    dealTitle: "DP World's ports in Djibouti",
+    dealTitle: "DP World ports in Djibouti",
     dealSubtitle:
       "One of the only projects where GDP of the country is less than the Project cost",
-    image: pathName + "/assets/landmarkdeals/dp-djibouti.jpg",
+    image: imageCDN + "/assets/landmarkdeals/dp-djibouti.jpg",
     projectCapacity: "1.25 Million TEUs",
     sector: "Ports",
     projectValue: [],
@@ -289,9 +289,9 @@ export const data = {
   },
   "dp-senegal": {
     srNumber: 13,
-    dealTitle: "DP World's ports in Senegal",
+    dealTitle: "DP World ports in Senegal",
     dealSubtitle: "First project finance port deal in Senegal",
-    image: pathName + "/assets/landmarkdeals/dp-senegal.jpg",
+    image: imageCDN + "/assets/landmarkdeals/dp-senegal.jpg",
     projectCapacity: "550k TEUs",
     sector: "Ports",
     projectValue: [],
@@ -313,7 +313,7 @@ export const data = {
     dealTitle: "Haya Water",
     dealSubtitle:
       "One of the first PPP’s to be procured under the newly notified Oman PPP Law",
-    image: pathName + "/assets/landmarkdeals/haya-water.jpg",
+    image: imageCDN + "/assets/landmarkdeals/haya-water.jpg",
     projectCapacity: [],
     sector: "Wastewater",
     projectValue: "USD 60-90 Million",
@@ -337,7 +337,7 @@ export const data = {
     srNumber: 15,
     dealTitle: "Guangdong regasification Project",
     dealSubtitle: "China’s First LNG receiving terminal",
-    image: pathName + "/assets/landmarkdeals/guangdong.jpg",
+    image: imageCDN + "/assets/landmarkdeals/guangdong.jpg",
     projectCapacity: [],
     sector: "LNG",
     projectValue: "USD 900 Million",
@@ -355,7 +355,7 @@ export const data = {
     srNumber: 16,
     dealTitle: "FEWA UAQ IWP",
     dealSubtitle: "FEWA’s first successfully closed PPP project",
-    image: pathName + "/assets/landmarkdeals/fewa-solar.jpg",
+    image: imageCDN + "/assets/landmarkdeals/fewa-solar.jpg",
     projectCapacity: "150 MIGD",
     sector: "Water",
     projectValue: "USD 800 Million",
@@ -376,7 +376,7 @@ export const data = {
     srNumber: 17,
     dealTitle: "Refinancing for Ruwais Power Company",
     dealSubtitle: "First project bond offering by an IWPP in the middle waste",
-    image: pathName + "/assets/landmarkdeals/ruwais-power.jpg",
+    image: imageCDN + "/assets/landmarkdeals/ruwais-power.jpg",
     projectCapacity: "1,507MW and 100MIGD,",
     sector: "Power and Utilities",
     projectValue: [],
@@ -397,7 +397,7 @@ export const data = {
     srNumber: 18,
     dealTitle: "Azura-Edo Open Cycle Gas Turbine",
     dealSubtitle: "One of Nigeria’s first project financed IPPS",
-    image: pathName + "/assets/landmarkdeals/azura.jpg",
+    image: imageCDN + "/assets/landmarkdeals/azura.jpg",
     projectCapacity: "459MW",
     sector: "Power",
     projectValue: "USD 868 Mn",
@@ -418,9 +418,9 @@ export const data = {
   },
   "oyu-tolgoi": {
     srNumber: 19,
-    dealTitle: "Project Name: Oyu Tolgoi Project",
+    dealTitle: " Oyu Tolgoi Project",
     dealSubtitle: "Largest single investment in Mongolia’s history",
-    image: pathName + "/assets/landmarkdeals/oyu-tolgoi.jpg",
+    image: imageCDN + "/assets/landmarkdeals/oyu-tolgoi.jpg",
     projectCapacity: [],
     sector: "Metal Mining",
     projectValue: "USD 197 Mn",
@@ -441,7 +441,7 @@ export const data = {
     dealTitle: "Mesaieed Water and Power Project",
     dealSubtitle:
       "First power privatization in Qatar and the longest debt tenor for a power project in the region at the time",
-    image: pathName + "/assets/landmarkdeals/messaieed-water.jpg",
+    image: imageCDN + "/assets/landmarkdeals/messaieed-water.jpg",
     projectCapacity: "2000MW",
     sector: "Power",
     projectValue: "Project value: USD 2.1Bn",
@@ -462,7 +462,7 @@ export const data = {
     dealTitle: "Oman refineries",
     dealSubtitle:
       "Merger led to the formation of the largest refinery complex in Oman till date, with a combined capacity of 222,400 BPD",
-    image: pathName + "/assets/landmarkdeals/oman-refineries.jpg",
+    image: imageCDN + "/assets/landmarkdeals/oman-refineries.jpg",
     projectCapacity: "222K BPD",
     sector: "Oil & Gas",
     projectValue: [],
@@ -481,7 +481,7 @@ export const data = {
     dealTitle: "Ras Laffan B Power and Water",
     dealSubtitle:
       "Longest power and water purchase agreement in the Middle East.",
-    image: pathName + "/assets/landmarkdeals/ras-laffan.jpg",
+    image: imageCDN + "/assets/landmarkdeals/ras-laffan.jpg",
     projectCapacity: "1025MW and 60MIGD",
     sector: "Power and Utilities",
     projectValue: "USD 900Mn",
@@ -502,7 +502,7 @@ export const data = {
     dealTitle: "Ma’aden Phosphate Fertilizer Project",
     dealSubtitle:
       "After the existing 2 pillars of Saudi Aramco (Oil) & SABIC (petrochemicals), this is the third pillar of mining established in the country",
-    image: pathName + "/assets/landmarkdeals/maaden.jpg",
+    image: imageCDN + "/assets/landmarkdeals/maaden.jpg",
     projectCapacity: "16 million tonnes/year",
     sector: "Mineral mining",
     projectValue: [],
@@ -532,7 +532,7 @@ export const data = {
     dealTitle: "Rabigh Power and Water Project",
     dealSubtitle:
       "First Independent Water and Power project financed by international banks and executed with a Chinese EPC contractor",
-    image: pathName + "/assets/landmarkdeals/rabigh-water.jpg",
+    image: imageCDN + "/assets/landmarkdeals/rabigh-water.jpg",
     projectCapacity: "(+)1024MW",
     sector: "Power and Utilities",
     projectValue: "USD 3Bn",
@@ -554,7 +554,7 @@ export const data = {
     dealTitle: "Al Dur Power and Water Project (Bahrain)",
     dealSubtitle:
       "Longest power and water purchase agreement in the Middle East.",
-    image: pathName + "/assets/landmarkdeals/al-dur-ii.jpg",
+    image: imageCDN + "/assets/landmarkdeals/al-dur-ii.jpg",
     projectCapacity: "220MW",
     sector: "Power",
     projectValue: "USD 1.7 Bn",
@@ -576,7 +576,7 @@ export const data = {
     dealTitle: "Corpus Christi Liquefaction Project",
     dealSubtitle:
       "It was the first greenfield LNG export facility in the United States in nearly 50 years",
-    image: pathName + "/assets/landmarkdeals/corpus-christi.jpg",
+    image: imageCDN + "/assets/landmarkdeals/corpus-christi.jpg",
     projectCapacity: "10Mtpa LNG storage",
     sector: "Oil & Gas",
     projectValue: [],
@@ -597,7 +597,7 @@ export const data = {
     srNumber: 27,
     dealTitle: "Victoria International Container Terminal (VICT)",
     dealSubtitle: "Australia’s first fully automated terminal",
-    image: pathName + "/assets/landmarkdeals/vict.jpg",
+    image: imageCDN + "/assets/landmarkdeals/vict.jpg",
     projectCapacity: "1.8 mn TEUs",
     sector: "Ports",
     projectValue: "USD 1.6 Bn",
@@ -623,7 +623,7 @@ export const data = {
     dealTitle: "Sirajganj 2- Combined Cycle Power Plant",
     dealSubtitle:
       "One of the projects towards the transformation of the Bangladesh power sector",
-    image: pathName + "/assets/landmarkdeals/shirajganj.jpg",
+    image: imageCDN + "/assets/landmarkdeals/shirajganj.jpg",
     projectCapacity: "225 MW",
     sector: "Power",
     projectValue: "USD 412 Mn",
@@ -650,13 +650,13 @@ export const data = {
     srNumber: 29,
     dealTitle: "UCH Power Ltd",
     dealSubtitle:
-      "It was the first greenfield LNG export facility in the United States in nearly 50 years",
-    image: pathName + "/assets/landmarkdeals/uch-power.jpg",
+      "It was the first greenfield LNG export facility in Pakistan in nearly 50 years",
+    image: imageCDN + "/assets/landmarkdeals/uch-power.jpg",
     projectCapacity: "404 MW",
     sector: "Power",
     projectValue: "USD 480 Mn",
     yearOfFinancialClose: 2013,
-    country: "United States of America",
+    country: "Pakistan",
     points: [
       "UCH Power Plant is a combined cycle power plant, located in Dera Murad Jamali, Nasirabad District, Baluchistan, Pakistan. The UCH-II project was constructed under an EPC contract with Hyundai Engineering Company and Descon Engineering.",
       "Raised USD 360 Mn of debt through multilateral and bilateral agencies that include the Asian Development Bank, International Finance Corporation, Korean EXIM and the Islamic Development Bank.",
@@ -669,7 +669,7 @@ export const data = {
     dealTitle: "Jorf Lasfar coal-fired power plant",
     dealSubtitle:
       "Largest coal-fired plant in the Middle East and North Africa and first independent power producer (IPP) in Morocco at the time",
-    image: pathName + "/assets/landmarkdeals/jorf-lasfar.jpg",
+    image: imageCDN + "/assets/landmarkdeals/jorf-lasfar.jpg",
     projectCapacity: "700MW",
     sector: "Power",
     projectValue: "USD 1.4 Bn",
@@ -699,7 +699,7 @@ export const data = {
     dealTitle: "CLP India wind energy assets",
     dealSubtitle:
       "Pooled Financing' arrangement was expected to boost the growth of CLP India's wind portfolio",
-    image: pathName + "/assets/landmarkdeals/clp-india.jpg",
+    image: imageCDN + "/assets/landmarkdeals/clp-india.jpg",
     projectCapacity: "300 MW",
     sector: "Power",
     projectValue: [],
@@ -725,12 +725,12 @@ export const data = {
     dealTitle: "Jhajjar plant- CLP India",
     dealSubtitle:
       "First coal-fired power generation project in India to be financed by a consortium of foreign banks",
-    image: pathName + "/assets/landmarkdeals/jhajjar-solar.jpg",
+    image: imageCDN + "/assets/landmarkdeals/jhajjar-solar.jpg",
     projectCapacity: "1,320 MW",
     sector: "Power",
     projectValue: "USD 1.3 Bn",
     yearOfFinancialClose: 2011,
-    country: "Morocco",
+    country: "India",
     points: [
       "CLP India, a wholly-owned subsidiary of the Hong Kong-based CLP group, entered into a financing agreement with The Bank of Tokyo-Mitsubishi UFJ, China Development Bank Corporation, The Export-Import Bank of China, The Hong Kong and Shanghai Banking Corporation and Standard Chartered Bank for its 1,320 mw (2 x 660 mw) power project in Jhajjar, Haryana.",
 
@@ -741,5 +741,24 @@ export const data = {
     pressLinks: [
       "https://wap.business-standard.com/article-amp/companies/clp-finalises-ecb-loan-of-rs-1-300-cr-for-jhajjar-unit-110122400099_1.html",
     ],
+  },
+  "power-africa": {
+    srNumber: 33,
+    dealTitle: "Power Africa",
+    dealSubtitle:
+      "The Power Africa project set an objective to improve access to clean, reliable power in Africa, and ultimately deliver electricity to more than 20 million new households and companies across the continent",
+    image: imageCDN + "/assets/landmarkdeals/power-africa.jpg",
+    sector: "Power",
+    projectValue: "USD 5 Billion",
+    yearOfFinancialClose: 2014,
+    country: "Africa",
+    points: [
+      "Under President Obama’s Power Africa Initiative, Standard Chartered commuted to help finance USD 5 Billion of power projects to help generate power to ameliorate the living conditions of Africans. Ravi helped lead this initiative and ensured the banks commitments were met.",
+
+      "As recommended by James Courtenay, former Global Head of International Corporates at Standard Chartered Bank, “As a result of Ravi’s work leading the Project Finance team, in Africa, Standard Chartered went on to become the largest private sector contributor within the Power Africa partnership.”",
+    ],
+    pressTitles: ["Power Africa receives $6b boost"],
+
+    pressLinks: [pathName + "/assets/gallery/pdf/pf-africa-boost.pdf"],
   },
 };

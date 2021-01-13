@@ -1,7 +1,7 @@
 import React from "react";
 import { Button, Grid, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import { pathName } from "../../../properties/properties";
+import { imageCDN, pathName } from "../../../properties/properties";
 import { useIsMobile } from "../../../components/useIsMobile";
 
 const useStyles = makeStyles((theme) => ({
@@ -101,50 +101,50 @@ export function ProjectCards() {
     {
       title: "About",
       text: "Details on Expertise and work experience",
-      src: `${pathName}/assets/home/Cards/about.png`,
+      src: `${imageCDN}/assets/home/Cards/about.png`,
       href: `${pathName}/about`,
     },
     {
       title: "LANDMARK DEALS",
       text:
         "Cutting edge and large complex advisory projects done in sectors of power, ports, renewables etc, both developed and emerging markets",
-      src: `${pathName}/assets/home/Cards/deals.jpg`,
+      src: `${imageCDN}/assets/home/Cards/deals.jpg`,
       href: `${pathName}/landmark-deals`,
     },
     {
       title: "Thought leadership",
       text:
         "Insights provided at high profile forums on lnfrastructure and sustainability",
-      src: `${pathName}/assets/home/Cards/thoughtleadership.jpg`,
+      src: `${imageCDN}/assets/home/Cards/thoughtleadership.jpg`,
       href: `${pathName}/thought-leadership`,
     },
     {
       title: "Passion for Sustainability",
       text: "Work being done on Sustainability and Green financing  ",
       src: isMobile
-        ? `${pathName}/assets/home/Cards/sustainability-mobile.png`
-        : `${pathName}/assets/home/Cards/sustainability.png`,
+        ? `${imageCDN}/assets/home/Cards/sustainability-mobile.png`
+        : `${imageCDN}/assets/home/Cards/sustainability.png`,
       href: `${pathName}/sustainability`,
     },
 
     {
       title: "Impact on Society",
       text: "Actively working for the Business For Peace Foundation",
-      src: `${pathName}/assets/home/Cards/peace.jpg`,
+      src: `${imageCDN}/assets/home/Cards/peace.jpg`,
       href: `${pathName}/peace`,
     },
     {
       title: "Gallery",
       text: "Media coverage across different platforms",
-      src: `${pathName}/assets/home/Cards/gallery.jpg`,
+      src: `${imageCDN}/assets/home/Cards/gallery.jpg`,
       href: `${pathName}/gallery`,
     },
     {
       title: "AWARDS",
       text: "Industry awards won for project finance deals ",
       src: isMobile
-        ? `${pathName}/assets/home/Cards/awards-mobile.jpg`
-        : `${pathName}/assets/home/Cards/awards.jpg`,
+        ? `${imageCDN}/assets/home/Cards/awards-mobile.jpg`
+        : `${imageCDN}/assets/home/Cards/awards.jpg`,
       href: `${pathName}/awards`,
     },
   ];
