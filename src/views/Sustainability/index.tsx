@@ -113,9 +113,9 @@ export const PassionForSustainabilityDesktopView: React.FC = () => {
                 Though not proven ; it is also likely that the Covid virus
                 challenge we face is due to this change in our carbon balance .
                 We have less than two decades left to ensure temperature rise
-                does not exceed two degree centigrade and hence fighting climate
-                change is real and the sustainability agenda needs to come to
-                the forefront.
+                does not exceed two degrees and hence fighting climate change is
+                real and the sustainability agenda needs to come to the
+                forefront.
               </Typography>
             </Grid>
             <Grid item xs={6}>
@@ -165,10 +165,10 @@ export const PassionForSustainabilityDesktopView: React.FC = () => {
             <Grid item xs={6}>
               <Typography variant="h6" className={classes.text}>
                 Growth of battery storage and Waste to Energy will be a big
-                factor as we tackle climate change.Whilst a lot of work has been
-                on controlling carbon emission; a lot more needs to bedone in
-                the capture side. Carbon storage and capture technology needs to
-                evolve, and technology needs to bring the cost down. We must
+                factor as we tackle climate change. Whilst a lot of work has
+                been done on controlling carbon emission, a lot needs to be done
+                on the capture side. Carbon storage and capture technology needs
+                to evolve, and technology needs to bring the cost down. We must
                 focus on reforestation and use of technology should increased so
                 that carbon is captured by our forests, including growing our
                 oceans to act as a sink for increased carbon capture. Finally,
@@ -265,9 +265,9 @@ const PassionForSustainabilityMobileView: React.FC = () => {
                 Though not proven ; it is also likely that the Covid virus
                 challenge we face is due to this change in our carbon balance .
                 We have less than two decades left to ensure temperature rise
-                does not exceed two degree centigrade and hence fighting climate
-                change is real and the sustainability agenda needs to come to
-                the forefront.
+                does not exceed two degrees and hence fighting climate change is
+                real and the sustainability agenda needs to come to the
+                forefront.
               </Typography>
             </Grid>
             <Grid item xs={12}>
@@ -317,10 +317,10 @@ const PassionForSustainabilityMobileView: React.FC = () => {
             <Grid item xs={12}>
               <Typography variant="body2" className={classes.text}>
                 Growth of battery storage and Waste to Energy will be a big
-                factor as we tackle climate change.Whilst a lot of work has been
-                on controlling carbon emission; a lot more needs to bedone in
-                the capture side. Carbon storage and capture technology needs to
-                evolve, and technology needs to bring the cost down. We must
+                factor as we tackle climate change. Whilst a lot of work has
+                been done on controlling carbon emission, a lot needs to be done
+                on the capture side. Carbon storage and capture technology needs
+                to evolve, and technology needs to bring the cost down. We must
                 focus on reforestation and use of technology should increased so
                 that carbon is captured by our forests, including growing our
                 oceans to act as a sink for increased carbon capture. Finally,

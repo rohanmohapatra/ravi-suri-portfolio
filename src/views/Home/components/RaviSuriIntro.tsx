@@ -5,17 +5,17 @@ import { imageCDN } from "../../../properties/properties";
 
 const useStyles = makeStyles((theme) => ({
   image: {
-    height: 300,
-    width: 300,
-    background: `url(${imageCDN}/assets/home/ravi-suri.png) no-repeat center`,
+    height: 350,
+    width: 350,
+    background: `url(${imageCDN}/assets/home/ravi-suri2.png) no-repeat center`,
     backgroundSize: "contain",
     [theme.breakpoints.between(1280, 1380)]: {
-      height: 260,
-      width: 260,
+      height: 280,
+      width: 280,
     },
     [theme.breakpoints.down("md")]: {
-      height: 230,
-      width: 230,
+      height: 260,
+      width: 260,
     },
     [theme.breakpoints.down("sm")]: {
       height: 180,

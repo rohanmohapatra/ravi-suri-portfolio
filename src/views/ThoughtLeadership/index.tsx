@@ -30,6 +30,7 @@ const useStyles = makeStyles((theme) => ({
   },
   home: {
     padding: 40,
+    paddingTop: 5,
     color: theme.palette.common.white,
     [theme.breakpoints.down("xs")]: {
       paddingLeft: 20,
@@ -232,16 +233,18 @@ const RiskMitigationCard: React.FC<Props> = (props) => {
           {props.text}
         </Typography>
       </CardContent>
-      <CardActions style={{ padding: 0 }}>
-        <Button
-          size="large"
-          href={props.href}
-          className={classes.button}
-          target="_blank"
-        >
-          {props.buttonText}
-        </Button>
-      </CardActions>
+      {props.href && (
+        <CardActions style={{ padding: 0 }}>
+          <Button
+            size="large"
+            href={props.href}
+            className={classes.button}
+            target="_blank"
+          >
+            {props.buttonText}
+          </Button>
+        </CardActions>
+      )}
       <CardContent className={classes.content}>
         <Typography variant="h6" className={classes.text}>
           With reference to the above article, please find more details on:

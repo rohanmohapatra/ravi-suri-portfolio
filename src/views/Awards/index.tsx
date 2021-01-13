@@ -45,7 +45,7 @@ const awards = [
   {
     src: imageCDN + "/assets/awards/aw2.jpg",
     desc:
-      "Prestigious IFC -FT Transformational Award, while at Standard Chartered Banks",
+      "Prestigious IFC -FT Transformational Award, while at Standard Chartered Bank",
   },
   {
     src: imageCDN + "/assets/awards/aw3.jpg",
@@ -54,7 +54,7 @@ const awards = [
   {
     src: imageCDN + "/assets/awards/aw4.jpg",
     desc:
-      "EUROMONEY award for the best Project finance house in the Middle East to Standard Chartered Bank",
+      "EUROMONEY award for the best Project finance house in the Middle East - Standard Chartered Bank",
   },
   {
     src: imageCDN + "/assets/awards/aw5.jpg",
@@ -88,7 +88,7 @@ const awards = [
   },
   {
     src: imageCDN + "/assets/awards/aw12.jpg",
-    desc: "IJ GLOBAL AWARDS; MENA Power Salalah 2",
+    desc: "IJ GLOBAL AWARDS 2015- MENA POWER SALALAH 2",
   },
   {
     src: imageCDN + "/assets/awards/aw13.jpg",

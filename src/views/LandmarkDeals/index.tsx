@@ -171,7 +171,7 @@ const landmarkDeals = [
     title: "Power Africa",
     text:
       "Part of US President Barack Obama’s Power Africa Initiative to help generate power to ameliorate the living conditions of Africans",
-    href: pathName + "/landmark-deals/dewa-mbr",
+    href: pathName + "/landmark-deals/power-africa",
   },
   {
     src: imageCDN + "/assets/landmarkdeals/azura.jpg",
@@ -249,7 +249,7 @@ const landmarkDeals = [
   },
   {
     src: imageCDN + "/assets/landmarkdeals/dp-djibouti.jpg",
-    title: "DP World’s Ports In Djibouti",
+    title: "DP World Ports In Djibouti",
     text:
       "One of the only projects where GDP of the country is less than the Project cost",
     href: pathName + "/landmark-deals/dp-djibouti",
@@ -309,18 +309,18 @@ const landmarkDeals = [
     title: "Sembcorp Salalah Power & Water Company",
     text:
       "Largest project in Oman executed at the peak of the Financial Crisis",
-    href: pathName + "/landmark-deals/sembcorp-salalahr",
+    href: pathName + "/landmark-deals/sembcorp-salalah",
   },
   {
     src: imageCDN + "/assets/landmarkdeals/jhajjar-india.jpg",
     title: "Jhajjar power project, India",
     text:
-      "First coal-fired power generation project in India to be financed by a consortium of foreign banksn",
+      "First coal-fired power generation project in India to be financed by a consortium of foreign banks",
     href: pathName + "/landmark-deals/jhajjar-india",
   },
   {
     src: imageCDN + "/assets/landmarkdeals/dp-senegal.jpg",
-    title: "DP World’s ports in Senegal",
+    title: "DP World ports in Senegal",
     text: "First project finance port deal in Senegal",
     href: pathName + "/landmark-deals/dp-senegal",
   },
@@ -334,7 +334,7 @@ const landmarkDeals = [
     src: imageCDN + "/assets/landmarkdeals/oyu-tolgoi.jpg",
     title: "Oyu Tolgoi Project",
     text: "Largest single investment in Mongolia’s history",
-    href: pathName + "/landmark-deals//oyu-tolgo",
+    href: pathName + "/landmark-deals/oyu-tolgoi",
   },
   {
     src: imageCDN + "/assets/landmarkdeals/oman-refineries.jpg",

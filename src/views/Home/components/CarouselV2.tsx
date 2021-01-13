@@ -238,9 +238,9 @@ function Card(props) {
         />
       </Grid>
       <Grid container justify="center" alignItems="center">
-        <Typography variant="h6" className={classes.cardTitle}>
+        {/* <Typography variant="h6" className={classes.cardTitle}>
           RAVI SURI
-        </Typography>
+        </Typography> */}
         <Text />
         {/* <Typography variant="h4" className={classes.cardText}>
           <Text />

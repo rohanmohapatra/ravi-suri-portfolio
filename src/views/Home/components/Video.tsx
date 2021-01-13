@@ -35,8 +35,8 @@ export function Video() {
       <Grid container justify="center">
         <ReactPlayer
           url={source}
-          playing={true}
-          loop={true}
+          playing={false}
+          loop={false}
           controls={true}
           height={height}
           width={width}

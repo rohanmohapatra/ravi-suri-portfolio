@@ -29,8 +29,7 @@ export const data = [
   },
   {
     title: "NEED FOR SUSTAINABLE CONVERSATIONS",
-    text:
-      "Boards are required to be increasingly fluent in the ESG language, with several Board members having to understand ESG risks & transparency.",
+    text: "Boards are required to be increasingly fluent in the ESG language.",
     buttonText: "Learn More",
     href:
       "https://hbr.org/2019/05/what-boards-need-to-know-about-sustainability-ratings",
@@ -76,7 +75,7 @@ export const data = [
   {
     title: "NET ZERO ECONOMY",
     text:
-      "The Energy Transitions Commission (ETC) mission is to work out how to build a global economy which can both enable developing countries to attain developed world standards of living and ensure that the world limits global warming. Read this report on how the world needs to achieve net-zero GHG emissions by around mid-century.",
+      "The Energy Transitions Commission (ETC) mission is to work out how to build a global economy which can both enable developed countries to achieve growth and ensure that the world limits global warning. Read this report on how the world needs to achieve net-zero GHG emissions by around mid-century.",
     buttonText: "PDF: Net Zero Economy report",
     href: imageCDN + "/assets/sustainability/pdf/Net-Zero-Economy.pdf",
     src: imageCDN + "/assets/sustainability/9.jpg",
@@ -92,8 +91,7 @@ export const data = [
   },
   {
     title: "SUSTAINABILITY TRANSFORMATION",
-    text:
-      "Climate change is a crisis of unprecedented magnitude. Organizations are under increasing pressure to respond. Many will need to sustainably transform their business models to find new opportunities and avenues for growth for their future business. The report below elaborates how:",
+    text: "Climate change is a crisis of unprecedented magnitude. ",
     buttonText: "PDF: SUSTAINABILITY TRANSFORMATION",
     href:
       imageCDN + "/assets/sustainability/pdf/Sustainability-transformation.pdf",

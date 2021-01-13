@@ -1,4 +1,4 @@
-import { imageCDN } from "../../../properties/properties";
+import { imageCDN, pathName } from "../../../properties/properties";
 
 export const data = {
   "mock-deal": {
@@ -230,7 +230,7 @@ export const data = {
   },
   "waste-to-energy": {
     srNumber: 10,
-    dealTitle: "Transformative Waste-to- Energy Project",
+    dealTitle: "Transformative Waste-to-Energy Project",
     dealSubtitle: "Largest Waste-toEnergy project in the world",
     image: imageCDN + "/assets/landmarkdeals/waste-to-energy.jpg",
     projectCapacity: [],
@@ -271,7 +271,7 @@ export const data = {
   },
   "dp-djibouti": {
     srNumber: 12,
-    dealTitle: "DP World's ports in Djibouti",
+    dealTitle: "DP World ports in Djibouti",
     dealSubtitle:
       "One of the only projects where GDP of the country is less than the Project cost",
     image: imageCDN + "/assets/landmarkdeals/dp-djibouti.jpg",
@@ -289,7 +289,7 @@ export const data = {
   },
   "dp-senegal": {
     srNumber: 13,
-    dealTitle: "DP World's ports in Senegal",
+    dealTitle: "DP World ports in Senegal",
     dealSubtitle: "First project finance port deal in Senegal",
     image: imageCDN + "/assets/landmarkdeals/dp-senegal.jpg",
     projectCapacity: "550k TEUs",
@@ -418,7 +418,7 @@ export const data = {
   },
   "oyu-tolgoi": {
     srNumber: 19,
-    dealTitle: "Project Name: Oyu Tolgoi Project",
+    dealTitle: " Oyu Tolgoi Project",
     dealSubtitle: "Largest single investment in Mongolia’s history",
     image: imageCDN + "/assets/landmarkdeals/oyu-tolgoi.jpg",
     projectCapacity: [],
@@ -650,13 +650,13 @@ export const data = {
     srNumber: 29,
     dealTitle: "UCH Power Ltd",
     dealSubtitle:
-      "It was the first greenfield LNG export facility in the United States in nearly 50 years",
+      "It was the first greenfield LNG export facility in Pakistan in nearly 50 years",
     image: imageCDN + "/assets/landmarkdeals/uch-power.jpg",
     projectCapacity: "404 MW",
     sector: "Power",
     projectValue: "USD 480 Mn",
     yearOfFinancialClose: 2013,
-    country: "United States of America",
+    country: "Pakistan",
     points: [
       "UCH Power Plant is a combined cycle power plant, located in Dera Murad Jamali, Nasirabad District, Baluchistan, Pakistan. The UCH-II project was constructed under an EPC contract with Hyundai Engineering Company and Descon Engineering.",
       "Raised USD 360 Mn of debt through multilateral and bilateral agencies that include the Asian Development Bank, International Finance Corporation, Korean EXIM and the Islamic Development Bank.",
@@ -730,7 +730,7 @@ export const data = {
     sector: "Power",
     projectValue: "USD 1.3 Bn",
     yearOfFinancialClose: 2011,
-    country: "Morocco",
+    country: "India",
     points: [
       "CLP India, a wholly-owned subsidiary of the Hong Kong-based CLP group, entered into a financing agreement with The Bank of Tokyo-Mitsubishi UFJ, China Development Bank Corporation, The Export-Import Bank of China, The Hong Kong and Shanghai Banking Corporation and Standard Chartered Bank for its 1,320 mw (2 x 660 mw) power project in Jhajjar, Haryana.",
 
@@ -741,5 +741,24 @@ export const data = {
     pressLinks: [
       "https://wap.business-standard.com/article-amp/companies/clp-finalises-ecb-loan-of-rs-1-300-cr-for-jhajjar-unit-110122400099_1.html",
     ],
+  },
+  "power-africa": {
+    srNumber: 33,
+    dealTitle: "Power Africa",
+    dealSubtitle:
+      "The Power Africa project set an objective to improve access to clean, reliable power in Africa, and ultimately deliver electricity to more than 20 million new households and companies across the continent",
+    image: imageCDN + "/assets/landmarkdeals/power-africa.jpg",
+    sector: "Power",
+    projectValue: "USD 5 Billion",
+    yearOfFinancialClose: 2014,
+    country: "Africa",
+    points: [
+      "Under President Obama’s Power Africa Initiative, Standard Chartered commuted to help finance USD 5 Billion of power projects to help generate power to ameliorate the living conditions of Africans. Ravi helped lead this initiative and ensured the banks commitments were met.",
+
+      "As recommended by James Courtenay, former Global Head of International Corporates at Standard Chartered Bank, “As a result of Ravi’s work leading the Project Finance team, in Africa, Standard Chartered went on to become the largest private sector contributor within the Power Africa partnership.”",
+    ],
+    pressTitles: ["Power Africa receives $6b boost"],
+
+    pressLinks: [pathName + "/assets/gallery/pdf/pf-africa-boost.pdf"],
   },
 };

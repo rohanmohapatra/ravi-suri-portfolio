@@ -244,7 +244,7 @@ export const Qualifications: React.FC = () => {
             <DegreeCard
               src={imageCDN + "/assets/about/education/bombay_uni.jpg"}
               university="University Of Mumbai"
-              course="B.Sc (Tech))"
+              course="B.Sc (Tech)"
               other="GOLD MEDALIST"
             />
           </Grid>

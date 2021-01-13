@@ -4,7 +4,7 @@ export const data = [
   {
     title: "SUSTAINABLE FINANCE",
     text:
-      "The Climate change challenge is severe and urgent action needs to be taken to control global warming. Rolling out sustainable infrastructure with sustainable finance. Ravi explains:",
+      "The Climate change challenge is severe and urgent action needs to be taken to control global warming. Rolling out sustainable infrastructure with sustainable finance is the key. Ravi explains:",
     buttonText: "Learn More",
     href:
       "https://www.linkedin.com/posts/ravi-suri-0aa30021_sustainableinfrastructure-economicrecovery-activity-6683989870785916928-DK5F",
@@ -22,7 +22,7 @@ export const data = [
   {
     title: "RISK MITIGATION FOR BANKABILITY",
     text:
-      "Why do infrastructure projects fail, resulting in losses to banks? What lessons can be learnt? Ravi explains ten guiding principles that can help ensure that projects are well structured, to avoid losses for the lending institutions financing them. ",
+      "Adequate capital is available to finance the infrastructure needs of the world provided the contracts are bankable and correct risk mitigation is done. Ravi Suri throws light on what needs to be done to make projects bankable.",
     buttonText: "Learn More",
     href:
       "https://www.linkedin.com/posts/ravi-suri-0aa30021_why-infrastructure-projects-fail-resulting-activity-6708266733569884160-s9J_",
@@ -31,7 +31,7 @@ export const data = [
   {
     title: "PLANNING A SUCCESSFUL PRIVATISATION PROGRAMME",
     text:
-      "Adequate capital is available to finance the infrastructure needs of the world provided the contracts are bankable and correct risk mitigation is done. Ravi Suri throws light on what needs to be done to make projects bankable.",
+      "Why do infrastructure projects fail, resulting in losses to banks? What lessons can be learnt? Ravi explains ten guiding principles that can help ensure that projects are well structured, to avoid losses for the lending institutions financing them.",
     buttonText: "Effective risk mitigation.pdf",
     href: pathName + "/assets/thought/pdf/effective-risk-mitigation.pdf",
     src: imageCDN + "/assets/thought/4.jpg",
