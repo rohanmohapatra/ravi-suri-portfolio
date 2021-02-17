@@ -75,8 +75,8 @@ export function Gallery() {
       <div className={classes.textContainer}>
         <Typography variant="h4">
           Media coverage across various platforms for the projects and
-          initiatives undertaken by Ravi Suri during his during his career at
-          different organisations.
+          initiatives undertaken by Ravi Suri during his career at different
+          organisations.
         </Typography>
       </div>
       <GalleryImage src={imageCDN + "/assets/gallery/av.jpg"} />

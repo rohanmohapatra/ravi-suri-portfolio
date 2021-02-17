@@ -126,9 +126,9 @@ export function CarouselV2() {
     className: classes.content,
     slidesToShow: 1,
     slidesToScroll: 1,
-    speed: 500,
+    speed: 200,
     autoplay: true,
-    autoplaySpeed: 13000,
+    autoplaySpeed: 6000,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
   };

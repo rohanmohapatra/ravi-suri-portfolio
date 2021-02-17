@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
       width: 400,
     },
     [theme.breakpoints.down("xs")]: {
-      top: "35%",
+      top: "20%",
       fontSize: 12,
       width: 300,
     },
@@ -38,7 +38,7 @@ const variants = {
   animate: {
     opacity: 1,
     transition: {
-      duration: 5,
+      duration: 2,
     },
   },
 };

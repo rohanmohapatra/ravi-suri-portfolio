@@ -109,7 +109,7 @@ export const data = [
     text:
       "As part of the high profile panel, Ravi shares his views on financing Energy Projects and the need for risk mitigation to meet these needs",
     buttonText: "Listen Here",
-    href: "",
+    href: pathName + "/assets/thought/pfi-conf.mp4",
     src: imageCDN + "/assets/thought/14.jpg",
   },
 ];

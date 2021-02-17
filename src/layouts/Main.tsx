@@ -1,6 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core";
 import { TopBar } from "./components/TopBar";
+import { Footer } from "./components/Footer";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -23,6 +24,7 @@ export function Main(props) {
     <div>
       <TopBar location={location} />
       <main className={classes.content}>{children}</main>
+      <Footer />
     </div>
   );
 }

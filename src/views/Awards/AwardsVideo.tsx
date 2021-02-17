@@ -5,7 +5,7 @@ import { useWidth } from "../../components/useIsMobile";
 import { pathName } from "../../properties/properties";
 
 export const AwardsVideo: React.FC = () => {
-  const source = pathName + "/assets/awards/awards-video.mp4";
+  const source = pathName + "/assets/awards/awards-video2.mp4";
   const width = useWidth();
   let height: number;
   // width >= 1200 && width <= 1380 ? 650 : 0;

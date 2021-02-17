@@ -39,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
 
 const awards = [
   {
-    src: imageCDN + "/assets/awards/tm5.jpg",
+    src: imageCDN + "/assets/awards/aw1_Idpt-vXpw.jpg",
     desc: "PFI- GLOBAL BANK OF THE YEAR AWARD – Standard Chartered Bank, 2010",
   },
   {
