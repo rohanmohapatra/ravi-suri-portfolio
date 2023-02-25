@@ -52,13 +52,17 @@ export const Footer: React.FC = () => {
         &copy; Copyright {new Date().getFullYear()}. All rights reserved.
       </Typography>
       <Grid container justify="center" className={classes.logoContainer}>
-        <a href="http://themintlab.com">
+        {/* <a href="http://themintlab.com">
           <img
             src="https://ik.imagekit.io/tgj9qhofatt/assets/home/tml-white_pbLuzWqGd.svg"
             alt="The Mint Lab"
             className={classes.logo}
           />
-        </a>
+        </a> */}
+        <p>
+          Made with 🤍 by{" "}
+          <a href="http://rohanmohapatra.github.io">Rohan Mohapatra</a>
+        </p>
       </Grid>
     </Box>
   );
